@@ -14,18 +14,18 @@ public:
 
     Coord createNewPlayer(); // Добавить нового игрока
 
-    ArrayOfCoord addWayCurve(Coord coord); // Добавить кривую пути в список пути
-    ArrayOfCoord updatePlayerArea(ArrayOfCoord arrayOfCoord); // Обновить зону владения игрока
+    VectorOfCoord addWayCurve(Coord coord); // Добавить кривую пути в список пути
+    VectorOfCoord updatePlayerArea(VectorOfCoord arrayOfCoord); // Обновить зону владения игрока
     Coord updatePlayerCoord(Coord coord);
 
     bool isInArea(Coord coord); // Точка в своей зоне?
-    bool isWayEmpty(ArrayOfCoord arrayOfWay); // Существует ли путь?
+    bool isWayEmpty(VectorOfCoord arrayOfWay); // Существует ли путь?
 
 private:
 
     Coord playerCoord;
-    ArrayOfCoord arrayOfAreaCoord;
-    ArrayOfCoord arrayOfWay;
+    VectorOfCoord arrayOfAreaCoord;
+    VectorOfCoord arrayOfWay;
 
 };
 
