@@ -14,7 +14,7 @@ public:
 
     Coord createNewPlayer(); // Добавить нового игрока
 
-    VectorOfCoord addWayCurve(Coord coord); // Добавить кривую пути в список пути
+    void addWayCurve(Coord coord); // Добавить кривую пути в список пути
     VectorOfCoord updatePlayerArea(VectorOfCoord arrayOfCoord); // Обновить зону владения игрока
     void updatePlayerCoord(Coord coord);
 

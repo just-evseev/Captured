@@ -6,6 +6,10 @@ Coord MapRender::createNewPlayer() {
     return coord;
 }
 
+void MapRender::addWayCurve(Coord coord) {
+    this->arrayOfWay.push_back(coord);
+}
+
 void  MapRender::createAreaOfNewPlayer(Coord coord) {
     Coord newCoord;
     newCoord.x = coord.x + 0.001;
@@ -27,17 +31,15 @@ void MapRender::updatePlayerCoord(Vector vector) {
     this->playerCoord.y += vector.y;
 }
 
-Coord MapRender::generateCoord() {
-    Coord mem;
-    return mem;
+Coord MapRender::generateCoord() { //TODO: Build this method
+    Coord coord;
+    float lll = 0.01;
+    coord.x += lll;
+    coord.y += lll;
+    return coord;
 }
 
-VectorOfCoord MapRender::addWayCurve(Coord coord) {
-    VectorOfCoord mem;
-    return mem;
-}
-
-bool MapRender::isInArea(Coord coord) {
+bool MapRender::isInArea(Coord coord) { //TODO: Build this method
     for (Coord n : this->arrayOfAreaCoord) {
         
     }
