@@ -16,7 +16,10 @@ public:
 
     VectorOfCoord addWayCurve(Coord coord); // Добавить кривую пути в список пути
     VectorOfCoord updatePlayerArea(VectorOfCoord arrayOfCoord); // Обновить зону владения игрока
-    Coord updatePlayerCoord(Coord coord);
+    void updatePlayerCoord(Coord coord);
+
+    Coord generateCoord();
+    void createAreaOfNewPlayer(Coord coord);
 
     bool isInArea(Coord coord); // Точка в своей зоне?
     bool isWayEmpty(VectorOfCoord arrayOfWay); // Существует ли путь?

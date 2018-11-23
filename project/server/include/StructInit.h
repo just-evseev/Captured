@@ -4,8 +4,8 @@
 #include <vector>
 
 struct XY {
-    float *x;
-    float *y;
+    float x;
+    float y;
 };
 
 typedef struct XY Vector;
