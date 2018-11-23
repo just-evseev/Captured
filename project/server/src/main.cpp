@@ -1,5 +1,7 @@
-#include <stdio.h>
+#include <iostream>
+#include <thread>
+#include <sstream>
 
-int main(void) {
+int main() {
     return 0;
 }
