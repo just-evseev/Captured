@@ -2,10 +2,10 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6"/>
 	<Project>
-		<Option title="serverCaptured"/>
+		<Option title="server"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\Library\;CMake Files\..\..\..\..\..\..\Library\Frameworks\;CMake Files\..\..\..\..\..\..\Library\Frameworks\SFML.framework\;CMake Files\..\..\..\..\..\..\Library\Frameworks\SFML.framework\Resources\;CMake Files\..\..\..\..\..\..\Library\Frameworks\SFML.framework\Resources\CMake\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake_modules\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/ilya/Desktop/Captured/project/server/cmake-build-debug"/>
@@ -37,13 +37,14 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="serverCaptured">
-				<Option output="/Users/ilya/Desktop/Captured/project/server/cmake-build-debug/serverCaptured" prefix_auto="0" extension_auto="0"/>
+			<Target title="server">
+				<Option output="/Users/ilya/Desktop/Captured/project/server/cmake-build-debug/server" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/ilya/Desktop/Captured/project/server/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Library/Frameworks/SFML.framework"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include"/>
@@ -52,19 +53,20 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 serverCaptured"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 server"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="serverCaptured/fast">
-				<Option output="/Users/ilya/Desktop/Captured/project/server/cmake-build-debug/serverCaptured" prefix_auto="0" extension_auto="0"/>
+			<Target title="server/fast">
+				<Option output="/Users/ilya/Desktop/Captured/project/server/cmake-build-debug/server" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/ilya/Desktop/Captured/project/server/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Library/Frameworks/SFML.framework"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include"/>
@@ -73,33 +75,36 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 serverCaptured/fast"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 server/fast"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/ilya/Desktop/Captured/project/server/include/MapRender.h">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/Users/ilya/Desktop/Captured/project/server/include/Server.h">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/Users/ilya/Desktop/Captured/project/server/include/StructInit.h">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/Users/ilya/Desktop/Captured/project/server/src/MapRender.cpp">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/Users/ilya/Desktop/Captured/project/server/src/Server.cpp">
+			<Option target="server"/>
+		</Unit>
 		<Unit filename="/Users/ilya/Desktop/Captured/project/server/src/main.cpp">
-			<Option target="serverCaptured"/>
+			<Option target="server"/>
 		</Unit>
 		<Unit filename="/Users/ilya/Desktop/Captured/project/server/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/Users/ilya/Desktop/Captured/project/server/../../../../../../Library/Frameworks/SFML.framework/Resources/CMake/SFMLConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\Library\Frameworks\SFML.framework\Resources\CMake\"/>
-		</Unit>
-		<Unit filename="/Users/ilya/Desktop/Captured/project/server/../../../../../../Library/Frameworks/SFML.framework/Resources/CMake/SFMLConfigDependencies.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\Library\Frameworks\SFML.framework\Resources\CMake\"/>
-		</Unit>
-		<Unit filename="/Users/ilya/Desktop/Captured/project/server/../../../../../../Library/Frameworks/SFML.framework/Resources/CMake/SFMLConfigVersion.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\Library\Frameworks\SFML.framework\Resources\CMake\"/>
-		</Unit>
-		<Unit filename="/Users/ilya/Desktop/Captured/project/server/../../../../../../Library/Frameworks/SFML.framework/Resources/CMake/SFMLSharedTargets-release.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\Library\Frameworks\SFML.framework\Resources\CMake\"/>
-		</Unit>
-		<Unit filename="/Users/ilya/Desktop/Captured/project/server/../../../../../../Library/Frameworks/SFML.framework/Resources/CMake/SFMLSharedTargets.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\Library\Frameworks\SFML.framework\Resources\CMake\"/>
+		<Unit filename="/Users/ilya/Desktop/Captured/project/server/cmake_modules/FindSFML.cmake">
+			<Option virtualFolder="CMake Files\cmake_modules\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

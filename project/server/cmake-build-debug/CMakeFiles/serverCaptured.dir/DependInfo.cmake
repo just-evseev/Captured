@@ -4,14 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/ilya/Desktop/Captured/project/server/src/MapRender.cpp" "/Users/ilya/Desktop/Captured/project/server/cmake-build-debug/CMakeFiles/serverCaptured.dir/src/MapRender.cpp.o"
   "/Users/ilya/Desktop/Captured/project/server/src/main.cpp" "/Users/ilya/Desktop/Captured/project/server/cmake-build-debug/CMakeFiles/serverCaptured.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../include"
   )
 
 # Targets to which this target links.

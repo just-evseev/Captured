@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++17 -g -isysroot /Applications/Xcode.app/Contents/Developer/
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -F/Library/Frameworks 
 

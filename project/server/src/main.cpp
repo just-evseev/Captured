@@ -1,17 +1,32 @@
 #include <iostream>
+#include <vector>
+#include <SFML/Network.hpp>
 #include <thread>
-#include <sstream>
 
-#include "MapRender.h"
+#include "../include/MapRender.h"
+#include "../include/Server.h"
+
+
+
+void getInfo() {
+    Server s;
+    s.getInfo();
+}
+
+void createServer() {
+    Server s;
+    s.createServer();
+}
 
 int main() {
-//    Socket s;
-//    s.bind(5000);
-//    s.listen();
-//
-//    while (true) {
-//        ClientSocket client = s.accept();
-//        std::thread t(client_handler, std::move(client));
-//        t.detach();
-//    }
+    sf::Thread* serverCr;
+    serverCr = new sf::Thread(&createServer);
+    sf::Thread * thread;
+    thread = new sf::Thread(&getInfo);
+
+    serverCr->launch();
+    thread->launch();
+
+    return 0;
+
 }
