@@ -3,19 +3,18 @@
 //#include <sstream>
 #include <SFML/Network.hpp>
 
-#include "MapRender.h"
+#include "../include/MapRender.h"
 
 sf::TcpSocket socket;
 sf::Mutex globalMutex;
 
 std::string msgSend;
-
 bool quit = false;
 
 const unsigned short PORT = 5000;
-const std::string IPADDRESS("192.168.0.100");//change to suit your needs
+const std::string IPADDRESS("172.20.10.14");//change to suit your needs
 
-void DoStuff(void)
+void GetInfo(void)
 {
     static std::string oldMsg;
     while(!quit)
@@ -33,7 +32,7 @@ void DoStuff(void)
         socket.receive(packetReceive);
         if ((packetReceive >> msg) && oldMsg != msg && !msg.empty())
         {
-            std::cout << msg << std::endl;
+            std::cout << socket.getRemoteAddress() << ": " << msg << std::endl;
             oldMsg = msg;
         }
     }
@@ -41,48 +40,56 @@ void DoStuff(void)
 
 void Server(void)
 {
+    std::cout << "Server created";
     sf::TcpListener listener;
     listener.listen(PORT);
-    listener.accept(socket);
-    std::cout << "New client connected: " << socket.getRemoteAddress() << std::endl;
+    while (!quit) {
+        listener.accept(socket);
+        std::cout << socket.getRemoteAddress() << ": Connected" << std::endl;
+    }
 }
 
 void GetInput(void)
 {
     std::string s;
-    std::cout << "\nEnter \"exit\" to quit or message to send: ";
     getline(std::cin,s);
-    if(s == "exit")
+    if(s == "exit") {
+        std::cout << socket.getRemoteAddress() << ": Disconnect" << std::endl;
         quit = true;
+    }
     globalMutex.lock();
     msgSend = s;
     globalMutex.unlock();
 }
 
 int main() {
-//    Socket s;
-//    s.bind(5000);
-//    s.listen();
-//
-//    while (true) {
-//        ClientSocket client = s.accept();
-//        std::thread t(client_handler, std::move(client));
-//        t.detach();
-//    }
-    Server();
-    sf::Thread* thread = 0;
-    thread = new sf::Thread(&DoStuff);
-    thread->launch();
+    sf::Thread* serverCreate = 0;
+    serverCreate = new sf::Thread(&Server);
+    serverCreate->launch();
+
+    if(serverCreate)
+    {
+        serverCreate->wait();
+        delete serverCreate;
+    }
+
+//    Server();
+    sf::Thread* threadGet = 0;
+
+    threadGet = new sf::Thread(&GetInfo);
+    threadGet->launch();
+
+
 
     while(!quit)
     {
         GetInput();
     }
 
-    if(thread)
+    if(threadGet)
     {
-        thread->wait();
-        delete thread;
+        threadGet->wait();
+        delete threadGet;
     }
     return 0;
 

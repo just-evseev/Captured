@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <vector>
 
-#include "MapRender.h"
+#include "../include/MapRender.h"
 
 /* Я использую для генератора случайных чисел точность 0,0001 */
 
