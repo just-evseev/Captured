@@ -10,6 +10,6 @@ struct XY {
 
 typedef struct XY Vector;
 typedef struct XY Coord;
-typedef std::vector<Coord> VectorOfCoord; //TASK: Сделать вектор
+typedef std::vector<Coord> VectorOfCoord;
 
 #endif /* StructInit_h */
