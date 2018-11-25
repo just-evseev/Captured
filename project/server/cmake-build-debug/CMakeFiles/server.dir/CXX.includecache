@@ -19,6 +19,8 @@ vector
 /Users/ilya/Desktop/Captured/project/server/src/main.cpp
 iostream
 -
+vector
+-
 SFML/Network.hpp
 -
 ../include/MapRender.h

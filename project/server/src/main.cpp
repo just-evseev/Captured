@@ -1,10 +1,12 @@
 #include <iostream>
+#include <vector>
 //#include <thread>
 //#include <sstream>
 #include <SFML/Network.hpp>
 
 #include "../include/MapRender.h"
 
+//std::vector<sf::TcpSocket> socket;
 sf::TcpSocket socket;
 sf::Mutex globalMutex;
 
@@ -40,12 +42,15 @@ void GetInfo(void)
 
 void Server(void)
 {
-    std::cout << "Server created";
+    std::cout << "Server created" << std::endl;
     sf::TcpListener listener;
     listener.listen(PORT);
     while (!quit) {
         listener.accept(socket);
         std::cout << socket.getRemoteAddress() << ": Connected" << std::endl;
+        int a = 0, b = 0, c = 0, d = 0;
+        socket.getRemoteAddress(a, b, c, d);
+        std::cout << d << std::endl;
     }
 }
 
@@ -62,34 +67,32 @@ void GetInput(void)
     globalMutex.unlock();
 }
 
-int main() {
-    sf::Thread* serverCreate = 0;
-    serverCreate = new sf::Thread(&Server);
-    serverCreate->launch();
+int main()
+{
+    sf::Thread* serverCr = nullptr;
 
-    if(serverCreate)
-    {
-        serverCreate->wait();
-        delete serverCreate;
-    }
+    serverCr = new sf::Thread(&Server);
+    serverCr->launch();
 
-//    Server();
-    sf::Thread* threadGet = 0;
+    sf::Thread* thread = nullptr;
 
-    threadGet = new sf::Thread(&GetInfo);
-    threadGet->launch();
+    thread = new sf::Thread(&GetInfo);
+    thread->launch();
 
-
-
-    while(!quit)
-    {
+    while(!quit) {
         GetInput();
     }
 
-    if(threadGet)
+    if(serverCr)
     {
-        threadGet->wait();
-        delete threadGet;
+        serverCr->wait();
+        delete serverCr;
+    }
+
+    if(thread)
+    {
+        thread->wait();
+        delete thread;
     }
     return 0;
 
