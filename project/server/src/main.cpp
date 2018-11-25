@@ -6,19 +6,17 @@
 
 #include "../include/MapRender.h"
 
-//std::vector<sf::TcpSocket> socket;
-sf::TcpSocket socket;
+//std::vector<sf::TcpSocket*> socket;
+static std::vector<std::unique_ptr<sf::TcpSocket>> socket;
 sf::Mutex globalMutex;
 
 std::string msgSend;
 bool quit = false;
 
 const unsigned short PORT = 5000;
-const std::string IPADDRESS("172.20.10.14");//change to suit your needs
 
 void GetInfo(void)
 {
-    static std::string oldMsg;
     while(!quit)
     {
         sf::Packet packetSend;
@@ -26,16 +24,22 @@ void GetInfo(void)
         packetSend << msgSend;
         globalMutex.unlock();
 
-        socket.send(packetSend);
+        for (int i = 0; i < socket.size(); ++i) {
+            socket[i]->send(packetSend);  // todo проверить успешность
 
-        std::string msg;
-        sf::Packet packetReceive;
+            std::string msg;
+            sf::Packet packetReceive;
 
-        socket.receive(packetReceive);
-        if ((packetReceive >> msg) && oldMsg != msg && !msg.empty())
-        {
-            std::cout << socket.getRemoteAddress() << ": " << msg << std::endl;
-            oldMsg = msg;
+            socket[i]->receive(packetReceive);// проверить успешность
+            if (msg == "exit")
+            {
+                std::cout << socket[i]->getRemoteAddress() << ": Disconnect" << std::endl;
+            }
+
+            if ((packetReceive >> msg) && !msg.empty())
+            {
+                std::cout << socket[i]->getRemoteAddress() << ": " << msg << std::endl;
+            }
         }
     }
 }
@@ -44,13 +48,21 @@ void Server(void)
 {
     std::cout << "Server created" << std::endl;
     sf::TcpListener listener;
-    listener.listen(PORT);
+    if(listener.listen(PORT)!=sf::Socket::Done){
+        exit(1);
+    }
+    listener.setBlocking(false);
     while (!quit) {
-        listener.accept(socket);
-        std::cout << socket.getRemoteAddress() << ": Connected" << std::endl;
-        int a = 0, b = 0, c = 0, d = 0;
-        socket.getRemoteAddress(a, b, c, d);
-        std::cout << d << std::endl;
+        std::unique_ptr<sf::TcpSocket> fooSocket = std::make_unique<sf::TcpSocket>();
+
+        if (listener.accept(*fooSocket) == sf::Socket::Done)
+        {
+            std::cout << "Server createdasdasdassadasdasdasdasdasdd" << std::endl;
+            std::cout << "Server createdasdasdasd" << std::endl;
+            socket.push_back(std::move(fooSocket));
+            std::cout << socket[socket.size() - 1]->getRemoteAddress() << ": Connected" << std::endl;
+            socket[socket.size() - 1]->getRemoteAddress();
+        }
     }
 }
 
@@ -59,7 +71,7 @@ void GetInput(void)
     std::string s;
     getline(std::cin,s);
     if(s == "exit") {
-        std::cout << socket.getRemoteAddress() << ": Disconnect" << std::endl;
+        std::cout << ": Disconnect" << std::endl;
         quit = true;
     }
     globalMutex.lock();
