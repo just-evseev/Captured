@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/serverCaptured.dir/src/main.cpp.o"
-  "CMakeFiles/serverCaptured.dir/src/MapRender.cpp.o"
   "serverCaptured.pdb"
   "serverCaptured"
 )

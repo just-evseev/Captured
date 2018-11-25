@@ -111,44 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named serverCaptured
+# Target rules for targets named server
 
 # Build rule for target.
-serverCaptured: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 serverCaptured
-.PHONY : serverCaptured
+server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 server
+.PHONY : server
 
 # fast build rule for target.
-serverCaptured/fast:
-	$(MAKE) -f CMakeFiles/serverCaptured.dir/build.make CMakeFiles/serverCaptured.dir/build
-.PHONY : serverCaptured/fast
-
-src/MapRender.o: src/MapRender.cpp.o
-
-.PHONY : src/MapRender.o
-
-# target to build an object file
-src/MapRender.cpp.o:
-	$(MAKE) -f CMakeFiles/serverCaptured.dir/build.make CMakeFiles/serverCaptured.dir/src/MapRender.cpp.o
-.PHONY : src/MapRender.cpp.o
-
-src/MapRender.i: src/MapRender.cpp.i
-
-.PHONY : src/MapRender.i
-
-# target to preprocess a source file
-src/MapRender.cpp.i:
-	$(MAKE) -f CMakeFiles/serverCaptured.dir/build.make CMakeFiles/serverCaptured.dir/src/MapRender.cpp.i
-.PHONY : src/MapRender.cpp.i
-
-src/MapRender.s: src/MapRender.cpp.s
-
-.PHONY : src/MapRender.s
-
-# target to generate assembly for a file
-src/MapRender.cpp.s:
-	$(MAKE) -f CMakeFiles/serverCaptured.dir/build.make CMakeFiles/serverCaptured.dir/src/MapRender.cpp.s
-.PHONY : src/MapRender.cpp.s
+server/fast:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
+.PHONY : server/fast
 
 src/main.o: src/main.cpp.o
 
@@ -156,7 +129,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/serverCaptured.dir/build.make CMakeFiles/serverCaptured.dir/src/main.cpp.o
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -165,7 +138,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/serverCaptured.dir/build.make CMakeFiles/serverCaptured.dir/src/main.cpp.i
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -174,7 +147,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/serverCaptured.dir/build.make CMakeFiles/serverCaptured.dir/src/main.cpp.s
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -185,10 +158,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... serverCaptured"
-	@echo "... src/MapRender.o"
-	@echo "... src/MapRender.i"
-	@echo "... src/MapRender.s"
+	@echo "... server"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

@@ -5,7 +5,7 @@
 		<Option title="serverCaptured"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\Library\;CMake Files\..\..\..\..\..\..\Library\Frameworks\;CMake Files\..\..\..\..\..\..\Library\Frameworks\SFML.framework\;CMake Files\..\..\..\..\..\..\Library\Frameworks\SFML.framework\Resources\;CMake Files\..\..\..\..\..\..\Library\Frameworks\SFML.framework\Resources\CMake\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/ilya/Desktop/Captured/project/server/cmake-build-debug"/>
@@ -44,7 +44,6 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/ilya/Desktop/Captured/project/server/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include"/>
@@ -66,7 +65,6 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/ilya/Desktop/Captured/project/server/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include"/>
@@ -82,20 +80,26 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/ilya/Desktop/Captured/project/server/include/MapRender.h">
-			<Option target="serverCaptured"/>
-		</Unit>
-		<Unit filename="/Users/ilya/Desktop/Captured/project/server/include/StructInit.h">
-			<Option target="serverCaptured"/>
-		</Unit>
-		<Unit filename="/Users/ilya/Desktop/Captured/project/server/src/MapRender.cpp">
-			<Option target="serverCaptured"/>
-		</Unit>
 		<Unit filename="/Users/ilya/Desktop/Captured/project/server/src/main.cpp">
 			<Option target="serverCaptured"/>
 		</Unit>
 		<Unit filename="/Users/ilya/Desktop/Captured/project/server/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/ilya/Desktop/Captured/project/server/../../../../../../Library/Frameworks/SFML.framework/Resources/CMake/SFMLConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\Library\Frameworks\SFML.framework\Resources\CMake\"/>
+		</Unit>
+		<Unit filename="/Users/ilya/Desktop/Captured/project/server/../../../../../../Library/Frameworks/SFML.framework/Resources/CMake/SFMLConfigDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\Library\Frameworks\SFML.framework\Resources\CMake\"/>
+		</Unit>
+		<Unit filename="/Users/ilya/Desktop/Captured/project/server/../../../../../../Library/Frameworks/SFML.framework/Resources/CMake/SFMLConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\Library\Frameworks\SFML.framework\Resources\CMake\"/>
+		</Unit>
+		<Unit filename="/Users/ilya/Desktop/Captured/project/server/../../../../../../Library/Frameworks/SFML.framework/Resources/CMake/SFMLSharedTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\Library\Frameworks\SFML.framework\Resources\CMake\"/>
+		</Unit>
+		<Unit filename="/Users/ilya/Desktop/Captured/project/server/../../../../../../Library/Frameworks/SFML.framework/Resources/CMake/SFMLSharedTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\Library\Frameworks\SFML.framework\Resources\CMake\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>
