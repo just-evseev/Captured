@@ -13,10 +13,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d737d72e-2f77-4ceb-847f-c09fa166bbc6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MapRender.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/MapRender.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MapRender.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/MapRender.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StructInit.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/StructInit.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,7 +26,7 @@
     <session id="-285866645">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.opened" value="2" />
@@ -53,14 +49,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cpp" value="429" />
-          <entry key="txt" value="98" />
+          <entry key="txt" value="152" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="70" />
           <entry key="ObjectiveC" value="429" />
-          <entry key="PLAIN_TEXT" value="28" />
+          <entry key="PLAIN_TEXT" value="82" />
         </counts>
       </usages-collector>
     </session>
@@ -191,7 +187,7 @@
       <option name="presentableId" value="Default" />
       <updated>1543136058684</updated>
       <workItem from="1543136061116" duration="1110000" />
-      <workItem from="1543138859500" duration="7673000" />
+      <workItem from="1543138859500" duration="7745000" />
     </task>
     <task id="LOCAL-00001" summary="add sfml to server">
       <created>1543145786582</created>
@@ -200,11 +196,18 @@
       <option name="project" value="LOCAL" />
       <updated>1543145786582</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Создал сервер и работаю над многопоточностью">
+      <created>1543152203600</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1543152203600</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8783000" />
+    <option name="totallyTimeSpent" value="8855000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -240,7 +243,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add sfml to server" />
-    <option name="LAST_COMMIT_MESSAGE" value="add sfml to server" />
+    <MESSAGE value="Создал сервер и работаю над многопоточностью" />
+    <option name="LAST_COMMIT_MESSAGE" value="Создал сервер и работаю над многопоточностью" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/MapRender.cpp">
