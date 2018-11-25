@@ -3,7 +3,7 @@ project(server)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17")
 
-set(SOURCE_FILES ./src/main.cpp)
+set(SOURCE_FILES ./src/main.cpp src/Server.cpp include/Server.h)
 add_executable(server ${SOURCE_FILES})
 
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake_modules")

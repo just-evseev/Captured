@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/ilya/Desktop/Captured/project/server/include/Server.h">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/Users/ilya/Desktop/Captured/project/server/src/Server.cpp">
+			<Option target="server"/>
+		</Unit>
 		<Unit filename="/Users/ilya/Desktop/Captured/project/server/src/main.cpp">
 			<Option target="server"/>
 		</Unit>

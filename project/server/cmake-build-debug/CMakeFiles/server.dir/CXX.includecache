@@ -12,9 +12,19 @@ stdio.h
 StructInit.h
 /Users/ilya/Desktop/Captured/project/server/include/StructInit.h
 
+/Users/ilya/Desktop/Captured/project/server/include/Server.h
+SFML/Network.hpp
+-
+
 /Users/ilya/Desktop/Captured/project/server/include/StructInit.h
 vector
 -
+
+/Users/ilya/Desktop/Captured/project/server/src/Server.cpp
+iostream
+-
+../include/Server.h
+/Users/ilya/Desktop/Captured/project/server/include/Server.h
 
 /Users/ilya/Desktop/Captured/project/server/src/main.cpp
 iostream
@@ -25,4 +35,6 @@ SFML/Network.hpp
 -
 ../include/MapRender.h
 /Users/ilya/Desktop/Captured/project/server/include/MapRender.h
+../include/Server.h
+/Users/ilya/Desktop/Captured/project/server/include/Server.h
 
