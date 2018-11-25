@@ -50,7 +50,7 @@ void Server::getInfo() {
     }
 }
 
-void Server::sendInput(void) {
+void Server::sendInput() {
     std::string s;
     getline(std::cin,s);
     if(s == "exit") {
@@ -62,11 +62,9 @@ void Server::sendInput(void) {
     globalMutex.unlock();
 }
 
-void Server::createServer(void)
-{
+void Server::createServer() {
     sf::TcpListener listener;
-    if (listener.listen(PORT) != sf::Socket::Done)
-    {
+    if (listener.listen(PORT) != sf::Socket::Done) {
         puts("Error in listen");
         exit(1);
     }

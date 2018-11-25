@@ -123,6 +123,33 @@ server/fast:
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
 .PHONY : server/fast
 
+src/MapRender.o: src/MapRender.cpp.o
+
+.PHONY : src/MapRender.o
+
+# target to build an object file
+src/MapRender.cpp.o:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/MapRender.cpp.o
+.PHONY : src/MapRender.cpp.o
+
+src/MapRender.i: src/MapRender.cpp.i
+
+.PHONY : src/MapRender.i
+
+# target to preprocess a source file
+src/MapRender.cpp.i:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/MapRender.cpp.i
+.PHONY : src/MapRender.cpp.i
+
+src/MapRender.s: src/MapRender.cpp.s
+
+.PHONY : src/MapRender.s
+
+# target to generate assembly for a file
+src/MapRender.cpp.s:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/MapRender.cpp.s
+.PHONY : src/MapRender.cpp.s
+
 src/Server.o: src/Server.cpp.o
 
 .PHONY : src/Server.o
@@ -186,6 +213,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... server"
+	@echo "... src/MapRender.o"
+	@echo "... src/MapRender.i"
+	@echo "... src/MapRender.s"
 	@echo "... src/Server.o"
 	@echo "... src/Server.i"
 	@echo "... src/Server.s"

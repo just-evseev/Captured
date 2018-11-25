@@ -20,18 +20,14 @@ SFML/Network.hpp
 vector
 -
 
-/Users/ilya/Desktop/Captured/project/server/src/Server.cpp
-iostream
--
-../include/Server.h
-/Users/ilya/Desktop/Captured/project/server/include/Server.h
-
 /Users/ilya/Desktop/Captured/project/server/src/main.cpp
 iostream
 -
 vector
 -
 SFML/Network.hpp
+-
+thread
 -
 ../include/MapRender.h
 /Users/ilya/Desktop/Captured/project/server/include/MapRender.h
