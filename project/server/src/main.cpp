@@ -9,7 +9,7 @@ static sf::Mutex globalMutex;
 
 const unsigned short PORT = 5001;
 
-std::string msgSend = "";
+std::string msgSend;
 bool quit = false;
 
 std::vector<std::unique_ptr<sf::TcpSocket>> socket;
