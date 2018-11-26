@@ -150,33 +150,6 @@ src/MapRender.cpp.s:
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/MapRender.cpp.s
 .PHONY : src/MapRender.cpp.s
 
-src/Server.o: src/Server.cpp.o
-
-.PHONY : src/Server.o
-
-# target to build an object file
-src/Server.cpp.o:
-	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/Server.cpp.o
-.PHONY : src/Server.cpp.o
-
-src/Server.i: src/Server.cpp.i
-
-.PHONY : src/Server.i
-
-# target to preprocess a source file
-src/Server.cpp.i:
-	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/Server.cpp.i
-.PHONY : src/Server.cpp.i
-
-src/Server.s: src/Server.cpp.s
-
-.PHONY : src/Server.s
-
-# target to generate assembly for a file
-src/Server.cpp.s:
-	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/Server.cpp.s
-.PHONY : src/Server.cpp.s
-
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -216,9 +189,6 @@ help:
 	@echo "... src/MapRender.o"
 	@echo "... src/MapRender.i"
 	@echo "... src/MapRender.s"
-	@echo "... src/Server.o"
-	@echo "... src/Server.i"
-	@echo "... src/Server.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

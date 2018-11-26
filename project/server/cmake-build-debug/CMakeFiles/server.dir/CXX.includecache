@@ -12,10 +12,6 @@ stdio.h
 StructInit.h
 /Users/ilya/Desktop/Captured/project/server/include/StructInit.h
 
-/Users/ilya/Desktop/Captured/project/server/include/Server.h
-SFML/Network.hpp
--
-
 /Users/ilya/Desktop/Captured/project/server/include/StructInit.h
 vector
 -
@@ -31,6 +27,4 @@ thread
 -
 ../include/MapRender.h
 /Users/ilya/Desktop/Captured/project/server/include/MapRender.h
-../include/Server.h
-/Users/ilya/Desktop/Captured/project/server/include/Server.h
 

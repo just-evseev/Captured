@@ -85,16 +85,10 @@
 		<Unit filename="/Users/ilya/Desktop/Captured/project/server/include/MapRender.h">
 			<Option target="server"/>
 		</Unit>
-		<Unit filename="/Users/ilya/Desktop/Captured/project/server/include/Server.h">
-			<Option target="server"/>
-		</Unit>
 		<Unit filename="/Users/ilya/Desktop/Captured/project/server/include/StructInit.h">
 			<Option target="server"/>
 		</Unit>
 		<Unit filename="/Users/ilya/Desktop/Captured/project/server/src/MapRender.cpp">
-			<Option target="server"/>
-		</Unit>
-		<Unit filename="/Users/ilya/Desktop/Captured/project/server/src/Server.cpp">
 			<Option target="server"/>
 		</Unit>
 		<Unit filename="/Users/ilya/Desktop/Captured/project/server/src/main.cpp">
