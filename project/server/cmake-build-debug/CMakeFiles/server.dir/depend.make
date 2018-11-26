@@ -5,11 +5,7 @@ CMakeFiles/server.dir/src/MapRender.cpp.o: ../include/MapRender.h
 CMakeFiles/server.dir/src/MapRender.cpp.o: ../include/StructInit.h
 CMakeFiles/server.dir/src/MapRender.cpp.o: ../src/MapRender.cpp
 
-CMakeFiles/server.dir/src/Server.cpp.o: ../include/Server.h
-CMakeFiles/server.dir/src/Server.cpp.o: ../src/Server.cpp
-
 CMakeFiles/server.dir/src/main.cpp.o: ../include/MapRender.h
-CMakeFiles/server.dir/src/main.cpp.o: ../include/Server.h
 CMakeFiles/server.dir/src/main.cpp.o: ../include/StructInit.h
 CMakeFiles/server.dir/src/main.cpp.o: ../src/main.cpp
 

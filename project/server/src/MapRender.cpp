@@ -47,8 +47,8 @@ void MapRender::updatePlayerCoord(Vector vector) {
 
 Coord MapRender::generateCoord() {
     Coord coord;
-    coord.x += generateNumber();
-    coord.y += generateNumber();
+    coord.x = generateNumber();
+    coord.y = generateNumber();
     return coord;
 }
 
