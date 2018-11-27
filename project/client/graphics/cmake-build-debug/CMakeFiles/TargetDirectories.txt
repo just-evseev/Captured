@@ -1,3 +1,0 @@
-/Users/jason/source/Captured/project/client/graphics/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/jason/source/Captured/project/client/graphics/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/jason/source/Captured/project/client/graphics/cmake-build-debug/CMakeFiles/graphics.dir
