@@ -7,7 +7,7 @@
 
 static sf::Mutex globalMutex;
 
-const unsigned short PORT = 5001;
+const unsigned short PORT = 5000;
 
 std::string msgSend;
 bool quit = false;
@@ -27,7 +27,6 @@ void getInfo() {
 
                 if (socket[i]->send(packetSend) != sf::Socket::Done) {
                     std::cout << socket[i]->getRemoteAddress() << ": Disconnect" << std::endl;
-                    puts("Error in packetSend");
                     socket.erase(socket.end() - 1);
                     continue;
                 }
@@ -38,7 +37,6 @@ void getInfo() {
 
             if (socket[i]->receive(packetReceive)  != sf::Socket::Done) {
                 std::cout << socket[i]->getRemoteAddress() << ": Disconnect" << std::endl;
-                puts("Error in receive");
                 socket.erase(socket.end() - 1);
                 continue;
             }
@@ -59,7 +57,6 @@ void getInfo() {
 void sendInput() {
     std::string s;
     getline(std::cin,s);
-    std::cout << s << std::endl;
     if(s == "exit") {
         std::cout << "Server Closed" << std::endl;
         quit = true;
@@ -77,18 +74,15 @@ void createServer() {
     }
 //    listener.setBlocking(false);
     std::cout << "Server created" << std::endl;
-    std::cout << "Write <exit> to Disconnect server" << std::endl;
+//    std::cout << "Write <exit> to close server" << std::endl;
     while (!quit) {
         std::unique_ptr<sf::TcpSocket> fooSocket = std::make_unique<sf::TcpSocket>();
-        std::cout << "asd" << std::endl;
 
+        listener.setBlocking(false);
         if (listener.accept(*fooSocket) == sf::Socket::Done) {
-            std::cout << "asd123" << std::endl;
             socket.push_back(std::move(fooSocket));
             std::cout << socket[socket.size() - 1]->getRemoteAddress() << ": Connected" << std::endl;
-            socket[socket.size() - 1]->getRemoteAddress();
         }
-        sendInput();
     }
 }
 
@@ -100,6 +94,10 @@ int main() {
     sf::Thread * thread = nullptr;
     thread = new sf::Thread(&getInfo);
     thread->launch();
+
+    while (!quit) {
+        sendInput();
+    }
 
     if(serverCr) {
         thread->wait();
