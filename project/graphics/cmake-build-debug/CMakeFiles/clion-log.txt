@@ -1,0 +1,5 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++ -G "CodeBlocks - Unix Makefiles" /Users/jason/source/Captured/project/client/graphics
+-- Found SFML .. in /Library/Frameworks/SFML.framework
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/jason/source/Captured/project/client/graphics/cmake-build-debug
