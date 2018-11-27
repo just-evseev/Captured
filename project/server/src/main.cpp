@@ -72,13 +72,11 @@ void createServer() {
         puts("Error in listen");
         exit(1);
     }
-//    listener.setBlocking(false);
+    listener.setBlocking(false);
     std::cout << "Server created" << std::endl;
-//    std::cout << "Write <exit> to close server" << std::endl;
     while (!quit) {
         std::unique_ptr<sf::TcpSocket> fooSocket = std::make_unique<sf::TcpSocket>();
 
-        listener.setBlocking(false);
         if (listener.accept(*fooSocket) == sf::Socket::Done) {
             socket.push_back(std::move(fooSocket));
             std::cout << socket[socket.size() - 1]->getRemoteAddress() << ": Connected" << std::endl;
