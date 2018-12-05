@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is AppleClang, found in "/Users/jason/source/Captured/project/client/graphics/cmake-build-debug/CMakeFiles/3.12.2/CompilerIdC/a.out"
+The C compiler identification is AppleClang, found in "/Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles/3.12.2/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++ 
@@ -23,35 +23,35 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is Clang, found in "/Users/jason/source/Captured/project/client/graphics/cmake-build-debug/CMakeFiles/3.12.2/CompilerIdCXX/a.out"
+The CXX compiler identification is Clang, found in "/Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles/3.12.2/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /Users/jason/source/Captured/project/client/graphics/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_05540/fast"
-/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_05540.dir/build.make CMakeFiles/cmTC_05540.dir/build
-Building C object CMakeFiles/cmTC_05540.dir/testCCompiler.c.o
-/Library/Developer/CommandLineTools/usr/bin/cc    -o CMakeFiles/cmTC_05540.dir/testCCompiler.c.o   -c /Users/jason/source/Captured/project/client/graphics/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_05540
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_05540.dir/link.txt --verbose=1
-/Library/Developer/CommandLineTools/usr/bin/cc   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_05540.dir/testCCompiler.c.o  -o cmTC_05540 
+Run Build Command:"/usr/bin/make" "cmTC_dba6c/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_dba6c.dir/build.make CMakeFiles/cmTC_dba6c.dir/build
+Building C object CMakeFiles/cmTC_dba6c.dir/testCCompiler.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc    -o CMakeFiles/cmTC_dba6c.dir/testCCompiler.c.o   -c /Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_dba6c
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dba6c.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_dba6c.dir/testCCompiler.c.o  -o cmTC_dba6c 
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /Users/jason/source/Captured/project/client/graphics/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_61b4f/fast"
-/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_61b4f.dir/build.make CMakeFiles/cmTC_61b4f.dir/build
-Building C object CMakeFiles/cmTC_61b4f.dir/CMakeCCompilerABI.c.o
-/Library/Developer/CommandLineTools/usr/bin/cc    -o CMakeFiles/cmTC_61b4f.dir/CMakeCCompilerABI.c.o   -c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.12/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_61b4f
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_61b4f.dir/link.txt --verbose=1
-/Library/Developer/CommandLineTools/usr/bin/cc   -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_61b4f.dir/CMakeCCompilerABI.c.o  -o cmTC_61b4f 
+Run Build Command:"/usr/bin/make" "cmTC_db9be/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_db9be.dir/build.make CMakeFiles/cmTC_db9be.dir/build
+Building C object CMakeFiles/cmTC_db9be.dir/CMakeCCompilerABI.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc    -o CMakeFiles/cmTC_db9be.dir/CMakeCCompilerABI.c.o   -c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.12/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_db9be
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_db9be.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_db9be.dir/CMakeCCompilerABI.c.o  -o cmTC_db9be 
 Apple LLVM version 10.0.0 (clang-1000.10.44.2)
 Target: x86_64-apple-darwin17.7.0
 Thread model: posix
 InstalledDir: /Library/Developer/CommandLineTools/usr/bin
- "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.13.0 -o cmTC_61b4f -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_61b4f.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/lib/darwin/libclang_rt.osx.a
+ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.13.0 -o cmTC_db9be -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_db9be.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/lib/darwin/libclang_rt.osx.a
 @(#)PROGRAM:ld  PROJECT:ld64-409.12
 BUILD 02:04:28 Aug 14 2018
 configured to support archs: armv6 armv7 armv7s arm64 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
@@ -65,20 +65,20 @@ Framework search paths:
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /Users/jason/source/Captured/project/client/graphics/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_61b4f/fast"]
-  ignore line: [/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_61b4f.dir/build.make CMakeFiles/cmTC_61b4f.dir/build]
-  ignore line: [Building C object CMakeFiles/cmTC_61b4f.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/Library/Developer/CommandLineTools/usr/bin/cc    -o CMakeFiles/cmTC_61b4f.dir/CMakeCCompilerABI.c.o   -c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.12/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_61b4f]
-  ignore line: [/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_61b4f.dir/link.txt --verbose=1]
-  ignore line: [/Library/Developer/CommandLineTools/usr/bin/cc   -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_61b4f.dir/CMakeCCompilerABI.c.o  -o cmTC_61b4f ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_db9be/fast"]
+  ignore line: [/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_db9be.dir/build.make CMakeFiles/cmTC_db9be.dir/build]
+  ignore line: [Building C object CMakeFiles/cmTC_db9be.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/Library/Developer/CommandLineTools/usr/bin/cc    -o CMakeFiles/cmTC_db9be.dir/CMakeCCompilerABI.c.o   -c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.12/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_db9be]
+  ignore line: [/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_db9be.dir/link.txt --verbose=1]
+  ignore line: [/Library/Developer/CommandLineTools/usr/bin/cc   -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_db9be.dir/CMakeCCompilerABI.c.o  -o cmTC_db9be ]
   ignore line: [Apple LLVM version 10.0.0 (clang-1000.10.44.2)]
   ignore line: [Target: x86_64-apple-darwin17.7.0]
   ignore line: [Thread model: posix]
   ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
-  link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.13.0 -o cmTC_61b4f -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_61b4f.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/lib/darwin/libclang_rt.osx.a]
+  link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.13.0 -o cmTC_db9be -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_db9be.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/lib/darwin/libclang_rt.osx.a]
     arg [/Library/Developer/CommandLineTools/usr/bin/ld] ==> ignore
     arg [-demangle] ==> ignore
     arg [-lto_library] ==> ignore, skip following value
@@ -89,11 +89,11 @@ Parsed C implicit link information from above output:
     arg [-macosx_version_min] ==> ignore
     arg [10.13.0] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_61b4f] ==> ignore
+    arg [cmTC_db9be] ==> ignore
     arg [-search_paths_first] ==> ignore
     arg [-headerpad_max_install_names] ==> ignore
     arg [-v] ==> ignore
-    arg [CMakeFiles/cmTC_61b4f.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_db9be.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lSystem] ==> lib [System]
     arg [/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/lib/darwin/libclang_rt.osx.a]
   Library search paths: [;/usr/lib;/usr/local/lib]
@@ -112,15 +112,15 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /Users/jason/source/Captured/project/client/graphics/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_7481f/fast"
-/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_7481f.dir/build.make CMakeFiles/cmTC_7481f.dir/build
-Building C object CMakeFiles/cmTC_7481f.dir/feature_tests.c.o
-/Library/Developer/CommandLineTools/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_7481f.dir/feature_tests.c.o   -c /Users/jason/source/Captured/project/client/graphics/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_7481f
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7481f.dir/link.txt --verbose=1
-/Library/Developer/CommandLineTools/usr/bin/cc   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_7481f.dir/feature_tests.c.o  -o cmTC_7481f 
+Run Build Command:"/usr/bin/make" "cmTC_8fd32/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_8fd32.dir/build.make CMakeFiles/cmTC_8fd32.dir/build
+Building C object CMakeFiles/cmTC_8fd32.dir/feature_tests.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_8fd32.dir/feature_tests.c.o   -c /Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_8fd32
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8fd32.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_8fd32.dir/feature_tests.c.o  -o cmTC_8fd32 
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -130,15 +130,15 @@ Linking C executable cmTC_7481f
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /Users/jason/source/Captured/project/client/graphics/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_5d767/fast"
-/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_5d767.dir/build.make CMakeFiles/cmTC_5d767.dir/build
-Building C object CMakeFiles/cmTC_5d767.dir/feature_tests.c.o
-/Library/Developer/CommandLineTools/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_5d767.dir/feature_tests.c.o   -c /Users/jason/source/Captured/project/client/graphics/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_5d767
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5d767.dir/link.txt --verbose=1
-/Library/Developer/CommandLineTools/usr/bin/cc   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_5d767.dir/feature_tests.c.o  -o cmTC_5d767 
+Run Build Command:"/usr/bin/make" "cmTC_f3e18/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_f3e18.dir/build.make CMakeFiles/cmTC_f3e18.dir/build
+Building C object CMakeFiles/cmTC_f3e18.dir/feature_tests.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_f3e18.dir/feature_tests.c.o   -c /Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_f3e18
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f3e18.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_f3e18.dir/feature_tests.c.o  -o cmTC_f3e18 
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -148,15 +148,15 @@ Linking C executable cmTC_5d767
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /Users/jason/source/Captured/project/client/graphics/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_6cfcb/fast"
-/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_6cfcb.dir/build.make CMakeFiles/cmTC_6cfcb.dir/build
-Building C object CMakeFiles/cmTC_6cfcb.dir/feature_tests.c.o
-/Library/Developer/CommandLineTools/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_6cfcb.dir/feature_tests.c.o   -c /Users/jason/source/Captured/project/client/graphics/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_6cfcb
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6cfcb.dir/link.txt --verbose=1
-/Library/Developer/CommandLineTools/usr/bin/cc   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_6cfcb.dir/feature_tests.c.o  -o cmTC_6cfcb 
+Run Build Command:"/usr/bin/make" "cmTC_28149/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_28149.dir/build.make CMakeFiles/cmTC_28149.dir/build
+Building C object CMakeFiles/cmTC_28149.dir/feature_tests.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_28149.dir/feature_tests.c.o   -c /Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_28149
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_28149.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc   -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_28149.dir/feature_tests.c.o  -o cmTC_28149 
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -164,32 +164,32 @@ Linking C executable cmTC_6cfcb
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /Users/jason/source/Captured/project/client/graphics/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_516d3/fast"
-/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_516d3.dir/build.make CMakeFiles/cmTC_516d3.dir/build
-Building CXX object CMakeFiles/cmTC_516d3.dir/testCXXCompiler.cxx.o
-/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++     -o CMakeFiles/cmTC_516d3.dir/testCXXCompiler.cxx.o -c /Users/jason/source/Captured/project/client/graphics/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_516d3
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_516d3.dir/link.txt --verbose=1
-/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_516d3.dir/testCXXCompiler.cxx.o  -o cmTC_516d3 
+Run Build Command:"/usr/bin/make" "cmTC_34c0d/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_34c0d.dir/build.make CMakeFiles/cmTC_34c0d.dir/build
+Building CXX object CMakeFiles/cmTC_34c0d.dir/testCXXCompiler.cxx.o
+/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++     -o CMakeFiles/cmTC_34c0d.dir/testCXXCompiler.cxx.o -c /Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_34c0d
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_34c0d.dir/link.txt --verbose=1
+/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_34c0d.dir/testCXXCompiler.cxx.o  -o cmTC_34c0d 
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /Users/jason/source/Captured/project/client/graphics/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_42fce/fast"
-/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_42fce.dir/build.make CMakeFiles/cmTC_42fce.dir/build
-Building CXX object CMakeFiles/cmTC_42fce.dir/CMakeCXXCompilerABI.cpp.o
-/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++     -o CMakeFiles/cmTC_42fce.dir/CMakeCXXCompilerABI.cpp.o -c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.12/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_42fce
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_42fce.dir/link.txt --verbose=1
-/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_42fce.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_42fce 
+Run Build Command:"/usr/bin/make" "cmTC_3585f/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_3585f.dir/build.make CMakeFiles/cmTC_3585f.dir/build
+Building CXX object CMakeFiles/cmTC_3585f.dir/CMakeCXXCompilerABI.cpp.o
+/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++     -o CMakeFiles/cmTC_3585f.dir/CMakeCXXCompilerABI.cpp.o -c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.12/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_3585f
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3585f.dir/link.txt --verbose=1
+/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_3585f.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_3585f 
 clang version 7.0.0 (tags/RELEASE_700/final)
 Target: x86_64-apple-darwin17.7.0
 Thread model: posix
 InstalledDir: /Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin
- "/usr/bin/ld" -demangle -lto_library /Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.13.0 -o cmTC_42fce -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_42fce.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/lib/clang/7.0.0/lib/darwin/libclang_rt.osx.a
+ "/usr/bin/ld" -demangle -lto_library /Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.13.0 -o cmTC_3585f -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_3585f.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/lib/clang/7.0.0/lib/darwin/libclang_rt.osx.a
 @(#)PROGRAM:ld  PROJECT:ld64-409.12
 BUILD 02:04:28 Aug 14 2018
 configured to support archs: armv6 armv7 armv7s arm64 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
@@ -203,20 +203,20 @@ Framework search paths:
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /Users/jason/source/Captured/project/client/graphics/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_42fce/fast"]
-  ignore line: [/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_42fce.dir/build.make CMakeFiles/cmTC_42fce.dir/build]
-  ignore line: [Building CXX object CMakeFiles/cmTC_42fce.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++     -o CMakeFiles/cmTC_42fce.dir/CMakeCXXCompilerABI.cpp.o -c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.12/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_42fce]
-  ignore line: [/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_42fce.dir/link.txt --verbose=1]
-  ignore line: [/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_42fce.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_42fce ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_3585f/fast"]
+  ignore line: [/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_3585f.dir/build.make CMakeFiles/cmTC_3585f.dir/build]
+  ignore line: [Building CXX object CMakeFiles/cmTC_3585f.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++     -o CMakeFiles/cmTC_3585f.dir/CMakeCXXCompilerABI.cpp.o -c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.12/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_3585f]
+  ignore line: [/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3585f.dir/link.txt --verbose=1]
+  ignore line: [/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_3585f.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_3585f ]
   ignore line: [clang version 7.0.0 (tags/RELEASE_700/final)]
   ignore line: [Target: x86_64-apple-darwin17.7.0]
   ignore line: [Thread model: posix]
   ignore line: [InstalledDir: /Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin]
-  link line: [ "/usr/bin/ld" -demangle -lto_library /Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.13.0 -o cmTC_42fce -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_42fce.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/lib/clang/7.0.0/lib/darwin/libclang_rt.osx.a]
+  link line: [ "/usr/bin/ld" -demangle -lto_library /Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.13.0 -o cmTC_3585f -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_3585f.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/lib/clang/7.0.0/lib/darwin/libclang_rt.osx.a]
     arg [/usr/bin/ld] ==> ignore
     arg [-demangle] ==> ignore
     arg [-lto_library] ==> ignore, skip following value
@@ -227,11 +227,11 @@ Parsed CXX implicit link information from above output:
     arg [-macosx_version_min] ==> ignore
     arg [10.13.0] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_42fce] ==> ignore
+    arg [cmTC_3585f] ==> ignore
     arg [-search_paths_first] ==> ignore
     arg [-headerpad_max_install_names] ==> ignore
     arg [-v] ==> ignore
-    arg [CMakeFiles/cmTC_42fce.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_3585f.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lc++] ==> lib [c++]
     arg [-lSystem] ==> lib [System]
     arg [/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/lib/clang/7.0.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/lib/clang/7.0.0/lib/darwin/libclang_rt.osx.a]
@@ -251,15 +251,15 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++2a] compiler features compiled with the following output:
-Change Dir: /Users/jason/source/Captured/project/client/graphics/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_74fc3/fast"
-/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_74fc3.dir/build.make CMakeFiles/cmTC_74fc3.dir/build
-Building CXX object CMakeFiles/cmTC_74fc3.dir/feature_tests.cxx.o
-/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++    -std=c++2a -o CMakeFiles/cmTC_74fc3.dir/feature_tests.cxx.o -c /Users/jason/source/Captured/project/client/graphics/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_74fc3
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_74fc3.dir/link.txt --verbose=1
-/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_74fc3.dir/feature_tests.cxx.o  -o cmTC_74fc3 
+Run Build Command:"/usr/bin/make" "cmTC_6e0d7/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_6e0d7.dir/build.make CMakeFiles/cmTC_6e0d7.dir/build
+Building CXX object CMakeFiles/cmTC_6e0d7.dir/feature_tests.cxx.o
+/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++    -std=c++2a -o CMakeFiles/cmTC_6e0d7.dir/feature_tests.cxx.o -c /Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_6e0d7
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6e0d7.dir/link.txt --verbose=1
+/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_6e0d7.dir/feature_tests.cxx.o  -o cmTC_6e0d7 
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -322,15 +322,15 @@ Linking CXX executable cmTC_74fc3
 
 
 Detecting CXX [-std=c++17] compiler features compiled with the following output:
-Change Dir: /Users/jason/source/Captured/project/client/graphics/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c9957/fast"
-/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_c9957.dir/build.make CMakeFiles/cmTC_c9957.dir/build
-Building CXX object CMakeFiles/cmTC_c9957.dir/feature_tests.cxx.o
-/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++    -std=c++17 -o CMakeFiles/cmTC_c9957.dir/feature_tests.cxx.o -c /Users/jason/source/Captured/project/client/graphics/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_c9957
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c9957.dir/link.txt --verbose=1
-/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_c9957.dir/feature_tests.cxx.o  -o cmTC_c9957 
+Run Build Command:"/usr/bin/make" "cmTC_a3cf6/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_a3cf6.dir/build.make CMakeFiles/cmTC_a3cf6.dir/build
+Building CXX object CMakeFiles/cmTC_a3cf6.dir/feature_tests.cxx.o
+/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++    -std=c++17 -o CMakeFiles/cmTC_a3cf6.dir/feature_tests.cxx.o -c /Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_a3cf6
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a3cf6.dir/link.txt --verbose=1
+/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_a3cf6.dir/feature_tests.cxx.o  -o cmTC_a3cf6 
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -393,15 +393,15 @@ Linking CXX executable cmTC_c9957
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /Users/jason/source/Captured/project/client/graphics/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_4d1f8/fast"
-/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_4d1f8.dir/build.make CMakeFiles/cmTC_4d1f8.dir/build
-Building CXX object CMakeFiles/cmTC_4d1f8.dir/feature_tests.cxx.o
-/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++    -std=c++14 -o CMakeFiles/cmTC_4d1f8.dir/feature_tests.cxx.o -c /Users/jason/source/Captured/project/client/graphics/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_4d1f8
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4d1f8.dir/link.txt --verbose=1
-/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_4d1f8.dir/feature_tests.cxx.o  -o cmTC_4d1f8 
+Run Build Command:"/usr/bin/make" "cmTC_aea7e/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_aea7e.dir/build.make CMakeFiles/cmTC_aea7e.dir/build
+Building CXX object CMakeFiles/cmTC_aea7e.dir/feature_tests.cxx.o
+/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++    -std=c++14 -o CMakeFiles/cmTC_aea7e.dir/feature_tests.cxx.o -c /Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_aea7e
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aea7e.dir/link.txt --verbose=1
+/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_aea7e.dir/feature_tests.cxx.o  -o cmTC_aea7e 
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -464,15 +464,15 @@ Linking CXX executable cmTC_4d1f8
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /Users/jason/source/Captured/project/client/graphics/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_a8481/fast"
-/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_a8481.dir/build.make CMakeFiles/cmTC_a8481.dir/build
-Building CXX object CMakeFiles/cmTC_a8481.dir/feature_tests.cxx.o
-/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++    -std=c++11 -o CMakeFiles/cmTC_a8481.dir/feature_tests.cxx.o -c /Users/jason/source/Captured/project/client/graphics/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_a8481
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a8481.dir/link.txt --verbose=1
-/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_a8481.dir/feature_tests.cxx.o  -o cmTC_a8481 
+Run Build Command:"/usr/bin/make" "cmTC_b4b93/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_b4b93.dir/build.make CMakeFiles/cmTC_b4b93.dir/build
+Building CXX object CMakeFiles/cmTC_b4b93.dir/feature_tests.cxx.o
+/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++    -std=c++11 -o CMakeFiles/cmTC_b4b93.dir/feature_tests.cxx.o -c /Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_b4b93
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b4b93.dir/link.txt --verbose=1
+/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_b4b93.dir/feature_tests.cxx.o  -o cmTC_b4b93 
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -535,15 +535,15 @@ Linking CXX executable cmTC_a8481
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /Users/jason/source/Captured/project/client/graphics/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_e3294/fast"
-/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_e3294.dir/build.make CMakeFiles/cmTC_e3294.dir/build
-Building CXX object CMakeFiles/cmTC_e3294.dir/feature_tests.cxx.o
-/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++    -std=c++98 -o CMakeFiles/cmTC_e3294.dir/feature_tests.cxx.o -c /Users/jason/source/Captured/project/client/graphics/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_e3294
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e3294.dir/link.txt --verbose=1
-/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_e3294.dir/feature_tests.cxx.o  -o cmTC_e3294 
+Run Build Command:"/usr/bin/make" "cmTC_926a5/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_926a5.dir/build.make CMakeFiles/cmTC_926a5.dir/build
+Building CXX object CMakeFiles/cmTC_926a5.dir/feature_tests.cxx.o
+/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++    -std=c++98 -o CMakeFiles/cmTC_926a5.dir/feature_tests.cxx.o -c /Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_926a5
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_926a5.dir/link.txt --verbose=1
+/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_926a5.dir/feature_tests.cxx.o  -o cmTC_926a5 
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers

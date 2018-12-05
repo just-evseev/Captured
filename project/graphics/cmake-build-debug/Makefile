@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/jason/source/Captured/project/client/graphics
+CMAKE_SOURCE_DIR = /Users/jason/source/Captured/project/graphics
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/jason/source/Captured/project/client/graphics/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/jason/source/Captured/project/graphics/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jason/source/Captured/project/client/graphics/cmake-build-debug/CMakeFiles /Users/jason/source/Captured/project/client/graphics/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles /Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jason/source/Captured/project/client/graphics/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -177,32 +177,32 @@ GraphicsController.cpp.s:
 	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/GraphicsController.cpp.s
 .PHONY : GraphicsController.cpp.s
 
-Player.o: Player.cpp.o
+HexMap.o: HexMap.cpp.o
 
-.PHONY : Player.o
+.PHONY : HexMap.o
 
 # target to build an object file
-Player.cpp.o:
-	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/Player.cpp.o
-.PHONY : Player.cpp.o
+HexMap.cpp.o:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/HexMap.cpp.o
+.PHONY : HexMap.cpp.o
 
-Player.i: Player.cpp.i
+HexMap.i: HexMap.cpp.i
 
-.PHONY : Player.i
+.PHONY : HexMap.i
 
 # target to preprocess a source file
-Player.cpp.i:
-	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/Player.cpp.i
-.PHONY : Player.cpp.i
+HexMap.cpp.i:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/HexMap.cpp.i
+.PHONY : HexMap.cpp.i
 
-Player.s: Player.cpp.s
+HexMap.s: HexMap.cpp.s
 
-.PHONY : Player.s
+.PHONY : HexMap.s
 
 # target to generate assembly for a file
-Player.cpp.s:
-	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/Player.cpp.s
-.PHONY : Player.cpp.s
+HexMap.cpp.s:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/HexMap.cpp.s
+.PHONY : HexMap.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -246,9 +246,9 @@ help:
 	@echo "... GraphicsController.o"
 	@echo "... GraphicsController.i"
 	@echo "... GraphicsController.s"
-	@echo "... Player.o"
-	@echo "... Player.i"
-	@echo "... Player.s"
+	@echo "... HexMap.o"
+	@echo "... HexMap.i"
+	@echo "... HexMap.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

@@ -3,7 +3,7 @@ project(graphics)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17")
 
-set(SOURCE_FILES src/main.cpp GraphicsController.cpp Player.cpp DataPacket.cpp)
+set(SOURCE_FILES src/main.cpp GraphicsController.cpp DataPacket.cpp HexMap.cpp)
 add_executable(graphics ${SOURCE_FILES})
 include_directories(.)
 

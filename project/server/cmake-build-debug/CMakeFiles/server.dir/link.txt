@@ -1,0 +1,1 @@
+/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++   -std=c++17 -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/server.dir/src/main.cpp.o  -o server -Wl,-rpath,/Library/Frameworks -framework sfml-system -framework sfml-window -framework sfml-graphics -framework sfml-network -framework sfml-audio 

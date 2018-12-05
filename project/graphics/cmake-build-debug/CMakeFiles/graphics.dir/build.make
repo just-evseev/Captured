@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/jason/source/Captured/project/client/graphics
+CMAKE_SOURCE_DIR = /Users/jason/source/Captured/project/graphics
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/jason/source/Captured/project/client/graphics/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/jason/source/Captured/project/graphics/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/graphics.dir/depend.make
@@ -59,73 +59,73 @@ include CMakeFiles/graphics.dir/flags.make
 
 CMakeFiles/graphics.dir/src/main.cpp.o: CMakeFiles/graphics.dir/flags.make
 CMakeFiles/graphics.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jason/source/Captured/project/client/graphics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/graphics.dir/src/main.cpp.o"
-	/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/src/main.cpp.o -c /Users/jason/source/Captured/project/client/graphics/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/graphics.dir/src/main.cpp.o"
+	/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/src/main.cpp.o -c /Users/jason/source/Captured/project/graphics/src/main.cpp
 
 CMakeFiles/graphics.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/src/main.cpp.i"
-	/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jason/source/Captured/project/client/graphics/src/main.cpp > CMakeFiles/graphics.dir/src/main.cpp.i
+	/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jason/source/Captured/project/graphics/src/main.cpp > CMakeFiles/graphics.dir/src/main.cpp.i
 
 CMakeFiles/graphics.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/src/main.cpp.s"
-	/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jason/source/Captured/project/client/graphics/src/main.cpp -o CMakeFiles/graphics.dir/src/main.cpp.s
+	/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jason/source/Captured/project/graphics/src/main.cpp -o CMakeFiles/graphics.dir/src/main.cpp.s
 
 CMakeFiles/graphics.dir/GraphicsController.cpp.o: CMakeFiles/graphics.dir/flags.make
 CMakeFiles/graphics.dir/GraphicsController.cpp.o: ../GraphicsController.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jason/source/Captured/project/client/graphics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/graphics.dir/GraphicsController.cpp.o"
-	/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/GraphicsController.cpp.o -c /Users/jason/source/Captured/project/client/graphics/GraphicsController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/graphics.dir/GraphicsController.cpp.o"
+	/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/GraphicsController.cpp.o -c /Users/jason/source/Captured/project/graphics/GraphicsController.cpp
 
 CMakeFiles/graphics.dir/GraphicsController.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/GraphicsController.cpp.i"
-	/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jason/source/Captured/project/client/graphics/GraphicsController.cpp > CMakeFiles/graphics.dir/GraphicsController.cpp.i
+	/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jason/source/Captured/project/graphics/GraphicsController.cpp > CMakeFiles/graphics.dir/GraphicsController.cpp.i
 
 CMakeFiles/graphics.dir/GraphicsController.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/GraphicsController.cpp.s"
-	/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jason/source/Captured/project/client/graphics/GraphicsController.cpp -o CMakeFiles/graphics.dir/GraphicsController.cpp.s
-
-CMakeFiles/graphics.dir/Player.cpp.o: CMakeFiles/graphics.dir/flags.make
-CMakeFiles/graphics.dir/Player.cpp.o: ../Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jason/source/Captured/project/client/graphics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/graphics.dir/Player.cpp.o"
-	/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/Player.cpp.o -c /Users/jason/source/Captured/project/client/graphics/Player.cpp
-
-CMakeFiles/graphics.dir/Player.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/Player.cpp.i"
-	/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jason/source/Captured/project/client/graphics/Player.cpp > CMakeFiles/graphics.dir/Player.cpp.i
-
-CMakeFiles/graphics.dir/Player.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/Player.cpp.s"
-	/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jason/source/Captured/project/client/graphics/Player.cpp -o CMakeFiles/graphics.dir/Player.cpp.s
+	/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jason/source/Captured/project/graphics/GraphicsController.cpp -o CMakeFiles/graphics.dir/GraphicsController.cpp.s
 
 CMakeFiles/graphics.dir/DataPacket.cpp.o: CMakeFiles/graphics.dir/flags.make
 CMakeFiles/graphics.dir/DataPacket.cpp.o: ../DataPacket.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jason/source/Captured/project/client/graphics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/graphics.dir/DataPacket.cpp.o"
-	/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/DataPacket.cpp.o -c /Users/jason/source/Captured/project/client/graphics/DataPacket.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/graphics.dir/DataPacket.cpp.o"
+	/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/DataPacket.cpp.o -c /Users/jason/source/Captured/project/graphics/DataPacket.cpp
 
 CMakeFiles/graphics.dir/DataPacket.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/DataPacket.cpp.i"
-	/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jason/source/Captured/project/client/graphics/DataPacket.cpp > CMakeFiles/graphics.dir/DataPacket.cpp.i
+	/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jason/source/Captured/project/graphics/DataPacket.cpp > CMakeFiles/graphics.dir/DataPacket.cpp.i
 
 CMakeFiles/graphics.dir/DataPacket.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/DataPacket.cpp.s"
-	/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jason/source/Captured/project/client/graphics/DataPacket.cpp -o CMakeFiles/graphics.dir/DataPacket.cpp.s
+	/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jason/source/Captured/project/graphics/DataPacket.cpp -o CMakeFiles/graphics.dir/DataPacket.cpp.s
+
+CMakeFiles/graphics.dir/HexMap.cpp.o: CMakeFiles/graphics.dir/flags.make
+CMakeFiles/graphics.dir/HexMap.cpp.o: ../HexMap.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/graphics.dir/HexMap.cpp.o"
+	/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/HexMap.cpp.o -c /Users/jason/source/Captured/project/graphics/HexMap.cpp
+
+CMakeFiles/graphics.dir/HexMap.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/HexMap.cpp.i"
+	/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jason/source/Captured/project/graphics/HexMap.cpp > CMakeFiles/graphics.dir/HexMap.cpp.i
+
+CMakeFiles/graphics.dir/HexMap.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/HexMap.cpp.s"
+	/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jason/source/Captured/project/graphics/HexMap.cpp -o CMakeFiles/graphics.dir/HexMap.cpp.s
 
 # Object files for target graphics
 graphics_OBJECTS = \
 "CMakeFiles/graphics.dir/src/main.cpp.o" \
 "CMakeFiles/graphics.dir/GraphicsController.cpp.o" \
-"CMakeFiles/graphics.dir/Player.cpp.o" \
-"CMakeFiles/graphics.dir/DataPacket.cpp.o"
+"CMakeFiles/graphics.dir/DataPacket.cpp.o" \
+"CMakeFiles/graphics.dir/HexMap.cpp.o"
 
 # External object files for target graphics
 graphics_EXTERNAL_OBJECTS =
 
 graphics: CMakeFiles/graphics.dir/src/main.cpp.o
 graphics: CMakeFiles/graphics.dir/GraphicsController.cpp.o
-graphics: CMakeFiles/graphics.dir/Player.cpp.o
 graphics: CMakeFiles/graphics.dir/DataPacket.cpp.o
+graphics: CMakeFiles/graphics.dir/HexMap.cpp.o
 graphics: CMakeFiles/graphics.dir/build.make
 graphics: CMakeFiles/graphics.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/jason/source/Captured/project/client/graphics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable graphics"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable graphics"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/graphics.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -138,6 +138,6 @@ CMakeFiles/graphics.dir/clean:
 .PHONY : CMakeFiles/graphics.dir/clean
 
 CMakeFiles/graphics.dir/depend:
-	cd /Users/jason/source/Captured/project/client/graphics/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/jason/source/Captured/project/client/graphics /Users/jason/source/Captured/project/client/graphics /Users/jason/source/Captured/project/client/graphics/cmake-build-debug /Users/jason/source/Captured/project/client/graphics/cmake-build-debug /Users/jason/source/Captured/project/client/graphics/cmake-build-debug/CMakeFiles/graphics.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/jason/source/Captured/project/graphics/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/jason/source/Captured/project/graphics /Users/jason/source/Captured/project/graphics /Users/jason/source/Captured/project/graphics/cmake-build-debug /Users/jason/source/Captured/project/graphics/cmake-build-debug /Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles/graphics.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/graphics.dir/depend
 

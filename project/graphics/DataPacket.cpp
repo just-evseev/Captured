@@ -4,26 +4,33 @@
 
 #include "DataPacket.h"
 
-void DataPacket::move_up(float val) {
-    for (auto& area : areas)
-        for (auto& point : area.points)
-            point.y -= val;
-}
+DataPacket::DataPacket() {
+    //std::clog << "DataPacket: created" << std::endl;
 
-void DataPacket::move_down(float val) {
-    for (auto& area : areas)
-        for (auto& point : area.points)
-            point.y += val;
-}
+    areas.emplace(Hex(0, -4), 1);
+    areas.emplace(Hex(1, -4), 1);
+    areas.emplace(Hex(0, -5), 1);
+    areas.emplace(Hex(0, -6), 1);
+    areas.emplace(Hex(2, -4), 1);
+    areas.emplace(Hex(3, -4), 1);
 
-void DataPacket::move_left(float val) {
-    for (auto& area : areas)
-        for (auto& point : area.points)
-            point.x -= val;
-}
+    areas.emplace(Hex(-1, -4), 1);
+    areas.emplace(Hex(-3, -6), 1);
+    areas.emplace(Hex(5, -9), 1);
+    areas.emplace(Hex(0, -9), 1);
+    areas.emplace(Hex(0, 9), 1);
+    areas.emplace(Hex(-4, -4), 1);
 
-void DataPacket::move_right(float val) {
-    for (auto& area : areas)
-        for (auto& point : area.points)
-            point.x += val;
+    areas.emplace(Hex(4, -3), 1);
+    areas.emplace(Hex(5, -3), 1);
+    areas.emplace(Hex(4, -2), 1);
+    areas.emplace(Hex(3, -1), 1);
+    areas.emplace(Hex(3, 1), 1);
+    areas.emplace(Hex(4, 1), 1);
+    areas.emplace(Hex(2, 2), 1);
+    areas.emplace(Hex(4, -4), 1);
+
+    /*for (auto& area : areas)
+        std::cout << "(" << area.first.q << ", " << area.first.r << ") -> " << area.second << std::endl;
+    */
 }

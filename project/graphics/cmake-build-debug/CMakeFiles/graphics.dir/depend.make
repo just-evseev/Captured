@@ -3,17 +3,21 @@
 
 CMakeFiles/graphics.dir/DataPacket.cpp.o: ../DataPacket.cpp
 CMakeFiles/graphics.dir/DataPacket.cpp.o: ../DataPacket.h
+CMakeFiles/graphics.dir/DataPacket.cpp.o: ../Hex.h
 
 CMakeFiles/graphics.dir/GraphicsController.cpp.o: ../DataPacket.h
 CMakeFiles/graphics.dir/GraphicsController.cpp.o: ../GraphicsController.cpp
 CMakeFiles/graphics.dir/GraphicsController.cpp.o: ../GraphicsController.h
-CMakeFiles/graphics.dir/GraphicsController.cpp.o: ../Player.h
+CMakeFiles/graphics.dir/GraphicsController.cpp.o: ../Hex.h
+CMakeFiles/graphics.dir/GraphicsController.cpp.o: ../HexMap.h
 
-CMakeFiles/graphics.dir/Player.cpp.o: ../Player.cpp
-CMakeFiles/graphics.dir/Player.cpp.o: ../Player.h
+CMakeFiles/graphics.dir/HexMap.cpp.o: ../Hex.h
+CMakeFiles/graphics.dir/HexMap.cpp.o: ../HexMap.cpp
+CMakeFiles/graphics.dir/HexMap.cpp.o: ../HexMap.h
 
 CMakeFiles/graphics.dir/src/main.cpp.o: .././DataPacket.h
 CMakeFiles/graphics.dir/src/main.cpp.o: .././GraphicsController.h
-CMakeFiles/graphics.dir/src/main.cpp.o: .././Player.h
+CMakeFiles/graphics.dir/src/main.cpp.o: .././Hex.h
+CMakeFiles/graphics.dir/src/main.cpp.o: .././HexMap.h
 CMakeFiles/graphics.dir/src/main.cpp.o: ../src/main.cpp
 

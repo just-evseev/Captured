@@ -12,8 +12,8 @@
 #include <vector>
 #include <memory>
 
-#include "Player.h"
 #include "DataPacket.h"
+#include "HexMap.h"
 
 
 class GraphicsController {
@@ -23,7 +23,16 @@ class GraphicsController {
 
     std::shared_ptr<DataPacket> data;
 
-    Player player;
+    sf::Texture backgroundTexture;
+    sf::Sprite backgroundSprite;
+
+    sf::Texture gridTexture;
+    sf::Sprite gridSprite;
+
+    sf::Texture playerTexture;
+    sf::Sprite playerSprite;
+
+    HexMap hexMap;
 
  public:
     explicit GraphicsController(std::shared_ptr<sf::RenderWindow> window);

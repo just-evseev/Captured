@@ -4,10 +4,34 @@
 
 #include "GraphicsController.h"
 
+
 GraphicsController::GraphicsController(std::shared_ptr<sf::RenderWindow> window)
                             : window(window), size(window->getSize()),
-                            player(sf::Vector2f(size.x/2 - 30, size.y/2 - 30)),
-                            data(nullptr) {
+                              hexMap(window), data(nullptr) {
+
+    backgroundTexture.loadFromFile("./Contents/sprites/Fon.png");
+
+    backgroundSprite.setTexture(backgroundTexture);
+    backgroundSprite.setPosition(0.f, 0.f);
+
+    gridTexture.loadFromFile("./Contents/sprites/grid.png");
+
+    gridSprite.setTexture(gridTexture);
+
+    sf::Vector2f size1(gridTexture.getSize());
+
+    gridSprite.setOrigin(size1.x / 2.f, size1.y / 2.f);
+    gridSprite.setPosition(this->size.x / 2.f, this->size.y / 2.f);
+
+
+    playerTexture.loadFromFile("./Contents/sprites/Igrok.png");
+
+    playerSprite.setTexture(playerTexture);
+
+    sf::Vector2f size(playerTexture.getSize());
+
+    playerSprite.setOrigin(size.x / 2.f, size.y / 2.f);
+    playerSprite.setPosition(this->size.x / 2.f, this->size.y / 2.f);
 
     std::clog << "GraphicsController: created" << std::endl;
 }
@@ -18,39 +42,15 @@ GraphicsController::~GraphicsController() {
 
 void GraphicsController::update(std::shared_ptr<DataPacket> data) {
     this->data = data;
+    hexMap.prepare(data->areas);
 }
 
 void GraphicsController::draw() {
-    for (auto& area : data->areas) {
-        sf::ConvexShape convex;
+    window->draw(backgroundSprite);
 
-        size_t count = area.points.size();
-        convex.setPointCount(count);
+    window->draw(gridSprite);
 
-        for (size_t i = 0; i < count; ++i)
-            convex.setPoint(i, area.points.at(i));
+    window->draw(hexMap);
 
-        switch (area.id) {
-            case 1:
-                convex.setFillColor(sf::Color::Blue);
-                break;
-
-            case 2:
-                convex.setFillColor(sf::Color::Red);
-                break;
-
-            default:
-                convex.setFillColor(sf::Color::Green);
-                break;
-        }
-
-        window->draw(convex);
-    }
-
-    sf::RectangleShape player(this->player.get_size());
-    player.setPosition(this->player.get_pos());
-
-    player.setFillColor(sf::Color::White);
-
-    window->draw(player);
+    window->draw(playerSprite);
 }
