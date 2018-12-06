@@ -16,6 +16,16 @@ StructInit.h
 vector
 -
 
+/Users/ilya/Desktop/Captured/project/server/src/MapRender.cpp
+time.h
+-
+stdlib.h
+-
+vector
+-
+../include/MapRender.h
+/Users/ilya/Desktop/Captured/project/server/include/MapRender.h
+
 /Users/ilya/Desktop/Captured/project/server/src/main.cpp
 iostream
 -

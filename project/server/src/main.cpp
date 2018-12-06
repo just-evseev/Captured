@@ -22,6 +22,8 @@ void getInfo() {
     listener.setBlocking(false);
     std::cout << "Server created" << std::endl;
 
+    MapRender mapRender;
+
     while(!quit) {
         std::unique_ptr<sf::TcpSocket> fooSocket = std::make_unique<sf::TcpSocket>();
 
@@ -46,15 +48,33 @@ void getInfo() {
                 continue;
             }
 
-            std::string msg;
+            int msg;
 
-            if ((packetReceive >> msg) && !msg.empty()) {
-                if (msg == "exit") {
-                    std::cout << socket[i]->getRemoteAddress() << ": Disconnect" << std::endl;
-                    socket.erase(socket.end() - 1);
-                    continue;
-                }
+            if (packetReceive >> msg) {
+//                if (msg == "exit") {
+//                    std::cout << socket[i]->getRemoteAddress() << ": Disconnect" << std::endl;
+//                    socket.erase(socket.end() - 1);
+//                    continue;
+//                }
                 std::cout << socket[i]->getRemoteAddress() << ": " << msg << std::endl;
+
+                switch (msg) {
+                    case 0:
+                        break;
+                    case 1:
+                        break;
+                    case 2:
+                        break;
+                    case 3:
+                        break;
+                    case 4:
+                        break;
+                    case 5:
+                        break;
+                    default:
+                        std::cout << socket[i]->getRemoteAddress() << ": Incorrect value" << std::endl;
+                        break;
+                }
             }
 
         }

@@ -1,13 +1,16 @@
 #include <time.h>
 #include <stdlib.h>
 #include <vector>
+#include <map>
 
 #include "../include/MapRender.h"
+#include "../include/Hex.h"
 
 /* Я использую для генератора случайных чисел точность 0,0001 */
 
 MapRender::MapRender() {
-    
+    std::map<Hex, int> areas;
+    std::map<Hex, int> tails;
 }
 
 MapRender::~MapRender() {

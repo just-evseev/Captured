@@ -123,6 +123,33 @@ server/fast:
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
 .PHONY : server/fast
 
+include/RenderManager.o: include/RenderManager.cpp.o
+
+.PHONY : include/RenderManager.o
+
+# target to build an object file
+include/RenderManager.cpp.o:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/include/RenderManager.cpp.o
+.PHONY : include/RenderManager.cpp.o
+
+include/RenderManager.i: include/RenderManager.cpp.i
+
+.PHONY : include/RenderManager.i
+
+# target to preprocess a source file
+include/RenderManager.cpp.i:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/include/RenderManager.cpp.i
+.PHONY : include/RenderManager.cpp.i
+
+include/RenderManager.s: include/RenderManager.cpp.s
+
+.PHONY : include/RenderManager.s
+
+# target to generate assembly for a file
+include/RenderManager.cpp.s:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/include/RenderManager.cpp.s
+.PHONY : include/RenderManager.cpp.s
+
 src/MapRender.o: src/MapRender.cpp.o
 
 .PHONY : src/MapRender.o
@@ -186,6 +213,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... server"
+	@echo "... include/RenderManager.o"
+	@echo "... include/RenderManager.i"
+	@echo "... include/RenderManager.s"
 	@echo "... src/MapRender.o"
 	@echo "... src/MapRender.i"
 	@echo "... src/MapRender.s"
