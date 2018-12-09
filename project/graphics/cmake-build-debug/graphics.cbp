@@ -4,7 +4,7 @@
 	<Project>
 		<Option title="graphics"/>
 		<Option makefile_is_custom="1"/>
-		<Option compiler="clang"/>
+		<Option compiler="gcc"/>
 		<Option virtualFolders="CMake Files\;CMake Files\cmake_modules\;"/>
 		<Build>
 			<Target title="all">
@@ -42,18 +42,18 @@
 				<Option working_dir="/Users/jason/source/Captured/project/graphics/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
-				<Option compiler="clang"/>
+				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Users/jason/source/Captured/project/graphics/Modules/headers"/>
 					<Add directory="/Users/jason/source/Captured/project/graphics/."/>
 					<Add directory="/Library/Frameworks/SFML.framework"/>
-					<Add directory="/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/lib/clang/7.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
 					<Add directory="/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j4 -f &quot;/Users/jason/source/Captured/project/graphics/cmake-build-debug/Makefile&quot;  VERBOSE=1 graphics"/>
@@ -67,18 +67,18 @@
 				<Option working_dir="/Users/jason/source/Captured/project/graphics/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
-				<Option compiler="clang"/>
+				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Users/jason/source/Captured/project/graphics/Modules/headers"/>
 					<Add directory="/Users/jason/source/Captured/project/graphics/."/>
 					<Add directory="/Library/Frameworks/SFML.framework"/>
-					<Add directory="/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/lib/clang/7.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
 					<Add directory="/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j4 -f &quot;/Users/jason/source/Captured/project/graphics/cmake-build-debug/Makefile&quot;  VERBOSE=1 graphics/fast"/>
@@ -88,16 +88,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/jason/source/Captured/project/graphics/Cursor.cpp">
+			<Option target="graphics"/>
+		</Unit>
+		<Unit filename="/Users/jason/source/Captured/project/graphics/Cursor.h">
+			<Option target="graphics"/>
+		</Unit>
 		<Unit filename="/Users/jason/source/Captured/project/graphics/DataPacket.cpp">
 			<Option target="graphics"/>
 		</Unit>
 		<Unit filename="/Users/jason/source/Captured/project/graphics/DataPacket.h">
-			<Option target="graphics"/>
-		</Unit>
-		<Unit filename="/Users/jason/source/Captured/project/graphics/GraphicsController.cpp">
-			<Option target="graphics"/>
-		</Unit>
-		<Unit filename="/Users/jason/source/Captured/project/graphics/GraphicsController.h">
 			<Option target="graphics"/>
 		</Unit>
 		<Unit filename="/Users/jason/source/Captured/project/graphics/HexMap.cpp">
@@ -106,7 +106,13 @@
 		<Unit filename="/Users/jason/source/Captured/project/graphics/HexMap.h">
 			<Option target="graphics"/>
 		</Unit>
-		<Unit filename="/Users/jason/source/Captured/project/graphics/src/main.cpp">
+		<Unit filename="/Users/jason/source/Captured/project/graphics/Modules/source/GraphicsController.cpp">
+			<Option target="graphics"/>
+		</Unit>
+		<Unit filename="/Users/jason/source/Captured/project/graphics/Modules/source/MouseController.cpp">
+			<Option target="graphics"/>
+		</Unit>
+		<Unit filename="/Users/jason/source/Captured/project/graphics/main.cpp">
 			<Option target="graphics"/>
 		</Unit>
 		<Unit filename="/Users/jason/source/Captured/project/graphics/CMakeLists.txt">

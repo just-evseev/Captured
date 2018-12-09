@@ -6,7 +6,7 @@
 #define GRAPHICS_HEXMAP_H
 
 #include <SFML/Graphics.hpp>
-#include <queue>
+#include <vector>
 #include <map>
 #include <math.h>
 
@@ -29,8 +29,8 @@ class HexMap : public sf::Drawable, public sf::Transformable {
 
     float hex_size = 59;
 
-    mutable std::queue<sf::Sprite> areaTiles;
-    std::queue<sf::Sprite> tailTiles;
+    std::vector<sf::Sprite> areaTiles;
+    std::vector<sf::Sprite> tailTiles;
 
     sf::Texture areaTexture;
 

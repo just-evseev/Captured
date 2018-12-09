@@ -15,7 +15,7 @@ DataPacket::DataPacket() {
     areas.emplace(Hex(3, -4), 1);
 
     areas.emplace(Hex(-1, -4), 1);
-    areas.emplace(Hex(-3, -6), 1);
+    areas.emplace(Hex(-3, -6), 2);
     areas.emplace(Hex(5, -9), 1);
     areas.emplace(Hex(0, -9), 1);
     areas.emplace(Hex(0, 9), 1);
@@ -29,8 +29,6 @@ DataPacket::DataPacket() {
     areas.emplace(Hex(4, 1), 1);
     areas.emplace(Hex(2, 2), 1);
     areas.emplace(Hex(4, -4), 1);
-
-    /*for (auto& area : areas)
-        std::cout << "(" << area.first.q << ", " << area.first.r << ") -> " << area.second << std::endl;
-    */
+    areas.emplace(Hex(-4, 4), 1);
+    areas.emplace(Hex(-5, 4), 1);
 }

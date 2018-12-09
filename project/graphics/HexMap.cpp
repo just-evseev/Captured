@@ -5,7 +5,7 @@
 #include "HexMap.h"
 
 HexMap::HexMap(std::shared_ptr<sf::RenderWindow> window) : window(window) {
-        areaTexture.loadFromFile("./Contents/sprites/Blok_territorii.png");
+        areaTexture.loadFromFile("./Contents/sprites/territoria_bez_sveta.png");
 
         window_size = window->getSize();
 };
@@ -19,7 +19,7 @@ void HexMap::prepare(std::map<Hex, int>& areas) {
 
         areaTile.setPosition(pixel(area.first));
 
-        areaTiles.push(areaTile);
+        areaTiles.push_back(areaTile);
     }
 }
 
@@ -31,11 +31,6 @@ sf::Vector2f HexMap::pixel(Hex hex) {
 }
 
 void HexMap::draw(sf::RenderTarget& target, sf::RenderStates states) const {
-    while (!areaTiles.empty()) {
-        auto tile = areaTiles.front();
-
+    for (auto& tile : areaTiles)
         target.draw(tile);
-
-        areaTiles.pop();
-    }
 }

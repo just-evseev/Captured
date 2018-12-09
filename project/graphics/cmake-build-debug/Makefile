@@ -123,6 +123,33 @@ graphics/fast:
 	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/build
 .PHONY : graphics/fast
 
+Cursor.o: Cursor.cpp.o
+
+.PHONY : Cursor.o
+
+# target to build an object file
+Cursor.cpp.o:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/Cursor.cpp.o
+.PHONY : Cursor.cpp.o
+
+Cursor.i: Cursor.cpp.i
+
+.PHONY : Cursor.i
+
+# target to preprocess a source file
+Cursor.cpp.i:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/Cursor.cpp.i
+.PHONY : Cursor.cpp.i
+
+Cursor.s: Cursor.cpp.s
+
+.PHONY : Cursor.s
+
+# target to generate assembly for a file
+Cursor.cpp.s:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/Cursor.cpp.s
+.PHONY : Cursor.cpp.s
+
 DataPacket.o: DataPacket.cpp.o
 
 .PHONY : DataPacket.o
@@ -149,33 +176,6 @@ DataPacket.s: DataPacket.cpp.s
 DataPacket.cpp.s:
 	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/DataPacket.cpp.s
 .PHONY : DataPacket.cpp.s
-
-GraphicsController.o: GraphicsController.cpp.o
-
-.PHONY : GraphicsController.o
-
-# target to build an object file
-GraphicsController.cpp.o:
-	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/GraphicsController.cpp.o
-.PHONY : GraphicsController.cpp.o
-
-GraphicsController.i: GraphicsController.cpp.i
-
-.PHONY : GraphicsController.i
-
-# target to preprocess a source file
-GraphicsController.cpp.i:
-	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/GraphicsController.cpp.i
-.PHONY : GraphicsController.cpp.i
-
-GraphicsController.s: GraphicsController.cpp.s
-
-.PHONY : GraphicsController.s
-
-# target to generate assembly for a file
-GraphicsController.cpp.s:
-	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/GraphicsController.cpp.s
-.PHONY : GraphicsController.cpp.s
 
 HexMap.o: HexMap.cpp.o
 
@@ -204,32 +204,86 @@ HexMap.cpp.s:
 	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/HexMap.cpp.s
 .PHONY : HexMap.cpp.s
 
-src/main.o: src/main.cpp.o
+Modules/source/GraphicsController.o: Modules/source/GraphicsController.cpp.o
 
-.PHONY : src/main.o
+.PHONY : Modules/source/GraphicsController.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+Modules/source/GraphicsController.cpp.o:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/Modules/source/GraphicsController.cpp.o
+.PHONY : Modules/source/GraphicsController.cpp.o
 
-src/main.i: src/main.cpp.i
+Modules/source/GraphicsController.i: Modules/source/GraphicsController.cpp.i
 
-.PHONY : src/main.i
+.PHONY : Modules/source/GraphicsController.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+Modules/source/GraphicsController.cpp.i:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/Modules/source/GraphicsController.cpp.i
+.PHONY : Modules/source/GraphicsController.cpp.i
 
-src/main.s: src/main.cpp.s
+Modules/source/GraphicsController.s: Modules/source/GraphicsController.cpp.s
 
-.PHONY : src/main.s
+.PHONY : Modules/source/GraphicsController.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+Modules/source/GraphicsController.cpp.s:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/Modules/source/GraphicsController.cpp.s
+.PHONY : Modules/source/GraphicsController.cpp.s
+
+Modules/source/MouseController.o: Modules/source/MouseController.cpp.o
+
+.PHONY : Modules/source/MouseController.o
+
+# target to build an object file
+Modules/source/MouseController.cpp.o:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/Modules/source/MouseController.cpp.o
+.PHONY : Modules/source/MouseController.cpp.o
+
+Modules/source/MouseController.i: Modules/source/MouseController.cpp.i
+
+.PHONY : Modules/source/MouseController.i
+
+# target to preprocess a source file
+Modules/source/MouseController.cpp.i:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/Modules/source/MouseController.cpp.i
+.PHONY : Modules/source/MouseController.cpp.i
+
+Modules/source/MouseController.s: Modules/source/MouseController.cpp.s
+
+.PHONY : Modules/source/MouseController.s
+
+# target to generate assembly for a file
+Modules/source/MouseController.cpp.s:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/Modules/source/MouseController.cpp.s
+.PHONY : Modules/source/MouseController.cpp.s
+
+main.o: main.cpp.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -240,18 +294,24 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... graphics"
+	@echo "... Cursor.o"
+	@echo "... Cursor.i"
+	@echo "... Cursor.s"
 	@echo "... DataPacket.o"
 	@echo "... DataPacket.i"
 	@echo "... DataPacket.s"
-	@echo "... GraphicsController.o"
-	@echo "... GraphicsController.i"
-	@echo "... GraphicsController.s"
 	@echo "... HexMap.o"
 	@echo "... HexMap.i"
 	@echo "... HexMap.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... Modules/source/GraphicsController.o"
+	@echo "... Modules/source/GraphicsController.i"
+	@echo "... Modules/source/GraphicsController.s"
+	@echo "... Modules/source/MouseController.o"
+	@echo "... Modules/source/MouseController.i"
+	@echo "... Modules/source/MouseController.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

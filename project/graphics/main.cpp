@@ -7,7 +7,9 @@
 #include <vector>
 
 #include "GraphicsController.h"
+#include "MouseController.h"
 #include "DataPacket.h"
+#include "Move.h"
 
 
 #define PROGRAM_NAME    "Captured: client"
@@ -20,9 +22,14 @@ int main() {
 
     window.setVerticalSyncEnabled(true);
 
-    GraphicsController graph(windowObj);
+    window.setMouseCursorVisible(false); // Hide cursor
+    auto mouse = std::make_shared<MouseController>(windowObj);
+
+    GraphicsController graph(windowObj, mouse);
 
     auto data = std::make_shared<DataPacket>();
+    graph.update(data);
+
 
     // Main cycle
     while (window.isOpen()) {
@@ -34,11 +41,14 @@ int main() {
 
             if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Escape)
                 window.close();
+
         }
 
+
+
         // Draw part
-        graph.update(data);
         graph.draw();
+        //window.draw(cursor);
 
         window.display();
     }

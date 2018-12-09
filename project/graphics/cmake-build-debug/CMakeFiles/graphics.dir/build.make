@@ -57,75 +57,105 @@ include CMakeFiles/graphics.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/graphics.dir/flags.make
 
-CMakeFiles/graphics.dir/src/main.cpp.o: CMakeFiles/graphics.dir/flags.make
-CMakeFiles/graphics.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/graphics.dir/src/main.cpp.o"
-	/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/src/main.cpp.o -c /Users/jason/source/Captured/project/graphics/src/main.cpp
+CMakeFiles/graphics.dir/main.cpp.o: CMakeFiles/graphics.dir/flags.make
+CMakeFiles/graphics.dir/main.cpp.o: ../main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/graphics.dir/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/main.cpp.o -c /Users/jason/source/Captured/project/graphics/main.cpp
 
-CMakeFiles/graphics.dir/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/src/main.cpp.i"
-	/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jason/source/Captured/project/graphics/src/main.cpp > CMakeFiles/graphics.dir/src/main.cpp.i
+CMakeFiles/graphics.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/main.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jason/source/Captured/project/graphics/main.cpp > CMakeFiles/graphics.dir/main.cpp.i
 
-CMakeFiles/graphics.dir/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/src/main.cpp.s"
-	/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jason/source/Captured/project/graphics/src/main.cpp -o CMakeFiles/graphics.dir/src/main.cpp.s
+CMakeFiles/graphics.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/main.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jason/source/Captured/project/graphics/main.cpp -o CMakeFiles/graphics.dir/main.cpp.s
 
-CMakeFiles/graphics.dir/GraphicsController.cpp.o: CMakeFiles/graphics.dir/flags.make
-CMakeFiles/graphics.dir/GraphicsController.cpp.o: ../GraphicsController.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/graphics.dir/GraphicsController.cpp.o"
-	/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/GraphicsController.cpp.o -c /Users/jason/source/Captured/project/graphics/GraphicsController.cpp
+CMakeFiles/graphics.dir/Modules/source/GraphicsController.cpp.o: CMakeFiles/graphics.dir/flags.make
+CMakeFiles/graphics.dir/Modules/source/GraphicsController.cpp.o: ../Modules/source/GraphicsController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/graphics.dir/Modules/source/GraphicsController.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/Modules/source/GraphicsController.cpp.o -c /Users/jason/source/Captured/project/graphics/Modules/source/GraphicsController.cpp
 
-CMakeFiles/graphics.dir/GraphicsController.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/GraphicsController.cpp.i"
-	/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jason/source/Captured/project/graphics/GraphicsController.cpp > CMakeFiles/graphics.dir/GraphicsController.cpp.i
+CMakeFiles/graphics.dir/Modules/source/GraphicsController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/Modules/source/GraphicsController.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jason/source/Captured/project/graphics/Modules/source/GraphicsController.cpp > CMakeFiles/graphics.dir/Modules/source/GraphicsController.cpp.i
 
-CMakeFiles/graphics.dir/GraphicsController.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/GraphicsController.cpp.s"
-	/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jason/source/Captured/project/graphics/GraphicsController.cpp -o CMakeFiles/graphics.dir/GraphicsController.cpp.s
+CMakeFiles/graphics.dir/Modules/source/GraphicsController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/Modules/source/GraphicsController.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jason/source/Captured/project/graphics/Modules/source/GraphicsController.cpp -o CMakeFiles/graphics.dir/Modules/source/GraphicsController.cpp.s
+
+CMakeFiles/graphics.dir/Modules/source/MouseController.cpp.o: CMakeFiles/graphics.dir/flags.make
+CMakeFiles/graphics.dir/Modules/source/MouseController.cpp.o: ../Modules/source/MouseController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/graphics.dir/Modules/source/MouseController.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/Modules/source/MouseController.cpp.o -c /Users/jason/source/Captured/project/graphics/Modules/source/MouseController.cpp
+
+CMakeFiles/graphics.dir/Modules/source/MouseController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/Modules/source/MouseController.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jason/source/Captured/project/graphics/Modules/source/MouseController.cpp > CMakeFiles/graphics.dir/Modules/source/MouseController.cpp.i
+
+CMakeFiles/graphics.dir/Modules/source/MouseController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/Modules/source/MouseController.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jason/source/Captured/project/graphics/Modules/source/MouseController.cpp -o CMakeFiles/graphics.dir/Modules/source/MouseController.cpp.s
 
 CMakeFiles/graphics.dir/DataPacket.cpp.o: CMakeFiles/graphics.dir/flags.make
 CMakeFiles/graphics.dir/DataPacket.cpp.o: ../DataPacket.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/graphics.dir/DataPacket.cpp.o"
-	/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/DataPacket.cpp.o -c /Users/jason/source/Captured/project/graphics/DataPacket.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/graphics.dir/DataPacket.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/DataPacket.cpp.o -c /Users/jason/source/Captured/project/graphics/DataPacket.cpp
 
 CMakeFiles/graphics.dir/DataPacket.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/DataPacket.cpp.i"
-	/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jason/source/Captured/project/graphics/DataPacket.cpp > CMakeFiles/graphics.dir/DataPacket.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jason/source/Captured/project/graphics/DataPacket.cpp > CMakeFiles/graphics.dir/DataPacket.cpp.i
 
 CMakeFiles/graphics.dir/DataPacket.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/DataPacket.cpp.s"
-	/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jason/source/Captured/project/graphics/DataPacket.cpp -o CMakeFiles/graphics.dir/DataPacket.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jason/source/Captured/project/graphics/DataPacket.cpp -o CMakeFiles/graphics.dir/DataPacket.cpp.s
 
 CMakeFiles/graphics.dir/HexMap.cpp.o: CMakeFiles/graphics.dir/flags.make
 CMakeFiles/graphics.dir/HexMap.cpp.o: ../HexMap.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/graphics.dir/HexMap.cpp.o"
-	/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/HexMap.cpp.o -c /Users/jason/source/Captured/project/graphics/HexMap.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/graphics.dir/HexMap.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/HexMap.cpp.o -c /Users/jason/source/Captured/project/graphics/HexMap.cpp
 
 CMakeFiles/graphics.dir/HexMap.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/HexMap.cpp.i"
-	/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jason/source/Captured/project/graphics/HexMap.cpp > CMakeFiles/graphics.dir/HexMap.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jason/source/Captured/project/graphics/HexMap.cpp > CMakeFiles/graphics.dir/HexMap.cpp.i
 
 CMakeFiles/graphics.dir/HexMap.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/HexMap.cpp.s"
-	/Users/jason/clang/clang+llvm-7.0.0-x86_64-apple-darwin/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jason/source/Captured/project/graphics/HexMap.cpp -o CMakeFiles/graphics.dir/HexMap.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jason/source/Captured/project/graphics/HexMap.cpp -o CMakeFiles/graphics.dir/HexMap.cpp.s
+
+CMakeFiles/graphics.dir/Cursor.cpp.o: CMakeFiles/graphics.dir/flags.make
+CMakeFiles/graphics.dir/Cursor.cpp.o: ../Cursor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/graphics.dir/Cursor.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/Cursor.cpp.o -c /Users/jason/source/Captured/project/graphics/Cursor.cpp
+
+CMakeFiles/graphics.dir/Cursor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/Cursor.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jason/source/Captured/project/graphics/Cursor.cpp > CMakeFiles/graphics.dir/Cursor.cpp.i
+
+CMakeFiles/graphics.dir/Cursor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/Cursor.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jason/source/Captured/project/graphics/Cursor.cpp -o CMakeFiles/graphics.dir/Cursor.cpp.s
 
 # Object files for target graphics
 graphics_OBJECTS = \
-"CMakeFiles/graphics.dir/src/main.cpp.o" \
-"CMakeFiles/graphics.dir/GraphicsController.cpp.o" \
+"CMakeFiles/graphics.dir/main.cpp.o" \
+"CMakeFiles/graphics.dir/Modules/source/GraphicsController.cpp.o" \
+"CMakeFiles/graphics.dir/Modules/source/MouseController.cpp.o" \
 "CMakeFiles/graphics.dir/DataPacket.cpp.o" \
-"CMakeFiles/graphics.dir/HexMap.cpp.o"
+"CMakeFiles/graphics.dir/HexMap.cpp.o" \
+"CMakeFiles/graphics.dir/Cursor.cpp.o"
 
 # External object files for target graphics
 graphics_EXTERNAL_OBJECTS =
 
-graphics: CMakeFiles/graphics.dir/src/main.cpp.o
-graphics: CMakeFiles/graphics.dir/GraphicsController.cpp.o
+graphics: CMakeFiles/graphics.dir/main.cpp.o
+graphics: CMakeFiles/graphics.dir/Modules/source/GraphicsController.cpp.o
+graphics: CMakeFiles/graphics.dir/Modules/source/MouseController.cpp.o
 graphics: CMakeFiles/graphics.dir/DataPacket.cpp.o
 graphics: CMakeFiles/graphics.dir/HexMap.cpp.o
+graphics: CMakeFiles/graphics.dir/Cursor.cpp.o
 graphics: CMakeFiles/graphics.dir/build.make
 graphics: CMakeFiles/graphics.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable graphics"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable graphics"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/graphics.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
