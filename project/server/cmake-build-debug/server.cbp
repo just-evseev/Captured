@@ -82,13 +82,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/ilya/Desktop/Captured/project/server/include/MapRender.h">
+		<Unit filename="/Users/ilya/Desktop/Captured/project/server/include/CellState.h">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/Users/ilya/Desktop/Captured/project/server/include/Hex.h">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/Users/ilya/Desktop/Captured/project/server/include/RenderManager.h">
 			<Option target="server"/>
 		</Unit>
 		<Unit filename="/Users/ilya/Desktop/Captured/project/server/include/StructInit.h">
 			<Option target="server"/>
 		</Unit>
-		<Unit filename="/Users/ilya/Desktop/Captured/project/server/src/MapRender.cpp">
+		<Unit filename="/Users/ilya/Desktop/Captured/project/server/src/RenderManager.cpp">
 			<Option target="server"/>
 		</Unit>
 		<Unit filename="/Users/ilya/Desktop/Captured/project/server/src/main.cpp">

@@ -123,32 +123,32 @@ server/fast:
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
 .PHONY : server/fast
 
-src/MapRender.o: src/MapRender.cpp.o
+src/RenderManager.o: src/RenderManager.cpp.o
 
-.PHONY : src/MapRender.o
+.PHONY : src/RenderManager.o
 
 # target to build an object file
-src/MapRender.cpp.o:
-	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/MapRender.cpp.o
-.PHONY : src/MapRender.cpp.o
+src/RenderManager.cpp.o:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/RenderManager.cpp.o
+.PHONY : src/RenderManager.cpp.o
 
-src/MapRender.i: src/MapRender.cpp.i
+src/RenderManager.i: src/RenderManager.cpp.i
 
-.PHONY : src/MapRender.i
+.PHONY : src/RenderManager.i
 
 # target to preprocess a source file
-src/MapRender.cpp.i:
-	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/MapRender.cpp.i
-.PHONY : src/MapRender.cpp.i
+src/RenderManager.cpp.i:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/RenderManager.cpp.i
+.PHONY : src/RenderManager.cpp.i
 
-src/MapRender.s: src/MapRender.cpp.s
+src/RenderManager.s: src/RenderManager.cpp.s
 
-.PHONY : src/MapRender.s
+.PHONY : src/RenderManager.s
 
 # target to generate assembly for a file
-src/MapRender.cpp.s:
-	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/MapRender.cpp.s
-.PHONY : src/MapRender.cpp.s
+src/RenderManager.cpp.s:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/RenderManager.cpp.s
+.PHONY : src/RenderManager.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -186,9 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... server"
-	@echo "... src/MapRender.o"
-	@echo "... src/MapRender.i"
-	@echo "... src/MapRender.s"
+	@echo "... src/RenderManager.o"
+	@echo "... src/RenderManager.i"
+	@echo "... src/RenderManager.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

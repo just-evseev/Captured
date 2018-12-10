@@ -6,25 +6,25 @@
 
 #IncludeRegexTransform: 
 
-/Users/ilya/Desktop/Captured/project/server/include/MapRender.h
-stdio.h
--
+/Users/ilya/Desktop/Captured/project/server/include/CellState.h
+
+/Users/ilya/Desktop/Captured/project/server/include/Hex.h
+
+/Users/ilya/Desktop/Captured/project/server/include/RenderManager.h
 StructInit.h
 /Users/ilya/Desktop/Captured/project/server/include/StructInit.h
 
 /Users/ilya/Desktop/Captured/project/server/include/StructInit.h
 vector
 -
+map
+-
+Hex.h
+/Users/ilya/Desktop/Captured/project/server/include/Hex.h
+CellState.h
+/Users/ilya/Desktop/Captured/project/server/include/CellState.h
 
-/Users/ilya/Desktop/Captured/project/server/src/main.cpp
-iostream
--
-vector
--
-SFML/Network.hpp
--
-thread
--
-../include/MapRender.h
-/Users/ilya/Desktop/Captured/project/server/include/MapRender.h
+/Users/ilya/Desktop/Captured/project/server/src/RenderManager.cpp
+../include/RenderManager.h
+/Users/ilya/Desktop/Captured/project/server/include/RenderManager.h
 
