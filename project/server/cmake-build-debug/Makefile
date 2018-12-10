@@ -123,33 +123,6 @@ server/fast:
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
 .PHONY : server/fast
 
-include/RenderManager.o: include/RenderManager.cpp.o
-
-.PHONY : include/RenderManager.o
-
-# target to build an object file
-include/RenderManager.cpp.o:
-	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/include/RenderManager.cpp.o
-.PHONY : include/RenderManager.cpp.o
-
-include/RenderManager.i: include/RenderManager.cpp.i
-
-.PHONY : include/RenderManager.i
-
-# target to preprocess a source file
-include/RenderManager.cpp.i:
-	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/include/RenderManager.cpp.i
-.PHONY : include/RenderManager.cpp.i
-
-include/RenderManager.s: include/RenderManager.cpp.s
-
-.PHONY : include/RenderManager.s
-
-# target to generate assembly for a file
-include/RenderManager.cpp.s:
-	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/include/RenderManager.cpp.s
-.PHONY : include/RenderManager.cpp.s
-
 src/MapRender.o: src/MapRender.cpp.o
 
 .PHONY : src/MapRender.o
@@ -176,6 +149,33 @@ src/MapRender.s: src/MapRender.cpp.s
 src/MapRender.cpp.s:
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/MapRender.cpp.s
 .PHONY : src/MapRender.cpp.s
+
+src/RenderManager.o: src/RenderManager.cpp.o
+
+.PHONY : src/RenderManager.o
+
+# target to build an object file
+src/RenderManager.cpp.o:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/RenderManager.cpp.o
+.PHONY : src/RenderManager.cpp.o
+
+src/RenderManager.i: src/RenderManager.cpp.i
+
+.PHONY : src/RenderManager.i
+
+# target to preprocess a source file
+src/RenderManager.cpp.i:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/RenderManager.cpp.i
+.PHONY : src/RenderManager.cpp.i
+
+src/RenderManager.s: src/RenderManager.cpp.s
+
+.PHONY : src/RenderManager.s
+
+# target to generate assembly for a file
+src/RenderManager.cpp.s:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/RenderManager.cpp.s
+.PHONY : src/RenderManager.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -213,12 +213,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... server"
-	@echo "... include/RenderManager.o"
-	@echo "... include/RenderManager.i"
-	@echo "... include/RenderManager.s"
 	@echo "... src/MapRender.o"
 	@echo "... src/MapRender.i"
 	@echo "... src/MapRender.s"
+	@echo "... src/RenderManager.o"
+	@echo "... src/RenderManager.i"
+	@echo "... src/RenderManager.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

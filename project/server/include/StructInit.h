@@ -2,15 +2,14 @@
 #define StructInit_h
 
 #include <vector>
+#include <map>
 
-struct XY {
-    float x;
-    float y;
-};
+#include "Hex.h"
 
-typedef struct XY Vector;
-typedef struct XY Coord;
-typedef std::vector<Coord> VectorOfCoord;
+typedef std::map<Hex, int> Areas;
+typedef std::map<Hex, int> Tails;
+
+typedef std::map<int, Hex> Points;
 
 enum Move {
     UP = 0,
