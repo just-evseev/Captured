@@ -3,7 +3,7 @@ project(server)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17")
 
-set(SOURCE_FILES ./src/main.cpp ./src/MapRender.cpp ./include/MapRender.h ./include/StructInit.h src/RenderManager.cpp include/RenderManager.h)
+set(SOURCE_FILES ./src/main.cpp src/RenderManager.cpp ./include/StructInit.h ./include/RenderManager.h ./include/Hex.h ./include/CellState.h)
 add_executable(server ${SOURCE_FILES})
 
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake_modules")

@@ -23,8 +23,14 @@ private:
     Hex generateCoord(int size);
     int generateNumber(int size);
 
-    const int MAP_SIZE = 10;
+    void personKiller(int id);
+    void playerKiller(int playerId);
 
+    void updatePersonArea(int id);
+
+    const int MAP_SIZE = 10; // Размер карты (кастомизируется под поле на клиенте)
+
+    Persons persons;
     Points points;
     Areas areas;
     Tails tails;
