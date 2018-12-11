@@ -177,33 +177,6 @@ DataPacket.cpp.s:
 	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/DataPacket.cpp.s
 .PHONY : DataPacket.cpp.s
 
-HexMap.o: HexMap.cpp.o
-
-.PHONY : HexMap.o
-
-# target to build an object file
-HexMap.cpp.o:
-	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/HexMap.cpp.o
-.PHONY : HexMap.cpp.o
-
-HexMap.i: HexMap.cpp.i
-
-.PHONY : HexMap.i
-
-# target to preprocess a source file
-HexMap.cpp.i:
-	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/HexMap.cpp.i
-.PHONY : HexMap.cpp.i
-
-HexMap.s: HexMap.cpp.s
-
-.PHONY : HexMap.s
-
-# target to generate assembly for a file
-HexMap.cpp.s:
-	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/HexMap.cpp.s
-.PHONY : HexMap.cpp.s
-
 Modules/source/GraphicsController.o: Modules/source/GraphicsController.cpp.o
 
 .PHONY : Modules/source/GraphicsController.o
@@ -258,6 +231,33 @@ Modules/source/MouseController.cpp.s:
 	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/Modules/source/MouseController.cpp.s
 .PHONY : Modules/source/MouseController.cpp.s
 
+client2server.pb.o: client2server.pb.cc.o
+
+.PHONY : client2server.pb.o
+
+# target to build an object file
+client2server.pb.cc.o:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/client2server.pb.cc.o
+.PHONY : client2server.pb.cc.o
+
+client2server.pb.i: client2server.pb.cc.i
+
+.PHONY : client2server.pb.i
+
+# target to preprocess a source file
+client2server.pb.cc.i:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/client2server.pb.cc.i
+.PHONY : client2server.pb.cc.i
+
+client2server.pb.s: client2server.pb.cc.s
+
+.PHONY : client2server.pb.s
+
+# target to generate assembly for a file
+client2server.pb.cc.s:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/client2server.pb.cc.s
+.PHONY : client2server.pb.cc.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -300,15 +300,15 @@ help:
 	@echo "... DataPacket.o"
 	@echo "... DataPacket.i"
 	@echo "... DataPacket.s"
-	@echo "... HexMap.o"
-	@echo "... HexMap.i"
-	@echo "... HexMap.s"
 	@echo "... Modules/source/GraphicsController.o"
 	@echo "... Modules/source/GraphicsController.i"
 	@echo "... Modules/source/GraphicsController.s"
 	@echo "... Modules/source/MouseController.o"
 	@echo "... Modules/source/MouseController.i"
 	@echo "... Modules/source/MouseController.s"
+	@echo "... client2server.pb.o"
+	@echo "... client2server.pb.i"
+	@echo "... client2server.pb.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

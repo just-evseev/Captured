@@ -14,6 +14,7 @@
 struct DataPacket {
     std::map<Hex, int> areas;
     //std::map<Hex, int> tails;
+    std::map<Hex, int> players;
 
     DataPacket();
 };

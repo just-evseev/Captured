@@ -109,22 +109,9 @@ CMakeFiles/graphics.dir/DataPacket.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/DataPacket.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jason/source/Captured/project/graphics/DataPacket.cpp -o CMakeFiles/graphics.dir/DataPacket.cpp.s
 
-CMakeFiles/graphics.dir/HexMap.cpp.o: CMakeFiles/graphics.dir/flags.make
-CMakeFiles/graphics.dir/HexMap.cpp.o: ../HexMap.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/graphics.dir/HexMap.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/HexMap.cpp.o -c /Users/jason/source/Captured/project/graphics/HexMap.cpp
-
-CMakeFiles/graphics.dir/HexMap.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/HexMap.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jason/source/Captured/project/graphics/HexMap.cpp > CMakeFiles/graphics.dir/HexMap.cpp.i
-
-CMakeFiles/graphics.dir/HexMap.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/HexMap.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jason/source/Captured/project/graphics/HexMap.cpp -o CMakeFiles/graphics.dir/HexMap.cpp.s
-
 CMakeFiles/graphics.dir/Cursor.cpp.o: CMakeFiles/graphics.dir/flags.make
 CMakeFiles/graphics.dir/Cursor.cpp.o: ../Cursor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/graphics.dir/Cursor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/graphics.dir/Cursor.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/Cursor.cpp.o -c /Users/jason/source/Captured/project/graphics/Cursor.cpp
 
 CMakeFiles/graphics.dir/Cursor.cpp.i: cmake_force
@@ -135,14 +122,27 @@ CMakeFiles/graphics.dir/Cursor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/Cursor.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jason/source/Captured/project/graphics/Cursor.cpp -o CMakeFiles/graphics.dir/Cursor.cpp.s
 
+CMakeFiles/graphics.dir/client2server.pb.cc.o: CMakeFiles/graphics.dir/flags.make
+CMakeFiles/graphics.dir/client2server.pb.cc.o: ../client2server.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/graphics.dir/client2server.pb.cc.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/client2server.pb.cc.o -c /Users/jason/source/Captured/project/graphics/client2server.pb.cc
+
+CMakeFiles/graphics.dir/client2server.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/client2server.pb.cc.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jason/source/Captured/project/graphics/client2server.pb.cc > CMakeFiles/graphics.dir/client2server.pb.cc.i
+
+CMakeFiles/graphics.dir/client2server.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/client2server.pb.cc.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jason/source/Captured/project/graphics/client2server.pb.cc -o CMakeFiles/graphics.dir/client2server.pb.cc.s
+
 # Object files for target graphics
 graphics_OBJECTS = \
 "CMakeFiles/graphics.dir/main.cpp.o" \
 "CMakeFiles/graphics.dir/Modules/source/GraphicsController.cpp.o" \
 "CMakeFiles/graphics.dir/Modules/source/MouseController.cpp.o" \
 "CMakeFiles/graphics.dir/DataPacket.cpp.o" \
-"CMakeFiles/graphics.dir/HexMap.cpp.o" \
-"CMakeFiles/graphics.dir/Cursor.cpp.o"
+"CMakeFiles/graphics.dir/Cursor.cpp.o" \
+"CMakeFiles/graphics.dir/client2server.pb.cc.o"
 
 # External object files for target graphics
 graphics_EXTERNAL_OBJECTS =
@@ -151,9 +151,10 @@ graphics: CMakeFiles/graphics.dir/main.cpp.o
 graphics: CMakeFiles/graphics.dir/Modules/source/GraphicsController.cpp.o
 graphics: CMakeFiles/graphics.dir/Modules/source/MouseController.cpp.o
 graphics: CMakeFiles/graphics.dir/DataPacket.cpp.o
-graphics: CMakeFiles/graphics.dir/HexMap.cpp.o
 graphics: CMakeFiles/graphics.dir/Cursor.cpp.o
+graphics: CMakeFiles/graphics.dir/client2server.pb.cc.o
 graphics: CMakeFiles/graphics.dir/build.make
+graphics: /usr/local/lib/libprotobuf.dylib
 graphics: CMakeFiles/graphics.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable graphics"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/graphics.dir/link.txt --verbose=$(VERBOSE)

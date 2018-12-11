@@ -6,9 +6,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/jason/source/Captured/project/graphics/Cursor.cpp" "/Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles/graphics.dir/Cursor.cpp.o"
   "/Users/jason/source/Captured/project/graphics/DataPacket.cpp" "/Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles/graphics.dir/DataPacket.cpp.o"
-  "/Users/jason/source/Captured/project/graphics/HexMap.cpp" "/Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles/graphics.dir/HexMap.cpp.o"
   "/Users/jason/source/Captured/project/graphics/Modules/source/GraphicsController.cpp" "/Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles/graphics.dir/Modules/source/GraphicsController.cpp.o"
   "/Users/jason/source/Captured/project/graphics/Modules/source/MouseController.cpp" "/Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles/graphics.dir/Modules/source/MouseController.cpp.o"
+  "/Users/jason/source/Captured/project/graphics/client2server.pb.cc" "/Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles/graphics.dir/client2server.pb.cc.o"
   "/Users/jason/source/Captured/project/graphics/main.cpp" "/Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles/graphics.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
@@ -18,6 +18,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../Modules/headers"
   "../."
   "/Library/Frameworks/SFML.framework"
+  "/usr/local/include"
+  "."
   )
 
 # Targets to which this target links.

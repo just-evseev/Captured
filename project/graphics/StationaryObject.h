@@ -10,22 +10,27 @@
 #ifndef GRAPHICS_STATIONARYOBJECT_H
 #define GRAPHICS_STATIONARYOBJECT_H
 
-#include "Object.h"
+#include "MovableObject.h"
 
 #define PI 3.14159265f
 
-class StationaryObject : public Object {
+class StationaryObject : public MovableObject {
  public:
-    //using Object::Object;
-
-    void move(Move direction, float distance) override {
+    void set_movement(Move direction, float distance) override {
         float alpha = (ANGLE_UNIT * PI) / 180 * direction;
 
-        float dx = distance * sin(alpha);
-        float dy = distance * cos(alpha);
-
-        sprite.move(dx, dy);
+        dx = distance * sin(alpha);
+        dy = distance * cos(alpha);
     }
+
+    void set_color() {
+        sprite.setColor(sf::Color(0, 255, 0));
+    }
+
+    void set_alpha() {
+        sprite.setColor(sf::Color(255, 255, 255, 128));
+    }
+
 };
 
 #endif //GRAPHICS_STATIONARYOBJECT_H

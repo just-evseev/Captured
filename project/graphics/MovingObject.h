@@ -10,23 +10,29 @@
 #ifndef GRAPHICS_MOVINGOBJECT_H
 #define GRAPHICS_MOVINGOBJECT_H
 
-#include "Object.h"
+#include "MovableObject.h"
 
-class MovingObject : public Object {
+#define PI 3.14159265f
+
+class MovingObject : public MovableObject {
  protected:
     Move current_direction;
 
  public:
-    using Object::Object;
+    void set_movement(Move direction, float distance) override {
+        float alpha = (ANGLE_UNIT * PI) / 180 * direction;
+        float beta = (ANGLE_UNIT * PI) / 180 * current_direction;
 
-    void move(Move direction, float distance) {
-        float alpha = ANGLE_UNIT * direction;
-        float beta = ANGLE_UNIT * direction;
+        dx = (-sin(beta) + sin(alpha)) * distance;
+        dy = (-cos(beta) + cos(alpha)) * distance;
+    }
 
-        float dx = (sin(beta) - sin(alpha)) * distance;
-        float dy = (cos(beta) - cos(alpha)) * distance;
+    void set_move(Move move) {
+        current_direction = move;
+    }
 
-        sprite.move(dx, dy);
+    void set_color() {
+        sprite.setColor(sf::Color(0, 255, 0));
     }
 };
 

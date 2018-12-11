@@ -18,12 +18,6 @@ class Object : public sf::Drawable, public sf::Transformable {
     sf::Sprite sprite;
 
  public:
-    /*explicit Object(sf::Texture& texture) : sprite(texture) {
-        sprite.setOrigin(texture.getSize().x / 2.f, texture.getSize().y / 2.f);
-    };*/
-
-    virtual void move(Move direction, float distance) = 0;
-
     void set_texture(sf::Texture& texture) {
         sprite.setTexture(texture);
         sprite.setOrigin(texture.getSize().x / 2.f, texture.getSize().y / 2.f);

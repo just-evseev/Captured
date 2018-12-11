@@ -13,13 +13,11 @@
 #include <memory>
 
 #include "DataPacket.h"
-#include "HexMap.h"
 #include "Cursor.h"
 #include "MouseController.h"
 
 #include "ObjectArray.h"
 #include "MovingObject.h"
-#include "StaticObject.h"
 #include "StationaryObject.h"
 
 #include "HexSpace.h"
@@ -44,11 +42,6 @@ class GraphicsController {
     sf::Sprite playerSprite;
 
     sf::Texture areaTexture;
-
-    HexMap hexMap;
-
-    ObjectArray areas;
-    ObjectArray players;
 
     HexSpace hexSpace;
 

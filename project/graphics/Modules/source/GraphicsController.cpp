@@ -7,7 +7,7 @@
 
 GraphicsController::GraphicsController(std::shared_ptr<sf::RenderWindow> window, std::shared_ptr<MouseController> mouse)
                             : window(window), size(window->getSize()),
-                              hexMap(window), data(nullptr),
+                              data(nullptr),
                               mouse(mouse), cursor(mouse),
                               hexSpace(window->getSize(), 59){
 
@@ -50,8 +50,7 @@ GraphicsController::~GraphicsController() {
 
 void GraphicsController::update(std::shared_ptr<DataPacket> data) {
     this->data = data;
-    hexSpace.rebuild(data->areas);
-    hexMap.prepare(data->areas);
+    hexSpace.rebuild(data->areas, data->players);
 }
 
 void GraphicsController::draw() {
@@ -73,6 +72,9 @@ void GraphicsController::draw() {
 
         i = 20;
         grid.set_position(this->size.x / 2.f, this->size.y / 2.f);
+        hexSpace.freak();
+        hexSpace.set_movement(mov, sqrt(3.f) * 59 / 20);
+        grid.set_movement(mov, sqrt(3.f) * 59 / 20);
     }
     --i;
 
@@ -81,11 +83,11 @@ void GraphicsController::draw() {
     window->draw(backgroundSprite);
 
     window->draw(grid);
-    grid.move(mov, sqrt(3.f) * 59 / 20);
+    grid.move();
 
     //window->draw(hexMap);
     window->draw(hexSpace);
-    hexSpace.move(mov, sqrt(3.f) * 59 / 20);
+    hexSpace.move();
 
     window->draw(playerSprite);
 

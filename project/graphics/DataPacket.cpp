@@ -31,4 +31,6 @@ DataPacket::DataPacket() {
     areas.emplace(Hex(4, -4), 1);
     areas.emplace(Hex(-4, 4), 1);
     areas.emplace(Hex(-5, 4), 1);
+
+    players.emplace(Hex(5, -7), 1);
 }

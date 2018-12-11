@@ -8,20 +8,25 @@
 #include <SFML/Graphics.hpp>
 #include <vector>
 
-#include "Object.h"
+#include "MovableObject.h"
 #include "Move.h"
 
-class ObjectArray : public sf::Drawable, public sf::Transformable {
+class MovableObjectArray : public sf::Drawable, public sf::Transformable {
  protected:
-    std::vector<std::unique_ptr<Object>> objects;
+    std::vector<std::unique_ptr<MovableObject>> objects;
 
  public:
-    void move(Move direction, float distance) {
+    void set_movement(Move direction, float distance) {
         for (auto& object : objects)
-            object->move(direction, distance);
+            object->set_movement(direction, distance);
     }
 
-    void push(std::unique_ptr<Object>&& object) {
+    void move() {
+        for (auto& object : objects)
+            object->move();
+    }
+
+    void push(std::unique_ptr<MovableObject>&& object) {
         objects.push_back(std::move(object));
     }
 

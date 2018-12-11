@@ -8,8 +8,11 @@
 
 #include "GraphicsController.h"
 #include "MouseController.h"
+#include "PacketGenerator.h"
 #include "DataPacket.h"
 #include "Move.h"
+
+#include "client2server.pb.h"
 
 
 #define PROGRAM_NAME    "Captured: client"
@@ -20,10 +23,15 @@ int main() {
     auto windowObj = std::make_shared<sf::RenderWindow>(sf::VideoMode(WIDTH, HEIGHT), PROGRAM_NAME, sf::Style::Fullscreen);
     auto& window = *windowObj;
 
+//    PacketGenerator pg;
+//    pg.pack(Move::LEFT_DOWN);
+//    pg.unpack();
+
     window.setVerticalSyncEnabled(true);
 
     window.setMouseCursorVisible(false); // Hide cursor
     auto mouse = std::make_shared<MouseController>(windowObj);
+
 
     GraphicsController graph(windowObj, mouse);
 
@@ -41,14 +49,12 @@ int main() {
 
             if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Escape)
                 window.close();
-
         }
 
 
 
         // Draw part
         graph.draw();
-        //window.draw(cursor);
 
         window.display();
     }

@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++17 -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/jason/source/Captured/project/graphics/Modules/headers -I/Users/jason/source/Captured/project/graphics/. -F/Library/Frameworks 
+CXX_INCLUDES = -I/Users/jason/source/Captured/project/graphics/Modules/headers -I/Users/jason/source/Captured/project/graphics/. -F/Library/Frameworks -I/usr/local/include -I/Users/jason/source/Captured/project/graphics/cmake-build-debug 
 
