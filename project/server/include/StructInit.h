@@ -7,6 +7,8 @@
 #include "Hex.h"
 #include "CellState.h"
 
+#define START_AREA 7
+
 enum Move {
     UP = 0,
     RIGHT_UP = 1,
@@ -16,20 +18,26 @@ enum Move {
     LEFT_UP = 5
 };
 
-struct Per {
-    int id;
-    int state; // хз зачем эта характеристика
+struct Person {
     int area_sq;
+    Hex point;
     int kills;
     int bonus_effect;
+    Person(Hex point)
+            :area_sq(START_AREA), point(point), kills(0), bonus_effect(0) {};
 };
 
-typedef struct Per Person;
+struct CellState {
+    int id;
+    int state;
+    CellState(int id, int state)
+            : id(id), state(state) {};
+};
 
-typedef std::map<int, Person> Persons;
+//typedef struct Per Person;
 
 typedef std::map<Hex, int> Areas;
 typedef std::map<Hex, CellState> Tails;
-typedef std::map<int, Hex> Points;
+typedef std::map<int, Person> Persons;
 
 #endif /* StructInit_h */

@@ -20,8 +20,8 @@ private:
     Hex createNewPlayer(int id);
     void createAreaOfNewPlayer(Hex point, int id);
 
-    Hex generateCoord(int size);
-    int generateNumber(int size);
+    Hex generateCoord();
+    int generateNumber();
 
     void personKiller(int id);
     void playerKiller(int playerId);
@@ -31,7 +31,6 @@ private:
     const int MAP_SIZE = 10; // Размер карты (кастомизируется под поле на клиенте)
 
     Persons persons;
-    Points points;
     Areas areas;
     Tails tails;
 };

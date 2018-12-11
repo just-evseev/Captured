@@ -6,51 +6,48 @@ RenderManager::~RenderManager() = default;
 
 void RenderManager::acceptPlayer(int id) {
     Hex point = this->createNewPlayer(id);
+    puts("получил id");
     this->createAreaOfNewPlayer(point, id);
-    Person person;
-    person.id = id;
-    person.state = 1;
-    person.area_sq = 6;
-    person.kills = 0;
-    person.bonus_effect = 0;
+    Person person(point);
     this->persons.insert(std::pair<int, Person>(id, person));
 }
 
 void RenderManager::getPlayerCoord(Move move, int id) {
-    Hex point = this->points.at(id);
+    Hex point = this->persons.at(id).point;
+
     CellState cellState(id, 1);
     switch (move) {
         case Move::UP:
             point.updateCoord(point.q, point.r - 1);
-            cellState.updateCellState(id, 1);
+            cellState.state = 1;
             break;
         case Move::RIGHT_UP:
             point.updateCoord(point.q + 1, point.r - 1);
-            cellState.updateCellState(id, 1);
+            cellState.state = 1;
             break;
         case Move::RIGHT_DOWN:
             point.updateCoord(point.q + 1, point.r);
-            cellState.updateCellState(id, -1);
+            cellState.state = -1;
             break;
         case Move::DOWN:
             point.updateCoord(point.q, point.r + 1);
-            cellState.updateCellState(id, -1);
+            cellState.state = -1;
             break;
         case Move::LEFT_DOWN:
             point.updateCoord(point.q - 1, point.r + 1);
-            cellState.updateCellState(id, -1);
+            cellState.state = -1;
             break;
         case Move::LEFT_UP:
             point.updateCoord(point.q - 1, point.r);
-            cellState.updateCellState(id, 1);
-            break;
-        default:
+            cellState.state = 1;
             break;
     }
-    if (tails.count(point) != 0) { // Проверка на принадлежность кривым
-        const auto detectId = tails.at(point).id;
+
+    auto t3 = tails.find(point);
+    if (t3 != tails.end()) {  // Проверка на принадлежность кривым
+        auto detectId = t3->second.id;
         if (detectId == id) {
-            this->personKiller(id);
+            this->personKiller(detectId);
             return;
         } else {
             this->playerKiller(detectId);
@@ -58,24 +55,27 @@ void RenderManager::getPlayerCoord(Move move, int id) {
         }
     }
 
-    if (areas.count(point) != 0) { // Проверка на окончание работы с зоной
+    auto t4 = areas.find(point);
+    if (t4 != areas.end()) { // Проверка на окончание работы с зоной
         if (areas.at(point) == id) {
             this->updatePersonArea(id);
         }
     }
 
-    if (tails.at(this->points.at(id)).state != cellState.id) { // обрабатываю угол
+    auto t5 = tails.find(persons.at(id).point);
+    if (t5->second.state != cellState.id) { // Обрабатываю угол
         cellState.id = 0;
+    } else {
+        puts("Ошибка в обработке острого угла");
     }
 
-    this->points.at(id) = point;
-
-    this->tails.insert(std::pair<Hex, CellState>(point, cellState));
+    persons.at(id).point = point; // Добавляем точку человеку
+    this->tails.emplace(point, cellState); // Добавляем точку кривым
 }
 
 Hex RenderManager::createNewPlayer(int id) {
-    Hex point = generateCoord(this->MAP_SIZE);
-    this->points.insert(std::pair<int,Hex>(id, point));
+    Hex point = this->generateCoord();
+    this->persons.emplace(id, Person(point));
     return point;
 }
 
@@ -90,14 +90,14 @@ void RenderManager::createAreaOfNewPlayer(Hex point, int id) {
     }
 }
 
-Hex RenderManager::generateCoord(int size) {
-    Hex coord(generateNumber(size), generateNumber(size));
+Hex RenderManager::generateCoord() {
+    Hex coord(this->generateNumber(), this->generateNumber());
     return coord;
 }
 
-int RenderManager::generateNumber(int size) {
+int RenderManager::generateNumber() {
     srand((unsigned)time(nullptr));
-    int number = rand() % (size * 2) - size;
+    int number = rand() % (this->MAP_SIZE * 2) - this->MAP_SIZE;
     return number;
 }
 
@@ -109,35 +109,49 @@ void RenderManager::playerKiller(int playerId) { // в процессе разр
 
 void RenderManager::updatePersonArea(int id) {
     auto counter = 0;
-    for (int r = -MAP_SIZE; r <= 0; r++) {
-        for (int q = -r - MAP_SIZE; q <= MAP_SIZE; q++) {
-            int state = tails.at(Hex(q, r)).state;
-            if (state == 0) {
-                areas.at(Hex(q, r)) = id;
-            } else if (abs(state) == 1) {
-                counter += state;
-            } else {
-                puts("Error in updatePersonArea");
+    for (int r = -(this->MAP_SIZE); r <= 0; r++) {
+        for (int q = -r - (this->MAP_SIZE); q <= (this->MAP_SIZE); q++) {
+            auto it5 = tails.find(Hex(q, r));
+            if (it5 != tails.end()) {
+                int state = it5->second.state;
+                if (state == 0) {
+                    areas.emplace(Hex(q, r), id);
+                } else if (abs(state) == 1) {
+                    counter += state;
+                } else {
+                    puts("Error in updatePersonArea");
+                }
+                if (abs(counter) > 0) {
+                    areas.emplace(Hex(q, r), id);
+                }
             }
-            if (counter > 0) {
-                areas.at(Hex(q, r)) = id;
-            }
+        }
+        if (counter != 0) {
+            puts("Error in updatePersonArea");
+            counter = 0;
         }
     }
 
-    for (int r = 1; r <= MAP_SIZE; r++) {
-        for (int q = -MAP_SIZE; q <= MAP_SIZE - r; q++) {
-            int state = tails.at(Hex(q, r)).state;
-            if (state == 0) {
-                areas.at(Hex(q, r)) = id;
-            } else if (abs(state) == 1) {
-                counter += state;
-            } else {
-                puts("Error in updatePersonArea");
+    for (int r = 1; r <= this->MAP_SIZE; r++) {
+        for (int q = -(this->MAP_SIZE); q <= this->MAP_SIZE - r; q++) {
+            auto it5 = tails.find(Hex(q, r));
+            if (it5 != tails.end()) {
+                int state = it5->second.state;
+                if (state == 0) {
+                    areas.emplace(Hex(q, r), id);
+                } else if (abs(state) == 1) {
+                    counter += state;
+                } else {
+                    puts("Error in updatePersonArea");
+                }
+                if (abs(counter) > 0) {
+                    areas.emplace(Hex(q, r), id);
+                }
             }
-            if (counter > 0) {
-                areas.at(Hex(q, r)) = id;
-            }
+        }
+        if (counter != 0) {
+            puts("Error in updatePersonArea");
+            counter = 0;
         }
     }
 }
