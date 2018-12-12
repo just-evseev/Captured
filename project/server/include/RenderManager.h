@@ -35,5 +35,4 @@ private:
     Tails tails;
 };
 
-
 #endif //SERVER_RENDERMANAGER_H

@@ -82,9 +82,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/ilya/Desktop/Captured/project/server/include/CellState.h">
-			<Option target="server"/>
-		</Unit>
 		<Unit filename="/Users/ilya/Desktop/Captured/project/server/include/Hex.h">
 			<Option target="server"/>
 		</Unit>

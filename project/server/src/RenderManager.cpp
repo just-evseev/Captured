@@ -1,3 +1,5 @@
+#include <iostream>
+
 #include "../include/RenderManager.h"
 
 RenderManager::RenderManager() = default;
@@ -6,16 +8,18 @@ RenderManager::~RenderManager() = default;
 
 void RenderManager::acceptPlayer(int id) {
     Hex point = this->createNewPlayer(id);
-    puts("получил id");
+    std::cout << "Получил id " << id << std::endl;
     this->createAreaOfNewPlayer(point, id);
+    std::cout << "Сгенерировал точку" << point.r << " " << point.q << " для " << id << std::endl;
     Person person(point);
-    this->persons.insert(std::pair<int, Person>(id, person));
+    this->persons.emplace(id, person);
 }
 
 void RenderManager::getPlayerCoord(Move move, int id) {
     Hex point = this->persons.at(id).point;
 
     CellState cellState(id, 1);
+    std::cout << "Получил движение " << move << " для игрока " << id << std::endl;
     switch (move) {
         case Move::UP:
             point.updateCoord(point.q, point.r - 1);
@@ -53,6 +57,8 @@ void RenderManager::getPlayerCoord(Move move, int id) {
             this->playerKiller(detectId);
             persons.at(id).kills += 1;
         }
+    } else {
+        std::cout << "Новая точка " << point.q << ":" << point.r << " игрока " << id << " кривым не принадлежит" << std::endl;
     }
 
     auto t4 = areas.find(point);
@@ -60,16 +66,18 @@ void RenderManager::getPlayerCoord(Move move, int id) {
         if (areas.at(point) == id) {
             this->updatePersonArea(id);
         }
+    } else {
+        std::cout << "Новая точка " << point.q << ":" << point.r << " игрока " << id << " зону не закрывает" << std::endl;
     }
 
     auto t5 = tails.find(persons.at(id).point);
     if (t5->second.state != cellState.id) { // Обрабатываю угол
-        cellState.id = 0;
+        cellState.state = 0;
     } else {
-        puts("Ошибка в обработке острого угла");
+        std::cout << "Новая точка " << point.q << ":" << point.r << " игрока " << id << " не образует острый угол кривых" << std::endl;
     }
 
-    persons.at(id).point = point; // Добавляем точку человеку
+    persons.at(id).point = point; //Обновляем точку человеку
     this->tails.emplace(point, cellState); // Добавляем точку кривым
 }
 
@@ -83,8 +91,8 @@ void RenderManager::createAreaOfNewPlayer(Hex point, int id) {
     for (int i = -1; i < 2; i++) {
         for (int j = -1; j < 2; j++) {
             if (abs(i + j) < 2) {
-                Hex newPoint(point.q + i, point.r + j);
-                this->areas.insert(std::pair<Hex, int>(newPoint,id));
+                this->areas.emplace(Hex(point.q + i, point.r + j), id);
+                std::cout << "Новая точка " << point.q + i << ":" << point.r + j << " принадлежит " << id << std::endl;
             }
         }
     }
@@ -92,6 +100,7 @@ void RenderManager::createAreaOfNewPlayer(Hex point, int id) {
 
 Hex RenderManager::generateCoord() {
     Hex coord(this->generateNumber(), this->generateNumber());
+    std::cout << "Сгенерирована координата нового игрока " << coord.r << ":" << coord.q << std::endl;
     return coord;
 }
 
@@ -107,7 +116,7 @@ void RenderManager::personKiller(int id) { // в процессе разрабо
 void RenderManager::playerKiller(int playerId) { // в процессе разработки (убийство другого игрока)
 }
 
-void RenderManager::updatePersonArea(int id) {
+void RenderManager::updatePersonArea(int id) { // добавление полигона к полигону игрока
     auto counter = 0;
     for (int r = -(this->MAP_SIZE); r <= 0; r++) {
         for (int q = -r - (this->MAP_SIZE); q <= (this->MAP_SIZE); q++) {

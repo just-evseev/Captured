@@ -44,10 +44,8 @@ public:
         if (l.y > r.y)
             return false;
 
-        if (l.x < r.x)
-            return true;
+        return l.x < r.x;
 
-        return false;
     }
 };
 

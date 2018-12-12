@@ -21,6 +21,8 @@ void serverCycle() {
     std::vector<std::unique_ptr<sf::TcpSocket>> socket;
     RenderManager renderManager;
 
+    int personId = 0;
+
     while(!quit) {
         std::unique_ptr<sf::TcpSocket> fooSocket = std::make_unique<sf::TcpSocket>();
 
@@ -28,7 +30,8 @@ void serverCycle() {
             (*fooSocket).setBlocking(false);
             socket.push_back(std::move(fooSocket));
             std::cout << socket[socket.size() - 1]->getRemoteAddress() << ": Connected" << std::endl;
-            renderManager.acceptPlayer(static_cast<int>(socket.size() - 1));
+            renderManager.acceptPlayer(personId);
+            personId += 1;
         }
 
         for (int i = 0; i < socket.size(); ++i) {

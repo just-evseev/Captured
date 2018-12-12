@@ -12,12 +12,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d737d72e-2f77-4ceb-847f-c09fa166bbc6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/CellState.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/CellState.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/server.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/server.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/server.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/server.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/server.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/server.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/server.dir/src/RenderManager.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/server.dir/src/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/server.dir/src/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/server" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/server" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/server.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/server.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/CellState.h" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/include/Hex.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Hex.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/RenderManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/RenderManager.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/StructInit.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/StructInit.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RenderManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/RenderManager.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,14 +40,14 @@
     <session id="-285866645">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="25" />
+          <entry key="project.closed" value="26" />
           <entry key="project.open.time.1" value="5" />
           <entry key="project.open.time.4" value="3" />
-          <entry key="project.open.time.5" value="10" />
-          <entry key="project.open.time.6" value="2" />
+          <entry key="project.open.time.5" value="11" />
+          <entry key="project.open.time.6" value="3" />
           <entry key="project.open.time.7" value="4" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="26" />
+          <entry key="project.opened" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -59,15 +68,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="6891" />
-          <entry key="h" value="1462" />
-          <entry key="txt" value="520" />
+          <entry key="cpp" value="7706" />
+          <entry key="h" value="1577" />
+          <entry key="txt" value="522" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CMakeLists.txt" value="127" />
-          <entry key="ObjectiveC" value="8353" />
+          <entry key="CMakeLists.txt" value="129" />
+          <entry key="ObjectiveC" value="9283" />
           <entry key="PLAIN_TEXT" value="393" />
         </counts>
       </usages-collector>
@@ -81,8 +90,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="654">
-              <caret line="67" column="48" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="48" />
+            <state relative-caret-position="254">
+              <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -93,8 +102,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/StructInit.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="31" column="13" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="13" />
+            <state relative-caret-position="388">
+              <caret line="27" column="34" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="34" />
               <folding>
                 <element signature="e#43#60#0" expanded="true" />
               </folding>
@@ -105,8 +114,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="75">
+              <caret line="5" column="118" selection-start-line="5" selection-start-column="118" selection-end-line="5" selection-end-column="118" />
             </state>
           </provider>
         </entry>
@@ -114,8 +123,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/RenderManager.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="23" column="22" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="22" />
+            <state relative-caret-position="405">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
@@ -123,17 +132,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/Hex.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/CellState.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="496">
+              <caret line="46" column="8" lean-forward="true" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -141,8 +141,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/RenderManager.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+            <state relative-caret-position="-1082">
+              <caret line="14" column="25" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -152,6 +155,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>MAP_SIZE</find>
+      <find>pair</find>
+      <find>person</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -164,12 +169,12 @@
         <option value="$PROJECT_DIR$/include/Server.h" />
         <option value="$PROJECT_DIR$/src/MapRender.cpp" />
         <option value="$PROJECT_DIR$/include/MapRender.h" />
+        <option value="$PROJECT_DIR$/include/CellState.h" />
         <option value="$PROJECT_DIR$/src/main.cpp" />
+        <option value="$PROJECT_DIR$/include/RenderManager.h" />
+        <option value="$PROJECT_DIR$/include/StructInit.h" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/include/Hex.h" />
-        <option value="$PROJECT_DIR$/include/RenderManager.h" />
-        <option value="$PROJECT_DIR$/include/CellState.h" />
-        <option value="$PROJECT_DIR$/include/StructInit.h" />
         <option value="$PROJECT_DIR$/src/RenderManager.cpp" />
       </list>
     </option>
@@ -213,7 +218,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -240,6 +244,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -324,6 +329,8 @@
       <workItem from="1544373107850" duration="4464000" />
       <workItem from="1544428075654" duration="11667000" />
       <workItem from="1544528471722" duration="11303000" />
+      <workItem from="1544545024566" duration="387000" />
+      <workItem from="1544549414349" duration="2282000" />
     </task>
     <task id="LOCAL-00001" summary="add sfml to server">
       <created>1543145786582</created>
@@ -385,24 +392,23 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66639000" />
+    <option name="totallyTimeSpent" value="69308000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49879518" visible="true" weight="0.12732475" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49879518" visible="true" weight="0.13018598" />
       <window_info id="Structure" order="1" sideWeight="0.50120485" side_tool="true" weight="0.15450644" />
       <window_info id="Favorites" order="2" sideWeight="0.50120485" side_tool="true" weight="0.15450644" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.13253012" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3421687" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.37831324" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.14698794" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
@@ -498,20 +504,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/CellState.cpp" />
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/Hex.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/CellState.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -519,37 +511,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/StructInit.h">
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="13" />
-          <folding>
-            <element signature="e#43#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/RenderManager.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="23" column="22" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="22" />
+        <state relative-caret-position="75">
+          <caret line="5" column="118" selection-start-line="5" selection-start-column="118" selection-end-line="5" selection-end-column="118" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="654">
-          <caret line="67" column="48" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="48" />
+        <state relative-caret-position="254">
+          <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/include/RenderManager.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Hex.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="46" column="8" lean-forward="true" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/StructInit.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="27" column="34" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="34" />
+          <folding>
+            <element signature="e#43#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/RenderManager.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        <state relative-caret-position="-1082">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
