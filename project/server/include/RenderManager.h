@@ -17,7 +17,6 @@ public:
     void getPlayerCoord(Move move, int id);
 
 private:
-    Hex createNewPlayer(int id);
     void createAreaOfNewPlayer(Hex point, int id);
 
     Hex generateCoord();

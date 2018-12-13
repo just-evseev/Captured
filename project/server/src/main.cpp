@@ -61,27 +61,27 @@ void serverCycle() {
             if (packetReceive >> msg) {
                 std::cout << socket[i]->getRemoteAddress() << ": " << msg << std::endl;
                 switch (msg) {
-                case Move::UP:
+                case 0:
                     renderManager.getPlayerCoord(Move::UP, i);
                     break;
-                case Move::RIGHT_UP:
+                case 1:
                     renderManager.getPlayerCoord(Move::RIGHT_UP, i);
                     break;
-                case Move::RIGHT_DOWN:
+                case 2:
                     renderManager.getPlayerCoord(Move::RIGHT_DOWN, i);
                     break;
-                case Move::DOWN:
+                case 3:
                     renderManager.getPlayerCoord(Move::DOWN, i);
                     break;
-                case Move::LEFT_DOWN:
+                case 4:
                     renderManager.getPlayerCoord(Move::LEFT_DOWN, i);
                     break;
-                case Move::LEFT_UP:
+                case 5:
                     renderManager.getPlayerCoord(Move::LEFT_UP, i);
                     break;
                 default:
                     std::cout << socket[i]->getRemoteAddress() << ": Incorrect value" << std::endl;
-                    continue;
+                    break;
                 }
 
             }

@@ -17,13 +17,16 @@ enum Move {
     LEFT_UP = 5
 };
 
-//typedef std::vector<Hex> PlayerArea;
+typedef std::vector<Hex> PlayerArea;
+typedef std::vector<Hex> PlayerTails;
 
 struct Person {
     int areaSquare;
     Hex point;
     int kills;
     int bonusEffect;
+    PlayerArea playerArea;
+    PlayerTails playerTails;
     Person(Hex point)
             :areaSquare(START_AREA), point(point), kills(0), bonusEffect(0) {};
 };
