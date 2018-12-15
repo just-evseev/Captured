@@ -6,11 +6,11 @@
 
 MouseController::MouseController(std::shared_ptr<sf::RenderWindow> window)
  : window(window), origin(window->getSize().x / 2.f, window->getSize().y / 2.f) {
-    std::clog << "Mouse controller: created" << std::endl;
+    //std::clog << "Mouse controller: created" << std::endl;
 }
 
 MouseController::~MouseController() {
-    std::clog << "Mouse controller: destroyed" << std::endl;
+    //std::clog << "Mouse controller: destroyed" << std::endl;
 }
 
 

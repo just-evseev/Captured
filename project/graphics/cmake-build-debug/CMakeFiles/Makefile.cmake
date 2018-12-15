@@ -44,6 +44,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.12.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.12.2/CMakeSystem.cmake"
   "../cmake_modules/FindSFML.cmake"
+  "/Users/jason/source/rapidjson/build/RapidJSONConfig.cmake"
+  "/Users/jason/source/rapidjson/build/RapidJSONConfigVersion.cmake"
   )
 
 # The corresponding makefile is:

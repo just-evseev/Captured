@@ -3,8 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/graphics.dir/Modules/source/GraphicsController.cpp.o"
   "CMakeFiles/graphics.dir/Modules/source/MouseController.cpp.o"
   "CMakeFiles/graphics.dir/DataPacket.cpp.o"
-  "CMakeFiles/graphics.dir/Cursor.cpp.o"
   "CMakeFiles/graphics.dir/client2server.pb.cc.o"
+  "CMakeFiles/graphics.dir/server2client.pb.cc.o"
   "graphics.pdb"
   "graphics"
 )

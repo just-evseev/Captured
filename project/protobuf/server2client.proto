@@ -2,6 +2,15 @@ syntax = "proto2";
 package server2client;
 
 // [START Helpful structures declaration]
+enum Move {
+    UP = 0;
+    RIGHT_UP = 1;
+    RIGHT_DOWN = 2;
+    DOWN = 3;
+    LEFT_DOWN = 4;
+    LEFT_UP = 5;
+}
+
 message HexagonCoordinate {
     required int32 q = 1;
     required int32 r = 2;
@@ -12,20 +21,18 @@ message HexagonProperty {
     required int32 id = 2;
 }
 
+message TailProperty {
+    required HexagonCoordinate hex = 1;
+    required Move direction = 2;
+    required int32 id = 3;
+}
+
 message Player {
-    enum Move {
-        UP = 0;
-        RIGHT_UP = 1;
-        RIGHT_DOWN = 2;
-        DOWN = 3;
-        LEFT_DOWN = 4;
-        LEFT_UP = 5;
-    }
-    
-    required Move direction = 1;
-    required HexagonCoordinate position = 2;
-    required int32 expansion = 3;
-    required int32 kills = 4;
+    required int32 id = 1;
+    required Move direction = 2;
+    required HexagonCoordinate position = 3;
+    required int32 expansion = 4;
+    required int32 kills = 5;
 }
 // [END Helpful structures declaration]
 

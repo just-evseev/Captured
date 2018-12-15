@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/jason/source/Captured/project/graphics
+CMAKE_SOURCE_DIR = /Users/jason/Desktop/Captured/project/graphics
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/jason/source/Captured/project/graphics/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/jason/Desktop/Captured/project/graphics/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles /Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jason/Desktop/Captured/project/graphics/cmake-build-debug/CMakeFiles /Users/jason/Desktop/Captured/project/graphics/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jason/source/Captured/project/graphics/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jason/Desktop/Captured/project/graphics/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -122,33 +122,6 @@ graphics: cmake_check_build_system
 graphics/fast:
 	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/build
 .PHONY : graphics/fast
-
-Cursor.o: Cursor.cpp.o
-
-.PHONY : Cursor.o
-
-# target to build an object file
-Cursor.cpp.o:
-	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/Cursor.cpp.o
-.PHONY : Cursor.cpp.o
-
-Cursor.i: Cursor.cpp.i
-
-.PHONY : Cursor.i
-
-# target to preprocess a source file
-Cursor.cpp.i:
-	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/Cursor.cpp.i
-.PHONY : Cursor.cpp.i
-
-Cursor.s: Cursor.cpp.s
-
-.PHONY : Cursor.s
-
-# target to generate assembly for a file
-Cursor.cpp.s:
-	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/Cursor.cpp.s
-.PHONY : Cursor.cpp.s
 
 DataPacket.o: DataPacket.cpp.o
 
@@ -285,6 +258,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+server2client.pb.o: server2client.pb.cc.o
+
+.PHONY : server2client.pb.o
+
+# target to build an object file
+server2client.pb.cc.o:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/server2client.pb.cc.o
+.PHONY : server2client.pb.cc.o
+
+server2client.pb.i: server2client.pb.cc.i
+
+.PHONY : server2client.pb.i
+
+# target to preprocess a source file
+server2client.pb.cc.i:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/server2client.pb.cc.i
+.PHONY : server2client.pb.cc.i
+
+server2client.pb.s: server2client.pb.cc.s
+
+.PHONY : server2client.pb.s
+
+# target to generate assembly for a file
+server2client.pb.cc.s:
+	$(MAKE) -f CMakeFiles/graphics.dir/build.make CMakeFiles/graphics.dir/server2client.pb.cc.s
+.PHONY : server2client.pb.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -294,9 +294,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... graphics"
-	@echo "... Cursor.o"
-	@echo "... Cursor.i"
-	@echo "... Cursor.s"
 	@echo "... DataPacket.o"
 	@echo "... DataPacket.i"
 	@echo "... DataPacket.s"
@@ -312,6 +309,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... server2client.pb.o"
+	@echo "... server2client.pb.i"
+	@echo "... server2client.pb.s"
 .PHONY : help
 
 

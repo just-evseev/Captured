@@ -10,20 +10,28 @@
 
 #include "MouseController.h"
 
-class Cursor : public sf::Drawable, public sf::Transformable {
-    sf::Texture texture;
+class Cursor : public sf::Drawable {
     sf::Sprite sprite;
 
     std::shared_ptr<MouseController> mouse;
 
  public:
-    explicit Cursor(std::shared_ptr<MouseController> mouse);
-    ~Cursor();
+    explicit Cursor(std::shared_ptr<MouseController> mouse)
+                                              : mouse(mouse) {};
 
-    void update();
+    void set_texture(sf::Texture& texture) {
+        sprite.setTexture(texture);
+        sprite.setOrigin(texture.getSize().x / 2.f, texture.getSize().y / 2.f);
+    };
+
+    void update() {
+        sprite.setPosition(mouse->get_positionf());
+    };
 
  private:
-    void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
+    void draw(sf::RenderTarget& target, sf::RenderStates states) const override {
+        target.draw(sprite);
+    };
 };
 
 

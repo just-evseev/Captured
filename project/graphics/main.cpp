@@ -8,11 +8,13 @@
 
 #include "GraphicsController.h"
 #include "MouseController.h"
-#include "PacketGenerator.h"
+#include "Client2ServerParser.h"
+#include "Server2ClientParser.h"
 #include "DataPacket.h"
 #include "Move.h"
 
-#include "client2server.pb.h"
+#include "TextureOwner.h"
+
 
 
 #define PROGRAM_NAME    "Captured: client"

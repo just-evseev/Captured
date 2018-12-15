@@ -39,7 +39,7 @@ namespace protobuf_server2client_2eproto {
 struct TableStruct {
   static const ::google::protobuf::internal::ParseTableField entries[];
   static const ::google::protobuf::internal::AuxillaryParseTableField aux[];
-  static const ::google::protobuf::internal::ParseTable schema[4];
+  static const ::google::protobuf::internal::ParseTable schema[5];
   static const ::google::protobuf::internal::FieldMetadata field_metadata[];
   static const ::google::protobuf::internal::SerializationTable serialization_table[];
   static const ::google::protobuf::uint32 offsets[];
@@ -59,6 +59,9 @@ extern PacketDefaultTypeInternal _Packet_default_instance_;
 class Player;
 class PlayerDefaultTypeInternal;
 extern PlayerDefaultTypeInternal _Player_default_instance_;
+class TailProperty;
+class TailPropertyDefaultTypeInternal;
+extern TailPropertyDefaultTypeInternal _TailProperty_default_instance_;
 }  // namespace server2client
 namespace google {
 namespace protobuf {
@@ -66,51 +69,33 @@ template<> ::server2client::HexagonCoordinate* Arena::CreateMaybeMessage<::serve
 template<> ::server2client::HexagonProperty* Arena::CreateMaybeMessage<::server2client::HexagonProperty>(Arena*);
 template<> ::server2client::Packet* Arena::CreateMaybeMessage<::server2client::Packet>(Arena*);
 template<> ::server2client::Player* Arena::CreateMaybeMessage<::server2client::Player>(Arena*);
+template<> ::server2client::TailProperty* Arena::CreateMaybeMessage<::server2client::TailProperty>(Arena*);
 }  // namespace protobuf
 }  // namespace google
 namespace server2client {
 
-enum Player_State {
-  Player_State_DEAD = 0,
-  Player_State_ALIVE = 1
+enum Move {
+  UP = 0,
+  RIGHT_UP = 1,
+  RIGHT_DOWN = 2,
+  DOWN = 3,
+  LEFT_DOWN = 4,
+  LEFT_UP = 5
 };
-bool Player_State_IsValid(int value);
-const Player_State Player_State_State_MIN = Player_State_DEAD;
-const Player_State Player_State_State_MAX = Player_State_ALIVE;
-const int Player_State_State_ARRAYSIZE = Player_State_State_MAX + 1;
+bool Move_IsValid(int value);
+const Move Move_MIN = UP;
+const Move Move_MAX = LEFT_UP;
+const int Move_ARRAYSIZE = Move_MAX + 1;
 
-const ::google::protobuf::EnumDescriptor* Player_State_descriptor();
-inline const ::std::string& Player_State_Name(Player_State value) {
+const ::google::protobuf::EnumDescriptor* Move_descriptor();
+inline const ::std::string& Move_Name(Move value) {
   return ::google::protobuf::internal::NameOfEnum(
-    Player_State_descriptor(), value);
+    Move_descriptor(), value);
 }
-inline bool Player_State_Parse(
-    const ::std::string& name, Player_State* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<Player_State>(
-    Player_State_descriptor(), name, value);
-}
-enum Player_Move {
-  Player_Move_UP = 0,
-  Player_Move_RIGHT_UP = 1,
-  Player_Move_RIGHT_DOWN = 2,
-  Player_Move_DOWN = 3,
-  Player_Move_LEFT_DOWN = 4,
-  Player_Move_LEFT_UP = 5
-};
-bool Player_Move_IsValid(int value);
-const Player_Move Player_Move_Move_MIN = Player_Move_UP;
-const Player_Move Player_Move_Move_MAX = Player_Move_LEFT_UP;
-const int Player_Move_Move_ARRAYSIZE = Player_Move_Move_MAX + 1;
-
-const ::google::protobuf::EnumDescriptor* Player_Move_descriptor();
-inline const ::std::string& Player_Move_Name(Player_Move value) {
-  return ::google::protobuf::internal::NameOfEnum(
-    Player_Move_descriptor(), value);
-}
-inline bool Player_Move_Parse(
-    const ::std::string& name, Player_Move* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<Player_Move>(
-    Player_Move_descriptor(), name, value);
+inline bool Move_Parse(
+    const ::std::string& name, Move* value) {
+  return ::google::protobuf::internal::ParseNamedEnum<Move>(
+    Move_descriptor(), name, value);
 }
 // ===================================================================
 
@@ -373,6 +358,148 @@ class HexagonProperty : public ::google::protobuf::Message /* @@protoc_insertion
 };
 // -------------------------------------------------------------------
 
+class TailProperty : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:server2client.TailProperty) */ {
+ public:
+  TailProperty();
+  virtual ~TailProperty();
+
+  TailProperty(const TailProperty& from);
+
+  inline TailProperty& operator=(const TailProperty& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  TailProperty(TailProperty&& from) noexcept
+    : TailProperty() {
+    *this = ::std::move(from);
+  }
+
+  inline TailProperty& operator=(TailProperty&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields();
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields();
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const TailProperty& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const TailProperty* internal_default_instance() {
+    return reinterpret_cast<const TailProperty*>(
+               &_TailProperty_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    2;
+
+  void Swap(TailProperty* other);
+  friend void swap(TailProperty& a, TailProperty& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline TailProperty* New() const final {
+    return CreateMaybeMessage<TailProperty>(NULL);
+  }
+
+  TailProperty* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<TailProperty>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const TailProperty& from);
+  void MergeFrom(const TailProperty& from);
+  void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(TailProperty* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return NULL;
+  }
+  inline void* MaybeArenaPtr() const {
+    return NULL;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // required .server2client.HexagonCoordinate hex = 1;
+  bool has_hex() const;
+  void clear_hex();
+  static const int kHexFieldNumber = 1;
+  private:
+  const ::server2client::HexagonCoordinate& _internal_hex() const;
+  public:
+  const ::server2client::HexagonCoordinate& hex() const;
+  ::server2client::HexagonCoordinate* release_hex();
+  ::server2client::HexagonCoordinate* mutable_hex();
+  void set_allocated_hex(::server2client::HexagonCoordinate* hex);
+
+  // required .server2client.Move direction = 2;
+  bool has_direction() const;
+  void clear_direction();
+  static const int kDirectionFieldNumber = 2;
+  ::server2client::Move direction() const;
+  void set_direction(::server2client::Move value);
+
+  // required int32 id = 3;
+  bool has_id() const;
+  void clear_id();
+  static const int kIdFieldNumber = 3;
+  ::google::protobuf::int32 id() const;
+  void set_id(::google::protobuf::int32 value);
+
+  // @@protoc_insertion_point(class_scope:server2client.TailProperty)
+ private:
+  void set_has_hex();
+  void clear_has_hex();
+  void set_has_direction();
+  void clear_has_direction();
+  void set_has_id();
+  void clear_has_id();
+
+  // helper for ByteSizeLong()
+  size_t RequiredFieldsByteSizeFallback() const;
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  ::server2client::HexagonCoordinate* hex_;
+  int direction_;
+  ::google::protobuf::int32 id_;
+  friend struct ::protobuf_server2client_2eproto::TableStruct;
+};
+// -------------------------------------------------------------------
+
 class Player : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:server2client.Player) */ {
  public:
   Player();
@@ -415,7 +542,7 @@ class Player : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
                &_Player_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    2;
+    3;
 
   void Swap(Player* other);
   friend void swap(Player& a, Player& b) {
@@ -465,66 +592,6 @@ class Player : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
 
   // nested types ----------------------------------------------------
 
-  typedef Player_State State;
-  static const State DEAD =
-    Player_State_DEAD;
-  static const State ALIVE =
-    Player_State_ALIVE;
-  static inline bool State_IsValid(int value) {
-    return Player_State_IsValid(value);
-  }
-  static const State State_MIN =
-    Player_State_State_MIN;
-  static const State State_MAX =
-    Player_State_State_MAX;
-  static const int State_ARRAYSIZE =
-    Player_State_State_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  State_descriptor() {
-    return Player_State_descriptor();
-  }
-  static inline const ::std::string& State_Name(State value) {
-    return Player_State_Name(value);
-  }
-  static inline bool State_Parse(const ::std::string& name,
-      State* value) {
-    return Player_State_Parse(name, value);
-  }
-
-  typedef Player_Move Move;
-  static const Move UP =
-    Player_Move_UP;
-  static const Move RIGHT_UP =
-    Player_Move_RIGHT_UP;
-  static const Move RIGHT_DOWN =
-    Player_Move_RIGHT_DOWN;
-  static const Move DOWN =
-    Player_Move_DOWN;
-  static const Move LEFT_DOWN =
-    Player_Move_LEFT_DOWN;
-  static const Move LEFT_UP =
-    Player_Move_LEFT_UP;
-  static inline bool Move_IsValid(int value) {
-    return Player_Move_IsValid(value);
-  }
-  static const Move Move_MIN =
-    Player_Move_Move_MIN;
-  static const Move Move_MAX =
-    Player_Move_Move_MAX;
-  static const int Move_ARRAYSIZE =
-    Player_Move_Move_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
-  Move_descriptor() {
-    return Player_Move_descriptor();
-  }
-  static inline const ::std::string& Move_Name(Move value) {
-    return Player_Move_Name(value);
-  }
-  static inline bool Move_Parse(const ::std::string& name,
-      Move* value) {
-    return Player_Move_Parse(name, value);
-  }
-
   // accessors -------------------------------------------------------
 
   // required .server2client.HexagonCoordinate position = 3;
@@ -539,19 +606,19 @@ class Player : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
   ::server2client::HexagonCoordinate* mutable_position();
   void set_allocated_position(::server2client::HexagonCoordinate* position);
 
-  // required .server2client.Player.State status = 1;
-  bool has_status() const;
-  void clear_status();
-  static const int kStatusFieldNumber = 1;
-  ::server2client::Player_State status() const;
-  void set_status(::server2client::Player_State value);
+  // required int32 id = 1;
+  bool has_id() const;
+  void clear_id();
+  static const int kIdFieldNumber = 1;
+  ::google::protobuf::int32 id() const;
+  void set_id(::google::protobuf::int32 value);
 
-  // required .server2client.Player.Move direction = 2;
+  // required .server2client.Move direction = 2;
   bool has_direction() const;
   void clear_direction();
   static const int kDirectionFieldNumber = 2;
-  ::server2client::Player_Move direction() const;
-  void set_direction(::server2client::Player_Move value);
+  ::server2client::Move direction() const;
+  void set_direction(::server2client::Move value);
 
   // required int32 expansion = 4;
   bool has_expansion() const;
@@ -569,8 +636,8 @@ class Player : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
 
   // @@protoc_insertion_point(class_scope:server2client.Player)
  private:
-  void set_has_status();
-  void clear_has_status();
+  void set_has_id();
+  void clear_has_id();
   void set_has_direction();
   void clear_has_direction();
   void set_has_position();
@@ -587,7 +654,7 @@ class Player : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
   ::google::protobuf::internal::HasBits<1> _has_bits_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   ::server2client::HexagonCoordinate* position_;
-  int status_;
+  ::google::protobuf::int32 id_;
   int direction_;
   ::google::protobuf::int32 expansion_;
   ::google::protobuf::int32 kills_;
@@ -637,7 +704,7 @@ class Packet : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
                &_Packet_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    3;
+    4;
 
   void Swap(Packet* other);
   friend void swap(Packet& a, Packet& b) {
@@ -883,34 +950,144 @@ inline void HexagonProperty::set_id(::google::protobuf::int32 value) {
 
 // -------------------------------------------------------------------
 
-// Player
+// TailProperty
 
-// required .server2client.Player.State status = 1;
-inline bool Player::has_status() const {
+// required .server2client.HexagonCoordinate hex = 1;
+inline bool TailProperty::has_hex() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void TailProperty::set_has_hex() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void TailProperty::clear_has_hex() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void TailProperty::clear_hex() {
+  if (hex_ != NULL) hex_->Clear();
+  clear_has_hex();
+}
+inline const ::server2client::HexagonCoordinate& TailProperty::_internal_hex() const {
+  return *hex_;
+}
+inline const ::server2client::HexagonCoordinate& TailProperty::hex() const {
+  const ::server2client::HexagonCoordinate* p = hex_;
+  // @@protoc_insertion_point(field_get:server2client.TailProperty.hex)
+  return p != NULL ? *p : *reinterpret_cast<const ::server2client::HexagonCoordinate*>(
+      &::server2client::_HexagonCoordinate_default_instance_);
+}
+inline ::server2client::HexagonCoordinate* TailProperty::release_hex() {
+  // @@protoc_insertion_point(field_release:server2client.TailProperty.hex)
+  clear_has_hex();
+  ::server2client::HexagonCoordinate* temp = hex_;
+  hex_ = NULL;
+  return temp;
+}
+inline ::server2client::HexagonCoordinate* TailProperty::mutable_hex() {
+  set_has_hex();
+  if (hex_ == NULL) {
+    auto* p = CreateMaybeMessage<::server2client::HexagonCoordinate>(GetArenaNoVirtual());
+    hex_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:server2client.TailProperty.hex)
+  return hex_;
+}
+inline void TailProperty::set_allocated_hex(::server2client::HexagonCoordinate* hex) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete hex_;
+  }
+  if (hex) {
+    ::google::protobuf::Arena* submessage_arena = NULL;
+    if (message_arena != submessage_arena) {
+      hex = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, hex, submessage_arena);
+    }
+    set_has_hex();
+  } else {
+    clear_has_hex();
+  }
+  hex_ = hex;
+  // @@protoc_insertion_point(field_set_allocated:server2client.TailProperty.hex)
+}
+
+// required .server2client.Move direction = 2;
+inline bool TailProperty::has_direction() const {
   return (_has_bits_[0] & 0x00000002u) != 0;
 }
-inline void Player::set_has_status() {
+inline void TailProperty::set_has_direction() {
   _has_bits_[0] |= 0x00000002u;
 }
-inline void Player::clear_has_status() {
+inline void TailProperty::clear_has_direction() {
   _has_bits_[0] &= ~0x00000002u;
 }
-inline void Player::clear_status() {
-  status_ = 0;
-  clear_has_status();
+inline void TailProperty::clear_direction() {
+  direction_ = 0;
+  clear_has_direction();
 }
-inline ::server2client::Player_State Player::status() const {
-  // @@protoc_insertion_point(field_get:server2client.Player.status)
-  return static_cast< ::server2client::Player_State >(status_);
+inline ::server2client::Move TailProperty::direction() const {
+  // @@protoc_insertion_point(field_get:server2client.TailProperty.direction)
+  return static_cast< ::server2client::Move >(direction_);
 }
-inline void Player::set_status(::server2client::Player_State value) {
-  assert(::server2client::Player_State_IsValid(value));
-  set_has_status();
-  status_ = value;
-  // @@protoc_insertion_point(field_set:server2client.Player.status)
+inline void TailProperty::set_direction(::server2client::Move value) {
+  assert(::server2client::Move_IsValid(value));
+  set_has_direction();
+  direction_ = value;
+  // @@protoc_insertion_point(field_set:server2client.TailProperty.direction)
 }
 
-// required .server2client.Player.Move direction = 2;
+// required int32 id = 3;
+inline bool TailProperty::has_id() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void TailProperty::set_has_id() {
+  _has_bits_[0] |= 0x00000004u;
+}
+inline void TailProperty::clear_has_id() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+inline void TailProperty::clear_id() {
+  id_ = 0;
+  clear_has_id();
+}
+inline ::google::protobuf::int32 TailProperty::id() const {
+  // @@protoc_insertion_point(field_get:server2client.TailProperty.id)
+  return id_;
+}
+inline void TailProperty::set_id(::google::protobuf::int32 value) {
+  set_has_id();
+  id_ = value;
+  // @@protoc_insertion_point(field_set:server2client.TailProperty.id)
+}
+
+// -------------------------------------------------------------------
+
+// Player
+
+// required int32 id = 1;
+inline bool Player::has_id() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void Player::set_has_id() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void Player::clear_has_id() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void Player::clear_id() {
+  id_ = 0;
+  clear_has_id();
+}
+inline ::google::protobuf::int32 Player::id() const {
+  // @@protoc_insertion_point(field_get:server2client.Player.id)
+  return id_;
+}
+inline void Player::set_id(::google::protobuf::int32 value) {
+  set_has_id();
+  id_ = value;
+  // @@protoc_insertion_point(field_set:server2client.Player.id)
+}
+
+// required .server2client.Move direction = 2;
 inline bool Player::has_direction() const {
   return (_has_bits_[0] & 0x00000004u) != 0;
 }
@@ -924,12 +1101,12 @@ inline void Player::clear_direction() {
   direction_ = 0;
   clear_has_direction();
 }
-inline ::server2client::Player_Move Player::direction() const {
+inline ::server2client::Move Player::direction() const {
   // @@protoc_insertion_point(field_get:server2client.Player.direction)
-  return static_cast< ::server2client::Player_Move >(direction_);
+  return static_cast< ::server2client::Move >(direction_);
 }
-inline void Player::set_direction(::server2client::Player_Move value) {
-  assert(::server2client::Player_Move_IsValid(value));
+inline void Player::set_direction(::server2client::Move value) {
+  assert(::server2client::Move_IsValid(value));
   set_has_direction();
   direction_ = value;
   // @@protoc_insertion_point(field_set:server2client.Player.direction)
@@ -1144,6 +1321,8 @@ Packet::tails() const {
 
 // -------------------------------------------------------------------
 
+// -------------------------------------------------------------------
+
 
 // @@protoc_insertion_point(namespace_scope)
 
@@ -1152,15 +1331,10 @@ Packet::tails() const {
 namespace google {
 namespace protobuf {
 
-template <> struct is_proto_enum< ::server2client::Player_State> : ::std::true_type {};
+template <> struct is_proto_enum< ::server2client::Move> : ::std::true_type {};
 template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::server2client::Player_State>() {
-  return ::server2client::Player_State_descriptor();
-}
-template <> struct is_proto_enum< ::server2client::Player_Move> : ::std::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::server2client::Player_Move>() {
-  return ::server2client::Player_Move_descriptor();
+inline const EnumDescriptor* GetEnumDescriptor< ::server2client::Move>() {
+  return ::server2client::Move_descriptor();
 }
 
 }  // namespace protobuf

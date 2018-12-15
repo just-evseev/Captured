@@ -5,50 +5,52 @@
 		<Option title="graphics"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\cmake_modules\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake_modules\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\source\;CMake Files\..\..\..\..\source\rapidjson\;CMake Files\..\..\..\..\source\rapidjson\build\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/jason/source/Captured/project/graphics/cmake-build-debug"/>
+				<Option working_dir="/Users/jason/Desktop/Captured/project/graphics/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/jason/source/Captured/project/graphics/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jason/source/Captured/project/graphics/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jason/source/Captured/project/graphics/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jason/source/Captured/project/graphics/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/jason/Desktop/Captured/project/graphics/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jason/Desktop/Captured/project/graphics/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jason/Desktop/Captured/project/graphics/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jason/Desktop/Captured/project/graphics/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/jason/source/Captured/project/graphics/cmake-build-debug"/>
+				<Option working_dir="/Users/jason/Desktop/Captured/project/graphics/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/jason/source/Captured/project/graphics/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jason/source/Captured/project/graphics/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jason/source/Captured/project/graphics/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jason/source/Captured/project/graphics/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/jason/Desktop/Captured/project/graphics/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jason/Desktop/Captured/project/graphics/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jason/Desktop/Captured/project/graphics/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jason/Desktop/Captured/project/graphics/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/jason/source/Captured/project/graphics/cmake-build-debug"/>
+				<Option working_dir="/Users/jason/Desktop/Captured/project/graphics/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/jason/source/Captured/project/graphics/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jason/source/Captured/project/graphics/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jason/source/Captured/project/graphics/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jason/source/Captured/project/graphics/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/jason/Desktop/Captured/project/graphics/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jason/Desktop/Captured/project/graphics/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jason/Desktop/Captured/project/graphics/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jason/Desktop/Captured/project/graphics/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="graphics">
-				<Option output="/Users/jason/source/Captured/project/graphics/cmake-build-debug/graphics" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jason/source/Captured/project/graphics/cmake-build-debug"/>
+				<Option output="/Users/jason/Desktop/Captured/project/graphics/cmake-build-debug/graphics" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jason/Desktop/Captured/project/graphics/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/jason/source/Captured/project/graphics/Modules/headers"/>
-					<Add directory="/Users/jason/source/Captured/project/graphics/."/>
+					<Add directory="/Users/jason/Desktop/Captured/project/graphics/Modules/headers"/>
+					<Add directory="/Users/jason/Desktop/Captured/project/graphics/."/>
+					<Add directory="/Users/jason/Desktop/Captured/project/graphics/Drawable Objects"/>
 					<Add directory="/Library/Frameworks/SFML.framework"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Users/jason/source/Captured/project/graphics/cmake-build-debug"/>
+					<Add directory="/Users/jason/Desktop/Captured/project/graphics/cmake-build-debug"/>
+					<Add directory="/Users/jason/source/rapidjson/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
@@ -57,24 +59,26 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/jason/source/Captured/project/graphics/cmake-build-debug/Makefile&quot;  VERBOSE=1 graphics"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jason/source/Captured/project/graphics/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jason/source/Captured/project/graphics/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jason/source/Captured/project/graphics/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/jason/Desktop/Captured/project/graphics/cmake-build-debug/Makefile&quot;  VERBOSE=1 graphics"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jason/Desktop/Captured/project/graphics/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jason/Desktop/Captured/project/graphics/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jason/Desktop/Captured/project/graphics/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="graphics/fast">
-				<Option output="/Users/jason/source/Captured/project/graphics/cmake-build-debug/graphics" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jason/source/Captured/project/graphics/cmake-build-debug"/>
+				<Option output="/Users/jason/Desktop/Captured/project/graphics/cmake-build-debug/graphics" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jason/Desktop/Captured/project/graphics/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/jason/source/Captured/project/graphics/Modules/headers"/>
-					<Add directory="/Users/jason/source/Captured/project/graphics/."/>
+					<Add directory="/Users/jason/Desktop/Captured/project/graphics/Modules/headers"/>
+					<Add directory="/Users/jason/Desktop/Captured/project/graphics/."/>
+					<Add directory="/Users/jason/Desktop/Captured/project/graphics/Drawable Objects"/>
 					<Add directory="/Library/Frameworks/SFML.framework"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Users/jason/source/Captured/project/graphics/cmake-build-debug"/>
+					<Add directory="/Users/jason/Desktop/Captured/project/graphics/cmake-build-debug"/>
+					<Add directory="/Users/jason/source/rapidjson/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
@@ -83,42 +87,45 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/jason/source/Captured/project/graphics/cmake-build-debug/Makefile&quot;  VERBOSE=1 graphics/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jason/source/Captured/project/graphics/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jason/source/Captured/project/graphics/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jason/source/Captured/project/graphics/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/jason/Desktop/Captured/project/graphics/cmake-build-debug/Makefile&quot;  VERBOSE=1 graphics/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jason/Desktop/Captured/project/graphics/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jason/Desktop/Captured/project/graphics/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jason/Desktop/Captured/project/graphics/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/jason/source/Captured/project/graphics/Cursor.cpp">
+		<Unit filename="/Users/jason/Desktop/Captured/project/graphics/DataPacket.cpp">
 			<Option target="graphics"/>
 		</Unit>
-		<Unit filename="/Users/jason/source/Captured/project/graphics/Cursor.h">
+		<Unit filename="/Users/jason/Desktop/Captured/project/graphics/DataPacket.h">
 			<Option target="graphics"/>
 		</Unit>
-		<Unit filename="/Users/jason/source/Captured/project/graphics/DataPacket.cpp">
+		<Unit filename="/Users/jason/Desktop/Captured/project/graphics/Modules/source/GraphicsController.cpp">
 			<Option target="graphics"/>
 		</Unit>
-		<Unit filename="/Users/jason/source/Captured/project/graphics/DataPacket.h">
+		<Unit filename="/Users/jason/Desktop/Captured/project/graphics/Modules/source/MouseController.cpp">
 			<Option target="graphics"/>
 		</Unit>
-		<Unit filename="/Users/jason/source/Captured/project/graphics/Modules/source/GraphicsController.cpp">
+		<Unit filename="/Users/jason/Desktop/Captured/project/graphics/client2server.pb.cc">
 			<Option target="graphics"/>
 		</Unit>
-		<Unit filename="/Users/jason/source/Captured/project/graphics/Modules/source/MouseController.cpp">
+		<Unit filename="/Users/jason/Desktop/Captured/project/graphics/main.cpp">
 			<Option target="graphics"/>
 		</Unit>
-		<Unit filename="/Users/jason/source/Captured/project/graphics/client2server.pb.cc">
+		<Unit filename="/Users/jason/Desktop/Captured/project/graphics/server2client.pb.cc">
 			<Option target="graphics"/>
 		</Unit>
-		<Unit filename="/Users/jason/source/Captured/project/graphics/main.cpp">
-			<Option target="graphics"/>
-		</Unit>
-		<Unit filename="/Users/jason/source/Captured/project/graphics/CMakeLists.txt">
+		<Unit filename="/Users/jason/Desktop/Captured/project/graphics/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/Users/jason/source/Captured/project/graphics/cmake_modules/FindSFML.cmake">
+		<Unit filename="/Users/jason/Desktop/Captured/project/graphics/cmake_modules/FindSFML.cmake">
 			<Option virtualFolder="CMake Files\cmake_modules\"/>
+		</Unit>
+		<Unit filename="/Users/jason/Desktop/Captured/project/graphics/../../../../source/rapidjson/build/RapidJSONConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\source\rapidjson\build\"/>
+		</Unit>
+		<Unit filename="/Users/jason/Desktop/Captured/project/graphics/../../../../source/rapidjson/build/RapidJSONConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\source\rapidjson\build\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

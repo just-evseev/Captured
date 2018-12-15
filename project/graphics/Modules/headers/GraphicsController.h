@@ -22,6 +22,8 @@
 
 #include "HexSpace.h"
 
+#include "TextureOwner.h"
+
 
 class GraphicsController {
     std::shared_ptr<sf::RenderWindow> window;
@@ -32,20 +34,18 @@ class GraphicsController {
     std::shared_ptr<MouseController> mouse;
     Cursor cursor;
 
-    sf::Texture backgroundTexture;
-    sf::Sprite backgroundSprite;
-
-    sf::Texture gridTexture;
-    sf::Sprite gridSprite;
-
-    sf::Texture playerTexture;
-    sf::Sprite playerSprite;
-
-    sf::Texture areaTexture;
-
     HexSpace hexSpace;
 
     StationaryObject grid;
+    Object background;
+    Object player;
+    Object light;
+    Object reflection;
+
+    sf::Texture lightT;
+    sf::Texture reflectionT;
+
+    TextureOwner texturePack;
 
     Move mov;
     int i = 0;

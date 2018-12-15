@@ -35,6 +35,11 @@ class HexagonPropertyDefaultTypeInternal {
   ::google::protobuf::internal::ExplicitlyConstructed<HexagonProperty>
       _instance;
 } _HexagonProperty_default_instance_;
+class TailPropertyDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<TailProperty>
+      _instance;
+} _TailProperty_default_instance_;
 class PlayerDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<Player>
@@ -76,6 +81,21 @@ static void InitDefaultsHexagonProperty() {
     {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsHexagonProperty}, {
       &protobuf_server2client_2eproto::scc_info_HexagonCoordinate.base,}};
 
+static void InitDefaultsTailProperty() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::server2client::_TailProperty_default_instance_;
+    new (ptr) ::server2client::TailProperty();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::server2client::TailProperty::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<1> scc_info_TailProperty =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsTailProperty}, {
+      &protobuf_server2client_2eproto::scc_info_HexagonCoordinate.base,}};
+
 static void InitDefaultsPlayer() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -110,12 +130,13 @@ static void InitDefaultsPacket() {
 void InitDefaults() {
   ::google::protobuf::internal::InitSCC(&scc_info_HexagonCoordinate.base);
   ::google::protobuf::internal::InitSCC(&scc_info_HexagonProperty.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TailProperty.base);
   ::google::protobuf::internal::InitSCC(&scc_info_Player.base);
   ::google::protobuf::internal::InitSCC(&scc_info_Packet.base);
 }
 
-::google::protobuf::Metadata file_level_metadata[4];
-const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[2];
+::google::protobuf::Metadata file_level_metadata[5];
+const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[1];
 
 const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::server2client::HexagonCoordinate, _has_bits_),
@@ -136,12 +157,23 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::server2client::HexagonProperty, id_),
   0,
   1,
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::server2client::TailProperty, _has_bits_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::server2client::TailProperty, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::server2client::TailProperty, hex_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::server2client::TailProperty, direction_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::server2client::TailProperty, id_),
+  0,
+  1,
+  2,
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::server2client::Player, _has_bits_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::server2client::Player, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::server2client::Player, status_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::server2client::Player, id_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::server2client::Player, direction_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::server2client::Player, position_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::server2client::Player, expansion_),
@@ -166,13 +198,15 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
 static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
   { 0, 7, sizeof(::server2client::HexagonCoordinate)},
   { 9, 16, sizeof(::server2client::HexagonProperty)},
-  { 18, 28, sizeof(::server2client::Player)},
-  { 33, 41, sizeof(::server2client::Packet)},
+  { 18, 26, sizeof(::server2client::TailProperty)},
+  { 29, 39, sizeof(::server2client::Player)},
+  { 44, 52, sizeof(::server2client::Packet)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::google::protobuf::Message*>(&::server2client::_HexagonCoordinate_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::server2client::_HexagonProperty_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::server2client::_TailProperty_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::server2client::_Player_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::server2client::_Packet_default_instance_),
 };
@@ -192,7 +226,7 @@ void protobuf_AssignDescriptorsOnce() {
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 4);
+  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 5);
 }
 
 void AddDescriptorsImpl() {
@@ -201,22 +235,23 @@ void AddDescriptorsImpl() {
       "\n\023server2client.proto\022\rserver2client\")\n\021"
       "HexagonCoordinate\022\t\n\001q\030\001 \002(\005\022\t\n\001r\030\002 \002(\005\""
       "L\n\017HexagonProperty\022-\n\003hex\030\001 \002(\0132 .server"
-      "2client.HexagonCoordinate\022\n\n\002id\030\002 \002(\005\"\254\002"
-      "\n\006Player\022+\n\006status\030\001 \002(\0162\033.server2client"
-      ".Player.State\022-\n\tdirection\030\002 \002(\0162\032.serve"
-      "r2client.Player.Move\0222\n\010position\030\003 \002(\0132 "
-      ".server2client.HexagonCoordinate\022\021\n\texpa"
-      "nsion\030\004 \002(\005\022\r\n\005kills\030\005 \002(\005\"\034\n\005State\022\010\n\004D"
-      "EAD\020\000\022\t\n\005ALIVE\020\001\"R\n\004Move\022\006\n\002UP\020\000\022\014\n\010RIGH"
-      "T_UP\020\001\022\016\n\nRIGHT_DOWN\020\002\022\010\n\004DOWN\020\003\022\r\n\tLEFT"
-      "_DOWN\020\004\022\013\n\007LEFT_UP\020\005\"\216\001\n\006Packet\022&\n\007playe"
-      "rs\030\001 \003(\0132\025.server2client.Player\022-\n\005areas"
-      "\030\002 \003(\0132\036.server2client.HexagonProperty\022-"
-      "\n\005tails\030\003 \003(\0132\036.server2client.HexagonPro"
-      "perty"
+      "2client.HexagonCoordinate\022\n\n\002id\030\002 \002(\005\"q\n"
+      "\014TailProperty\022-\n\003hex\030\001 \002(\0132 .server2clie"
+      "nt.HexagonCoordinate\022&\n\tdirection\030\002 \002(\0162"
+      "\023.server2client.Move\022\n\n\002id\030\003 \002(\005\"\222\001\n\006Pla"
+      "yer\022\n\n\002id\030\001 \002(\005\022&\n\tdirection\030\002 \002(\0162\023.ser"
+      "ver2client.Move\0222\n\010position\030\003 \002(\0132 .serv"
+      "er2client.HexagonCoordinate\022\021\n\texpansion"
+      "\030\004 \002(\005\022\r\n\005kills\030\005 \002(\005\"\216\001\n\006Packet\022&\n\007play"
+      "ers\030\001 \003(\0132\025.server2client.Player\022-\n\005area"
+      "s\030\002 \003(\0132\036.server2client.HexagonProperty\022"
+      "-\n\005tails\030\003 \003(\0132\036.server2client.HexagonPr"
+      "operty*R\n\004Move\022\006\n\002UP\020\000\022\014\n\010RIGHT_UP\020\001\022\016\n\n"
+      "RIGHT_DOWN\020\002\022\010\n\004DOWN\020\003\022\r\n\tLEFT_DOWN\020\004\022\013\n"
+      "\007LEFT_UP\020\005"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 605);
+      descriptor, 650);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "server2client.proto", &protobuf_RegisterTypes);
 }
@@ -233,32 +268,11 @@ struct StaticDescriptorInitializer {
 } static_descriptor_initializer;
 }  // namespace protobuf_server2client_2eproto
 namespace server2client {
-const ::google::protobuf::EnumDescriptor* Player_State_descriptor() {
+const ::google::protobuf::EnumDescriptor* Move_descriptor() {
   protobuf_server2client_2eproto::protobuf_AssignDescriptorsOnce();
   return protobuf_server2client_2eproto::file_level_enum_descriptors[0];
 }
-bool Player_State_IsValid(int value) {
-  switch (value) {
-    case 0:
-    case 1:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const Player_State Player::DEAD;
-const Player_State Player::ALIVE;
-const Player_State Player::State_MIN;
-const Player_State Player::State_MAX;
-const int Player::State_ARRAYSIZE;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-const ::google::protobuf::EnumDescriptor* Player_Move_descriptor() {
-  protobuf_server2client_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_server2client_2eproto::file_level_enum_descriptors[1];
-}
-bool Player_Move_IsValid(int value) {
+bool Move_IsValid(int value) {
   switch (value) {
     case 0:
     case 1:
@@ -272,17 +286,6 @@ bool Player_Move_IsValid(int value) {
   }
 }
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const Player_Move Player::UP;
-const Player_Move Player::RIGHT_UP;
-const Player_Move Player::RIGHT_DOWN;
-const Player_Move Player::DOWN;
-const Player_Move Player::LEFT_DOWN;
-const Player_Move Player::LEFT_UP;
-const Player_Move Player::Move_MIN;
-const Player_Move Player::Move_MAX;
-const int Player::Move_ARRAYSIZE;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 // ===================================================================
 
@@ -892,12 +895,373 @@ void HexagonProperty::InternalSwap(HexagonProperty* other) {
 
 // ===================================================================
 
+void TailProperty::InitAsDefaultInstance() {
+  ::server2client::_TailProperty_default_instance_._instance.get_mutable()->hex_ = const_cast< ::server2client::HexagonCoordinate*>(
+      ::server2client::HexagonCoordinate::internal_default_instance());
+}
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int TailProperty::kHexFieldNumber;
+const int TailProperty::kDirectionFieldNumber;
+const int TailProperty::kIdFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+TailProperty::TailProperty()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_server2client_2eproto::scc_info_TailProperty.base);
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:server2client.TailProperty)
+}
+TailProperty::TailProperty(const TailProperty& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(NULL),
+      _has_bits_(from._has_bits_) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (from.has_hex()) {
+    hex_ = new ::server2client::HexagonCoordinate(*from.hex_);
+  } else {
+    hex_ = NULL;
+  }
+  ::memcpy(&direction_, &from.direction_,
+    static_cast<size_t>(reinterpret_cast<char*>(&id_) -
+    reinterpret_cast<char*>(&direction_)) + sizeof(id_));
+  // @@protoc_insertion_point(copy_constructor:server2client.TailProperty)
+}
+
+void TailProperty::SharedCtor() {
+  ::memset(&hex_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&id_) -
+      reinterpret_cast<char*>(&hex_)) + sizeof(id_));
+}
+
+TailProperty::~TailProperty() {
+  // @@protoc_insertion_point(destructor:server2client.TailProperty)
+  SharedDtor();
+}
+
+void TailProperty::SharedDtor() {
+  if (this != internal_default_instance()) delete hex_;
+}
+
+void TailProperty::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ::google::protobuf::Descriptor* TailProperty::descriptor() {
+  ::protobuf_server2client_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_server2client_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+}
+
+const TailProperty& TailProperty::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_server2client_2eproto::scc_info_TailProperty.base);
+  return *internal_default_instance();
+}
+
+
+void TailProperty::Clear() {
+// @@protoc_insertion_point(message_clear_start:server2client.TailProperty)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
+    GOOGLE_DCHECK(hex_ != NULL);
+    hex_->Clear();
+  }
+  if (cached_has_bits & 6u) {
+    ::memset(&direction_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&id_) -
+        reinterpret_cast<char*>(&direction_)) + sizeof(id_));
+  }
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
+}
+
+bool TailProperty::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:server2client.TailProperty)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // required .server2client.HexagonCoordinate hex = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_hex()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // required .server2client.Move direction = 2;
+      case 2: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          if (::server2client::Move_IsValid(value)) {
+            set_direction(static_cast< ::server2client::Move >(value));
+          } else {
+            mutable_unknown_fields()->AddVarint(
+                2, static_cast< ::google::protobuf::uint64>(value));
+          }
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // required int32 id = 3;
+      case 3: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
+          set_has_id();
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &id_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:server2client.TailProperty)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:server2client.TailProperty)
+  return false;
+#undef DO_
+}
+
+void TailProperty::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:server2client.TailProperty)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  // required .server2client.HexagonCoordinate hex = 1;
+  if (cached_has_bits & 0x00000001u) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      1, this->_internal_hex(), output);
+  }
+
+  // required .server2client.Move direction = 2;
+  if (cached_has_bits & 0x00000002u) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      2, this->direction(), output);
+  }
+
+  // required int32 id = 3;
+  if (cached_has_bits & 0x00000004u) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(3, this->id(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:server2client.TailProperty)
+}
+
+::google::protobuf::uint8* TailProperty::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:server2client.TailProperty)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  // required .server2client.HexagonCoordinate hex = 1;
+  if (cached_has_bits & 0x00000001u) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        1, this->_internal_hex(), deterministic, target);
+  }
+
+  // required .server2client.Move direction = 2;
+  if (cached_has_bits & 0x00000002u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+      2, this->direction(), target);
+  }
+
+  // required int32 id = 3;
+  if (cached_has_bits & 0x00000004u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(3, this->id(), target);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:server2client.TailProperty)
+  return target;
+}
+
+size_t TailProperty::RequiredFieldsByteSizeFallback() const {
+// @@protoc_insertion_point(required_fields_byte_size_fallback_start:server2client.TailProperty)
+  size_t total_size = 0;
+
+  if (has_hex()) {
+    // required .server2client.HexagonCoordinate hex = 1;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *hex_);
+  }
+
+  if (has_direction()) {
+    // required .server2client.Move direction = 2;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->direction());
+  }
+
+  if (has_id()) {
+    // required int32 id = 3;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->id());
+  }
+
+  return total_size;
+}
+size_t TailProperty::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:server2client.TailProperty)
+  size_t total_size = 0;
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
+  if (((_has_bits_[0] & 0x00000007) ^ 0x00000007) == 0) {  // All required fields are present.
+    // required .server2client.HexagonCoordinate hex = 1;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSize(
+        *hex_);
+
+    // required .server2client.Move direction = 2;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->direction());
+
+    // required int32 id = 3;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->id());
+
+  } else {
+    total_size += RequiredFieldsByteSizeFallback();
+  }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void TailProperty::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:server2client.TailProperty)
+  GOOGLE_DCHECK_NE(&from, this);
+  const TailProperty* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const TailProperty>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:server2client.TailProperty)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:server2client.TailProperty)
+    MergeFrom(*source);
+  }
+}
+
+void TailProperty::MergeFrom(const TailProperty& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:server2client.TailProperty)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = from._has_bits_[0];
+  if (cached_has_bits & 7u) {
+    if (cached_has_bits & 0x00000001u) {
+      mutable_hex()->::server2client::HexagonCoordinate::MergeFrom(from.hex());
+    }
+    if (cached_has_bits & 0x00000002u) {
+      direction_ = from.direction_;
+    }
+    if (cached_has_bits & 0x00000004u) {
+      id_ = from.id_;
+    }
+    _has_bits_[0] |= cached_has_bits;
+  }
+}
+
+void TailProperty::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:server2client.TailProperty)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void TailProperty::CopyFrom(const TailProperty& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:server2client.TailProperty)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool TailProperty::IsInitialized() const {
+  if ((_has_bits_[0] & 0x00000007) != 0x00000007) return false;
+  if (has_hex()) {
+    if (!this->hex_->IsInitialized()) return false;
+  }
+  return true;
+}
+
+void TailProperty::Swap(TailProperty* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void TailProperty::InternalSwap(TailProperty* other) {
+  using std::swap;
+  swap(hex_, other->hex_);
+  swap(direction_, other->direction_);
+  swap(id_, other->id_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+}
+
+::google::protobuf::Metadata TailProperty::GetMetadata() const {
+  protobuf_server2client_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_server2client_2eproto::file_level_metadata[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
 void Player::InitAsDefaultInstance() {
   ::server2client::_Player_default_instance_._instance.get_mutable()->position_ = const_cast< ::server2client::HexagonCoordinate*>(
       ::server2client::HexagonCoordinate::internal_default_instance());
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int Player::kStatusFieldNumber;
+const int Player::kIdFieldNumber;
 const int Player::kDirectionFieldNumber;
 const int Player::kPositionFieldNumber;
 const int Player::kExpansionFieldNumber;
@@ -921,9 +1285,9 @@ Player::Player(const Player& from)
   } else {
     position_ = NULL;
   }
-  ::memcpy(&status_, &from.status_,
+  ::memcpy(&id_, &from.id_,
     static_cast<size_t>(reinterpret_cast<char*>(&kills_) -
-    reinterpret_cast<char*>(&status_)) + sizeof(kills_));
+    reinterpret_cast<char*>(&id_)) + sizeof(kills_));
   // @@protoc_insertion_point(copy_constructor:server2client.Player)
 }
 
@@ -968,9 +1332,9 @@ void Player::Clear() {
     position_->Clear();
   }
   if (cached_has_bits & 30u) {
-    ::memset(&status_, 0, static_cast<size_t>(
+    ::memset(&id_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&kills_) -
-        reinterpret_cast<char*>(&status_)) + sizeof(kills_));
+        reinterpret_cast<char*>(&id_)) + sizeof(kills_));
   }
   _has_bits_.Clear();
   _internal_metadata_.Clear();
@@ -986,27 +1350,21 @@ bool Player::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .server2client.Player.State status = 1;
+      // required int32 id = 1;
       case 1: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          int value;
+          set_has_id();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          if (::server2client::Player_State_IsValid(value)) {
-            set_status(static_cast< ::server2client::Player_State >(value));
-          } else {
-            mutable_unknown_fields()->AddVarint(
-                1, static_cast< ::google::protobuf::uint64>(value));
-          }
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &id_)));
         } else {
           goto handle_unusual;
         }
         break;
       }
 
-      // required .server2client.Player.Move direction = 2;
+      // required .server2client.Move direction = 2;
       case 2: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
@@ -1014,8 +1372,8 @@ bool Player::MergePartialFromCodedStream(
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
                  input, &value)));
-          if (::server2client::Player_Move_IsValid(value)) {
-            set_direction(static_cast< ::server2client::Player_Move >(value));
+          if (::server2client::Move_IsValid(value)) {
+            set_direction(static_cast< ::server2client::Move >(value));
           } else {
             mutable_unknown_fields()->AddVarint(
                 2, static_cast< ::google::protobuf::uint64>(value));
@@ -1093,13 +1451,12 @@ void Player::SerializeWithCachedSizes(
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  // required .server2client.Player.State status = 1;
+  // required int32 id = 1;
   if (cached_has_bits & 0x00000002u) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->status(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->id(), output);
   }
 
-  // required .server2client.Player.Move direction = 2;
+  // required .server2client.Move direction = 2;
   if (cached_has_bits & 0x00000004u) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       2, this->direction(), output);
@@ -1136,13 +1493,12 @@ void Player::SerializeWithCachedSizes(
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  // required .server2client.Player.State status = 1;
+  // required int32 id = 1;
   if (cached_has_bits & 0x00000002u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->status(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(1, this->id(), target);
   }
 
-  // required .server2client.Player.Move direction = 2;
+  // required .server2client.Move direction = 2;
   if (cached_has_bits & 0x00000004u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       2, this->direction(), target);
@@ -1184,14 +1540,15 @@ size_t Player::RequiredFieldsByteSizeFallback() const {
         *position_);
   }
 
-  if (has_status()) {
-    // required .server2client.Player.State status = 1;
+  if (has_id()) {
+    // required int32 id = 1;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::EnumSize(this->status());
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->id());
   }
 
   if (has_direction()) {
-    // required .server2client.Player.Move direction = 2;
+    // required .server2client.Move direction = 2;
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::EnumSize(this->direction());
   }
@@ -1227,11 +1584,12 @@ size_t Player::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *position_);
 
-    // required .server2client.Player.State status = 1;
+    // required int32 id = 1;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::EnumSize(this->status());
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->id());
 
-    // required .server2client.Player.Move direction = 2;
+    // required .server2client.Move direction = 2;
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::EnumSize(this->direction());
 
@@ -1281,7 +1639,7 @@ void Player::MergeFrom(const Player& from) {
       mutable_position()->::server2client::HexagonCoordinate::MergeFrom(from.position());
     }
     if (cached_has_bits & 0x00000002u) {
-      status_ = from.status_;
+      id_ = from.id_;
     }
     if (cached_has_bits & 0x00000004u) {
       direction_ = from.direction_;
@@ -1325,7 +1683,7 @@ void Player::Swap(Player* other) {
 void Player::InternalSwap(Player* other) {
   using std::swap;
   swap(position_, other->position_);
-  swap(status_, other->status_);
+  swap(id_, other->id_);
   swap(direction_, other->direction_);
   swap(expansion_, other->expansion_);
   swap(kills_, other->kills_);
@@ -1673,6 +2031,9 @@ template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::server2client::HexagonCoordinate
 }
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::server2client::HexagonProperty* Arena::CreateMaybeMessage< ::server2client::HexagonProperty >(Arena* arena) {
   return Arena::CreateInternal< ::server2client::HexagonProperty >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::server2client::TailProperty* Arena::CreateMaybeMessage< ::server2client::TailProperty >(Arena* arena) {
+  return Arena::CreateInternal< ::server2client::TailProperty >(arena);
 }
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::server2client::Player* Arena::CreateMaybeMessage< ::server2client::Player >(Arena* arena) {
   return Arena::CreateInternal< ::server2client::Player >(arena);
