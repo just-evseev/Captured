@@ -16,7 +16,7 @@ class Cursor : public sf::Drawable {
     std::shared_ptr<MouseController> mouse;
 
  public:
-    explicit Cursor(std::shared_ptr<MouseController> mouse)
+    explicit Cursor(std::shared_ptr<MouseController>& mouse)
                                               : mouse(mouse) {};
 
     void set_texture(sf::Texture& texture) {

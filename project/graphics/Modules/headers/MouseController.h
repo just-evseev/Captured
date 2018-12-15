@@ -34,6 +34,10 @@ class MouseController {
 
     void set_position(sf::Vector2i position);
     void set_position(int x, int y);
+
+    void set_visible(bool visible) {
+        window->setMouseCursorVisible(visible);
+    }
 };
 
 

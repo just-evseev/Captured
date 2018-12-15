@@ -16,7 +16,7 @@ class MovableObject : public Object {
     virtual void set_movement(Move direction, float distance) = 0;
 
     void move() {
-        sprite.move(dx, dy);
+        sf::Transformable::move(dx, dy);
     };
 };
 

@@ -14,60 +14,50 @@ GraphicsController::GraphicsController(std::shared_ptr<sf::RenderWindow> window,
     texturePack.load();
 
     background.set_up(texturePack.get(BACKGROUND));
-    background.setPosition(size.x / 2.f + 0.5f, size.y / 2.f);
+    centralize(background);
 
     grid.set_up(texturePack.get(GRID));
-    grid.setPosition(size.x / 2.f + 0.5f, size.y / 2.f);
+    centralize(grid);
 
     player.set_up(texturePack.get(PLAYER));
-    player.setPosition(size.x / 2.f + 0.5f, size.y / 2.f);
+    centralize(player);
 
     lightT.loadFromFile("./Contents/light.png");
     reflectionT.loadFromFile("./Contents/reflection.png");
 
     light.set_up(lightT);
-    light.setPosition(size.x / 2.f + 0.5f, size.y / 2.f);
+    centralize(light);
 
     reflection.set_up(reflectionT);
-    reflection.setPosition(size.x / 2.f + 0.5f, size.y / 2.f);
-
+    centralize(reflection);
 
     cursor.set_texture(texturePack.get(CURSOR));
-
 }
 
 GraphicsController::~GraphicsController() {}
+
+void GraphicsController::centralize(Object &object) {
+    object.setPosition(window->getView().getCenter());
+}
 
 void GraphicsController::update(std::shared_ptr<DataPacket> data) {
     this->data = data;
     hexSpace.rebuild(data->areas, data->players);
 }
 
+void GraphicsController::set_direction(Move direction) {
+    current = direction;
+    centralize(grid);
+    hexSpace.freak(direction);
+    hexSpace.set_movement(direction, sqrt(3.f) * 59 / 20);
+    grid.set_movement(direction, sqrt(3.f) * 59 / 20);
+}
+
+Move GraphicsController::get_direction() {
+    return current;
+}
+
 void GraphicsController::draw() {
-    if(!i) {
-        float angle = mouse->get_angle_deg();
-
-        if (angle >= -120.f && angle < -60.f)
-            mov = UP;
-        else if (angle >= -60.f && angle < 0.f)
-            mov = RIGHT_UP;
-        else if (angle >= 0.f && angle < 60.f)
-            mov = RIGHT_DOWN;
-        else if (angle >= 60.f && angle < 120.f)
-            mov = DOWN;
-        else if (angle >= 120.f && angle < 180.f)
-            mov = LEFT_DOWN;
-        else if (angle >= -180.f && angle < -120.f)
-            mov = LEFT_UP;
-
-        i = 20;
-        grid.setPosition(size.x / 2.f, size.y / 2.f);
-        hexSpace.freak(mov);
-        hexSpace.set_movement(mov, sqrt(3.f) * 59 / 20);
-        grid.set_movement(mov, sqrt(3.f) * 59 / 20);
-    }
-    --i;
-
     cursor.update();
 
     window->draw(background);

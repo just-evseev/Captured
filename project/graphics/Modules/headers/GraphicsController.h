@@ -47,8 +47,11 @@ class GraphicsController {
 
     TextureOwner texturePack;
 
-    Move mov;
+    Move current;
     int i = 0;
+
+ private:
+    void centralize(Object& object);
 
 
  public:
@@ -56,6 +59,8 @@ class GraphicsController {
     ~GraphicsController();
 
     void update(std::shared_ptr<DataPacket> data);
+    void set_direction(Move direction);
+    Move get_direction();
     void draw();
 };
 

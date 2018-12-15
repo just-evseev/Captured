@@ -133,7 +133,7 @@ class HexSpace : public sf::Drawable {
                         return SHARP_4;
 
                     case LEFT_UP:
-                        return OBTUSE_4;
+                        return SHARP_5;
                 }
 
             if (prev == RIGHT_DOWN)
