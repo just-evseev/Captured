@@ -19,7 +19,7 @@ class StationaryObject : public MovableObject {
     void set_movement(Move direction, float distance) override {
         float alpha = (ANGLE_UNIT * PI) / 180 * direction;
 
-        dx = distance * sin(alpha);
+        dx = -distance * sin(alpha);
         dy = distance * cos(alpha);
     }
 

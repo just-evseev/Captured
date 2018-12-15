@@ -23,7 +23,7 @@ class MovingObject : public MovableObject {
         float alpha = (ANGLE_UNIT * PI) / 180 * direction;
         float beta = (ANGLE_UNIT * PI) / 180 * current_direction;
 
-        dx = (-sin(beta) + sin(alpha)) * distance;
+        dx = (sin(beta) - sin(alpha)) * distance;
         dy = (-cos(beta) + cos(alpha)) * distance;
     }
 

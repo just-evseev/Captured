@@ -34,12 +34,9 @@ GraphicsController::GraphicsController(std::shared_ptr<sf::RenderWindow> window,
 
     cursor.set_texture(texturePack.get(CURSOR));
 
-//    std::clog << "GraphicsController: created" << std::endl;
 }
 
-GraphicsController::~GraphicsController() {
-    // std::clog << "GraphicsController: destroyed" << std::endl;
-}
+GraphicsController::~GraphicsController() {}
 
 void GraphicsController::update(std::shared_ptr<DataPacket> data) {
     this->data = data;

@@ -33,13 +33,13 @@ DataPacket::DataPacket() {
 //    areas.emplace(Hex(-5, 4), 1);
 //    areas.emplace(Hex(-11, 7), 1);
 
-    areas.emplace(Hex(1, -2), 1);
-    areas.emplace(Hex(0, -2), 1);
-    areas.emplace(Hex(1, -3), 1);
-    areas.emplace(Hex(-1, -1), 1);
+    areas.emplace(Hex(0, 0), 1);
+    areas.emplace(Hex(0, 1), 1);
     areas.emplace(Hex(0, -1), 1);
-    areas.emplace(Hex(1, -4), 1);
-    areas.emplace(Hex(1, -5), 1);
+    areas.emplace(Hex(1, 0), 1);
+    areas.emplace(Hex(-1, 0), 1);
+    areas.emplace(Hex(1, -1), 1);
+    areas.emplace(Hex(-1, 1), 1);
 
 
     players.emplace(Hex(5, -7), 1);

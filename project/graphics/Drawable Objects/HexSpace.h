@@ -29,7 +29,6 @@ class HexSpace : public sf::Drawable {
     sf::Texture playerTexture;
     sf::Texture tailTexture;
 
-    sf::Texture areaT[7];
 
     Move prevmove;
 
@@ -56,21 +55,13 @@ class HexSpace : public sf::Drawable {
         areaTexture.loadFromFile("./Contents/sprites/territoria_bez_sveta.png");
         playerTexture.loadFromFile("./Contents/sprites/Igrok.png");
         tailTexture.loadFromFile("./textures/source/Neon/tails/1.png");
-
-        areaT[0].loadFromFile("./Contents/пути - непрозрачные/120x120/obtuse_4.png");
-        areaT[1].loadFromFile("./Contents/пути - непрозрачные/120x120/straight_1.png");
-        areaT[2].loadFromFile("./Contents/пути - непрозрачные/120x120/straight_1.png");
-        areaT[3].loadFromFile("./Contents/пути - непрозрачные/120x120/obtuse_3.png");
-        areaT[4].loadFromFile("./Contents/пути - непрозрачные/120x120/sharp_2.png");
-        areaT[5].loadFromFile("./Contents/пути - непрозрачные/120x120/sharp_6.png");
-        areaT[6].loadFromFile("./Contents/пути - непрозрачные/120x120/obtuse_4.png");
     }
 
     void rebuild(std::map<Hex, int>& areas, std::map<Hex, int>& players) {
         int i = 0;
         for (auto& area : areas) {
             auto areaObj = std::make_unique<StationaryObject>();
-            areaObj->set_up(areaT[i]);
+            areaObj->set_up(areaTexture);
 
             areaObj->setPosition(pixel(area.first));
 
@@ -108,53 +99,114 @@ class HexSpace : public sf::Drawable {
         playerObj->set_move(ii[i]);
         i++;
 
-        auto guide = [](Move prevmove, Move newmove) -> TailType {
-            if (abs(prevmove - newmove == 0)) {
-                if (prevmove == UP || prevmove == DOWN)
-                    return TailType::STRAIGHT_1;
+        auto guide = [](Move prev, Move cur) -> TailType {
+            if (prev == UP)
+                switch (cur) {
+                    case UP:
+                        return STRAIGHT_1;
 
-                if (prevmove == LEFT_UP || prevmove == RIGHT_DOWN)
-                    return TailType::STRAIGHT_2;
+                    case RIGHT_UP:
+                        return OBTUSE_2;
 
-                if (prevmove == RIGHT_UP || prevmove == LEFT_DOWN)
-                    return TailType::STRAIGHT_3;
-            }
+                    case RIGHT_DOWN:
+                        return SHARP_3;
 
-            if ((prevmove == UP && newmove == RIGHT_UP) || (newmove == DOWN && prevmove == LEFT_DOWN))
-                return TailType::OBTUSE_1;
+                    case LEFT_DOWN:
+                        return SHARP_4;
 
-            if ((prevmove == RIGHT_UP && newmove == RIGHT_DOWN) || (newmove == RIGHT_UP && prevmove == RIGHT_DOWN))
-                return TailType::SHARP_2;
+                    case LEFT_UP:
+                        return OBTUSE_4;
+                }
 
-            if ((prevmove == RIGHT_DOWN && newmove == DOWN) || (newmove == RIGHT_DOWN && prevmove == DOWN))
-                return TailType::SHARP_3;
+            if (prev == RIGHT_UP)
+                switch (cur) {
+                    case UP:
+                        return OBTUSE_5;
 
-            if ((prevmove == DOWN && newmove == LEFT_DOWN) || (newmove == DOWN && prevmove == LEFT_DOWN))
-                return TailType::SHARP_4;
+                    case RIGHT_UP:
+                        return STRAIGHT_2;
 
-            if ((prevmove == LEFT_DOWN && newmove == LEFT_UP) || (newmove == LEFT_DOWN && prevmove == LEFT_UP))
-                return TailType::SHARP_5;
+                    case RIGHT_DOWN:
+                        return OBTUSE_3;
 
-            if ((prevmove == LEFT_UP && newmove == UP) || (newmove == LEFT_UP && prevmove == UP))
-                return TailType::SHARP_6;
+                    case DOWN:
+                        return SHARP_4;
 
-            if ((prevmove == UP && newmove == RIGHT_DOWN) || (newmove == UP && prevmove == RIGHT_DOWN))
-                return TailType::OBTUSE_1;
+                    case LEFT_UP:
+                        return OBTUSE_4;
+                }
 
-            if ((prevmove == RIGHT_UP && newmove == DOWN) || (newmove == RIGHT_UP && prevmove == DOWN))
-                return TailType::OBTUSE_2;
+            if (prev == RIGHT_DOWN)
+                switch (cur) {
+                    case UP:
+                        return SHARP_6;
 
-            if ((prevmove == RIGHT_DOWN && newmove == LEFT_DOWN) || (newmove == RIGHT_DOWN && prevmove == LEFT_DOWN))
-                return TailType::OBTUSE_3;
+                    case RIGHT_UP:
+                        return OBTUSE_6;
 
-            if ((prevmove == DOWN && newmove == LEFT_UP) || (newmove == DOWN && prevmove == LEFT_UP))
-                return TailType::OBTUSE_4;
+                    case RIGHT_DOWN:
+                        return STRAIGHT_3;
 
-            if ((prevmove == LEFT_DOWN && newmove == UP) || (newmove == LEFT_DOWN && prevmove == UP))
-                return TailType::OBTUSE_5;
+                    case DOWN:
+                        return OBTUSE_4;
 
-            if ((prevmove == LEFT_UP && newmove == RIGHT_UP) || (newmove == LEFT_UP && prevmove == RIGHT_UP))
-                return TailType::OBTUSE_6;
+                    case LEFT_DOWN:
+                        return SHARP_5;
+                }
+
+            if (prev == DOWN)
+                switch (cur) {
+                    case RIGHT_UP:
+                        return SHARP_1;
+
+                    case RIGHT_DOWN:
+                        return OBTUSE_1;
+
+                    case DOWN:
+                        return STRAIGHT_1;
+
+                    case LEFT_DOWN:
+                        return OBTUSE_5;
+
+                    case LEFT_UP:
+                        return SHARP_6;
+                }
+
+            if (prev == LEFT_DOWN)
+                switch (cur) {
+                    case UP:
+                        return SHARP_1;
+
+                    case RIGHT_DOWN:
+                        return SHARP_2;
+
+                    case DOWN:
+                        return OBTUSE_2;
+
+                    case LEFT_DOWN:
+                        return STRAIGHT_2;
+
+                    case LEFT_UP:
+                        return OBTUSE_6;
+                }
+
+            if (prev == LEFT_UP)
+                switch (cur) {
+                    case UP:
+                        return OBTUSE_1;
+
+                    case RIGHT_UP:
+                        return SHARP_2;
+
+                    case DOWN:
+                        return SHARP_3;
+
+                    case LEFT_DOWN:
+                        return OBTUSE_3;
+
+                    case LEFT_UP:
+                        return STRAIGHT_3;
+                }
         };
 
         auto tail = std::make_unique<StationaryObject>();
@@ -163,9 +215,8 @@ class HexSpace : public sf::Drawable {
 
         tail->setPosition(window_size.x / 2.f, window_size.y / 2.f);
 
-        std::cout << newmove << std::endl;
 
-        // tail->set_alpha();
+        //tail->set_alpha();
         tails.push(std::move(tail));
         prevmove = newmove;
     }

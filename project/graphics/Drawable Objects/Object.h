@@ -37,11 +37,6 @@ class SpriteListManager {
 class Object : public sf::Drawable, public sf::Transformable {
  protected:
     sf::Sprite sprite;
-    uint lines = 1;
-    uint cols = 1;
-
-    sf::Vector2u single_size;
-    sf::Vector2u current_;
 
     std::unique_ptr<SpriteListManager> spriteList;
 
