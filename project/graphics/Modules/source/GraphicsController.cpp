@@ -37,7 +37,8 @@ GraphicsController::GraphicsController(std::shared_ptr<sf::RenderWindow> window,
 GraphicsController::~GraphicsController() {}
 
 void GraphicsController::centralize(Object &object) {
-    object.setPosition(window->getView().getCenter());
+    auto size = window->getSize();
+    object.setPosition(size.x / 2.f, size.y / 2.f);
 }
 
 void GraphicsController::update(std::shared_ptr<DataPacket> data) {
@@ -63,10 +64,10 @@ void GraphicsController::draw() {
     window->draw(background);
 
     window->draw(grid);
-    grid.move();
+    //grid.move();
 
     window->draw(hexSpace);
-    hexSpace.move();
+    //hexSpace.move();
 
     window->draw(reflection);
     window->draw(light);

@@ -223,7 +223,7 @@ class HexSpace : public sf::Drawable {
 
  private:
     void draw(sf::RenderTarget& target, sf::RenderStates states) const override {
-        target.draw(areas);
+        //target.draw(areas);
         target.draw(tails);
         target.draw(*playerObj);
     }
