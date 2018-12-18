@@ -38,6 +38,13 @@ struct CellState {
             : id(id), state(state) {};
 };
 
+struct QPlusState {
+    int q;
+    int state;
+    QPlusState(int q, int state)
+            : q(q), state(state) {};
+};
+
 typedef std::map<Hex, int> Areas;
 typedef std::map<Hex, CellState> Tails;
 typedef std::map<int, Person> Persons;

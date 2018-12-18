@@ -59,7 +59,7 @@ void serverCycle() {
             int msg;
 
             if (packetReceive >> msg) {
-                std::cout << socket[i]->getRemoteAddress() << ": " << msg << std::endl;
+                std::cout << std::endl << socket[i]->getRemoteAddress() << ": " << msg << std::endl;
                 switch (msg) {
                 case 0:
                     renderManager.getPlayerCoord(Move::UP, i);

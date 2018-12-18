@@ -29,6 +29,9 @@ private:
 
     const int MAP_SIZE = 10; // Размер карты (кастомизируется под поле на клиенте)
 
+    void printArea();
+    void printTails();
+
     Persons persons;
     Areas areas;
     Tails tails;
