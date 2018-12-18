@@ -8,6 +8,7 @@
 #include <map>
 
 #include "Hex.h"
+#include "DataPacket.h"
 
 #include "TextureOwner.h"
 #include "ObjectArray.h"
@@ -57,19 +58,27 @@ class HexSpace : public sf::Drawable {
         tailTexture.loadFromFile("./textures/source/Neon/tails/1.png");
     }
 
-    void rebuild(std::map<Hex, int>& areas, std::map<Hex, int>& players) {
-        int i = 0;
-        for (auto& area : areas) {
+    void rebuild(std::shared_ptr<DataPacket> data) {
+        for (auto& area : data->areas) {
             auto areaObj = std::make_unique<StationaryObject>();
             areaObj->set_up(areaTexture);
 
             areaObj->setPosition(pixel(area.first));
 
             this->areas.push(std::move(areaObj));
-            i++;
         }
 
-        for (auto& player : players) {
+        for (auto& tail : data->tails) {
+            auto tailObj = std::make_unique<StationaryObject>();
+            tailObj->set_up(areaTexture);
+            tailObj->set_alpha();
+
+            tailObj->setPosition(pixel(tail.first));
+
+            this->areas.push(std::move(tailObj));
+        }
+
+        for (auto& player : data->players) {
             playerObj = std::make_unique<MovingObject>();
             playerObj->set_up(playerTexture);
 
@@ -77,7 +86,7 @@ class HexSpace : public sf::Drawable {
 
             playerObj->set_move(UP);
             playerObj->set_color();
-            //this->players.push(std::move(playerObj));
+            this->players.push(std::move(playerObj));
         }
     }
 
@@ -223,7 +232,7 @@ class HexSpace : public sf::Drawable {
 
  private:
     void draw(sf::RenderTarget& target, sf::RenderStates states) const override {
-        //target.draw(areas);
+        target.draw(areas);
         target.draw(tails);
         //target.draw(*playerObj);
     }

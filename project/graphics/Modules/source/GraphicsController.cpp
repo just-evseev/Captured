@@ -43,13 +43,13 @@ void GraphicsController::centralize(Object &object) {
 
 void GraphicsController::update(std::shared_ptr<DataPacket> data) {
     this->data = data;
-    hexSpace.rebuild(data->areas, data->players);
+    hexSpace.rebuild(data);
 }
 
 void GraphicsController::set_direction(Move direction) {
     current = direction;
     centralize(grid);
-    hexSpace.freak(direction);
+    //hexSpace.freak(direction);
     hexSpace.set_movement(direction, sqrt(3.f) * 59 / 20);
     grid.set_movement(direction, sqrt(3.f) * 59 / 20);
 }

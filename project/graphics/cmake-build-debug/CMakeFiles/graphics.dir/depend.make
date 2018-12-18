@@ -4,6 +4,7 @@
 CMakeFiles/graphics.dir/DataPacket.cpp.o: ../DataPacket.cpp
 CMakeFiles/graphics.dir/DataPacket.cpp.o: ../DataPacket.h
 CMakeFiles/graphics.dir/DataPacket.cpp.o: ../Hex.h
+CMakeFiles/graphics.dir/DataPacket.cpp.o: ../Person\ Struct.h
 CMakeFiles/graphics.dir/DataPacket.cpp.o: /usr/local/include/SFML/Config.hpp
 CMakeFiles/graphics.dir/DataPacket.cpp.o: /usr/local/include/SFML/Graphics.hpp
 CMakeFiles/graphics.dir/DataPacket.cpp.o: /usr/local/include/SFML/Graphics/BlendMode.hpp
@@ -84,6 +85,7 @@ CMakeFiles/graphics.dir/Modules/source/GraphicsController.cpp.o: .././DataPacket
 CMakeFiles/graphics.dir/Modules/source/GraphicsController.cpp.o: .././Hex.h
 CMakeFiles/graphics.dir/Modules/source/GraphicsController.cpp.o: .././JSONParser.h
 CMakeFiles/graphics.dir/Modules/source/GraphicsController.cpp.o: .././Move.h
+CMakeFiles/graphics.dir/Modules/source/GraphicsController.cpp.o: .././Person\ Struct.h
 CMakeFiles/graphics.dir/Modules/source/GraphicsController.cpp.o: .././TextureOwner.h
 CMakeFiles/graphics.dir/Modules/source/GraphicsController.cpp.o: .././Textures.h
 CMakeFiles/graphics.dir/Modules/source/GraphicsController.cpp.o: ../Drawable\ Objects/HexSpace.h
@@ -312,6 +314,9 @@ CMakeFiles/graphics.dir/client2server.pb.cc.o: /usr/local/include/google/protobu
 CMakeFiles/graphics.dir/client2server.pb.cc.o: /usr/local/include/google/protobuf/wire_format_lite_inl.h
 
 CMakeFiles/graphics.dir/main.cpp.o: .././Cursor.h
+CMakeFiles/graphics.dir/main.cpp.o: .././JSONParser.h
+CMakeFiles/graphics.dir/main.cpp.o: .././TextureOwner.h
+CMakeFiles/graphics.dir/main.cpp.o: .././Textures.h
 CMakeFiles/graphics.dir/main.cpp.o: ../Drawable\ Objects/HexSpace.h
 CMakeFiles/graphics.dir/main.cpp.o: ../Drawable\ Objects/MovableObject.h
 CMakeFiles/graphics.dir/main.cpp.o: ../Drawable\ Objects/MovingObject.h
@@ -320,17 +325,11 @@ CMakeFiles/graphics.dir/main.cpp.o: ../Drawable\ Objects/ObjectArray.h
 CMakeFiles/graphics.dir/main.cpp.o: ../Drawable\ Objects/StationaryObject.h
 CMakeFiles/graphics.dir/main.cpp.o: ../Modules/headers/GraphicsController.h
 CMakeFiles/graphics.dir/main.cpp.o: ../Modules/headers/MouseController.h
-CMakeFiles/graphics.dir/main.cpp.o: ../Client2ServerParser.h
 CMakeFiles/graphics.dir/main.cpp.o: ../DataPacket.h
 CMakeFiles/graphics.dir/main.cpp.o: ../Hex.h
-CMakeFiles/graphics.dir/main.cpp.o: ../JSONParser.h
 CMakeFiles/graphics.dir/main.cpp.o: ../Move.h
-CMakeFiles/graphics.dir/main.cpp.o: ../Server2ClientParser.h
-CMakeFiles/graphics.dir/main.cpp.o: ../TextureOwner.h
-CMakeFiles/graphics.dir/main.cpp.o: ../Textures.h
-CMakeFiles/graphics.dir/main.cpp.o: ../client2server.pb.h
+CMakeFiles/graphics.dir/main.cpp.o: ../Person\ Struct.h
 CMakeFiles/graphics.dir/main.cpp.o: ../main.cpp
-CMakeFiles/graphics.dir/main.cpp.o: ../server2client.pb.h
 CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/SFML/Config.hpp
 CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/SFML/Graphics.hpp
 CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/SFML/Graphics/BlendMode.hpp
@@ -363,6 +362,18 @@ CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/SFML/Graphics/Vertex.hpp
 CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/SFML/Graphics/VertexArray.hpp
 CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/SFML/Graphics/VertexBuffer.hpp
 CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/SFML/Graphics/View.hpp
+CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/SFML/Network.hpp
+CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/SFML/Network/Export.hpp
+CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/SFML/Network/Ftp.hpp
+CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/SFML/Network/Http.hpp
+CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/SFML/Network/IpAddress.hpp
+CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/SFML/Network/Packet.hpp
+CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/SFML/Network/Socket.hpp
+CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/SFML/Network/SocketHandle.hpp
+CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/SFML/Network/SocketSelector.hpp
+CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/SFML/Network/TcpListener.hpp
+CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/SFML/Network/TcpSocket.hpp
+CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/SFML/Network/UdpSocket.hpp
 CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/SFML/System.hpp
 CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/SFML/System/Clock.hpp
 CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/SFML/System/Err.hpp
@@ -405,43 +416,6 @@ CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/SFML/Window/VideoMode.hpp
 CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/SFML/Window/Window.hpp
 CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/SFML/Window/WindowHandle.hpp
 CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/SFML/Window/WindowStyle.hpp
-CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/google/protobuf/arena.h
-CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/google/protobuf/arena_impl.h
-CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/google/protobuf/arenastring.h
-CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/google/protobuf/descriptor.h
-CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/google/protobuf/extension_set.h
-CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/google/protobuf/generated_enum_reflection.h
-CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/google/protobuf/generated_enum_util.h
-CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/google/protobuf/generated_message_table_driven.h
-CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/google/protobuf/generated_message_util.h
-CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/google/protobuf/has_bits.h
-CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/google/protobuf/implicit_weak_message.h
-CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/google/protobuf/inlined_string_field.h
-CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/google/protobuf/io/coded_stream.h
-CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/google/protobuf/map.h
-CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/google/protobuf/map_entry_lite.h
-CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/google/protobuf/map_field_lite.h
-CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/google/protobuf/map_type_handler.h
-CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/google/protobuf/message.h
-CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/google/protobuf/message_lite.h
-CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/google/protobuf/metadata.h
-CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/google/protobuf/metadata_lite.h
-CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/google/protobuf/repeated_field.h
-CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/google/protobuf/stubs/callback.h
-CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/google/protobuf/stubs/casts.h
-CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/google/protobuf/stubs/common.h
-CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/google/protobuf/stubs/fastmem.h
-CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/google/protobuf/stubs/hash.h
-CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/google/protobuf/stubs/logging.h
-CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/google/protobuf/stubs/macros.h
-CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/google/protobuf/stubs/mutex.h
-CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/google/protobuf/stubs/once.h
-CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/google/protobuf/stubs/platform_macros.h
-CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/google/protobuf/stubs/port.h
-CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/google/protobuf/stubs/stringpiece.h
-CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/google/protobuf/unknown_field_set.h
-CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/google/protobuf/wire_format_lite.h
-CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/google/protobuf/wire_format_lite_inl.h
 CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/rapidjson/allocators.h
 CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/rapidjson/document.h
 CMakeFiles/graphics.dir/main.cpp.o: /usr/local/include/rapidjson/encodedstream.h
