@@ -64,10 +64,10 @@ void GraphicsController::draw() {
     window->draw(background);
 
     window->draw(grid);
-    //grid.move();
+    grid.move();
 
     window->draw(hexSpace);
-    //hexSpace.move();
+    hexSpace.move();
 
     window->draw(reflection);
     window->draw(light);

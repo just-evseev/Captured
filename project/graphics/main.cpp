@@ -20,6 +20,8 @@ int main() {
     auto window = std::make_shared<sf::RenderWindow>(sf::VideoMode(WIDTH, HEIGHT), PROGRAM_NAME, sf::Style::Fullscreen);
 
     window->setVerticalSyncEnabled(true);
+    /// Use next line if speed is too fast & comment previous line
+    //window->setFramerateLimit(60);
 
     auto mouse = std::make_shared<MouseController>(window);
     mouse->set_visible(false);
@@ -36,6 +38,7 @@ int main() {
     Move direction;
 
     // Main cycle
+
     while (window->isOpen()) {
 
         sf::Event event;
@@ -47,6 +50,7 @@ int main() {
                 window->close();
         }
 
+        // Getting current direction
         Move momental_direction;
 
         float angle = mouse->get_angle_deg();
@@ -73,12 +77,17 @@ int main() {
             graph.set_direction(direction);
             i = tacts;
         }
+        i--;
 
         graph.draw();
 
+
         window->display();
-        i--;
     }
 
     return 0;
 }
+
+Move get_enum() {
+
+};

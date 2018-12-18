@@ -1,4 +1,4 @@
-# Install script for directory: /Users/jason/Desktop/Captured/project/graphics
+# Install script for directory: /Users/jason/Desktop/Another Duplicate/Captured/project/graphics
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/jason/Desktop/Captured/project/graphics/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

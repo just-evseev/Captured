@@ -101,7 +101,7 @@ class HexSpace : public sf::Drawable {
 
         auto guide = [](Move prev, Move cur) -> TailType {
             if (prev == UP)
-                switch (cur) {
+                switch ( cur) {
                     case UP:
                         return STRAIGHT_1;
 
@@ -225,7 +225,7 @@ class HexSpace : public sf::Drawable {
     void draw(sf::RenderTarget& target, sf::RenderStates states) const override {
         //target.draw(areas);
         target.draw(tails);
-        target.draw(*playerObj);
+        //target.draw(*playerObj);
     }
 };
 

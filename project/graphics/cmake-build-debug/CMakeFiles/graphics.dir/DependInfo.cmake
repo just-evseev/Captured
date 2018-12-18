@@ -4,12 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/jason/Desktop/Captured/project/graphics/DataPacket.cpp" "/Users/jason/Desktop/Captured/project/graphics/cmake-build-debug/CMakeFiles/graphics.dir/DataPacket.cpp.o"
-  "/Users/jason/Desktop/Captured/project/graphics/Modules/source/GraphicsController.cpp" "/Users/jason/Desktop/Captured/project/graphics/cmake-build-debug/CMakeFiles/graphics.dir/Modules/source/GraphicsController.cpp.o"
-  "/Users/jason/Desktop/Captured/project/graphics/Modules/source/MouseController.cpp" "/Users/jason/Desktop/Captured/project/graphics/cmake-build-debug/CMakeFiles/graphics.dir/Modules/source/MouseController.cpp.o"
-  "/Users/jason/Desktop/Captured/project/graphics/client2server.pb.cc" "/Users/jason/Desktop/Captured/project/graphics/cmake-build-debug/CMakeFiles/graphics.dir/client2server.pb.cc.o"
-  "/Users/jason/Desktop/Captured/project/graphics/main.cpp" "/Users/jason/Desktop/Captured/project/graphics/cmake-build-debug/CMakeFiles/graphics.dir/main.cpp.o"
-  "/Users/jason/Desktop/Captured/project/graphics/server2client.pb.cc" "/Users/jason/Desktop/Captured/project/graphics/cmake-build-debug/CMakeFiles/graphics.dir/server2client.pb.cc.o"
+  "/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/DataPacket.cpp" "/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/cmake-build-debug/CMakeFiles/graphics.dir/DataPacket.cpp.o"
+  "/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/Modules/source/GraphicsController.cpp" "/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/cmake-build-debug/CMakeFiles/graphics.dir/Modules/source/GraphicsController.cpp.o"
+  "/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/Modules/source/MouseController.cpp" "/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/cmake-build-debug/CMakeFiles/graphics.dir/Modules/source/MouseController.cpp.o"
+  "/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/client2server.pb.cc" "/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/cmake-build-debug/CMakeFiles/graphics.dir/client2server.pb.cc.o"
+  "/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/main.cpp" "/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/cmake-build-debug/CMakeFiles/graphics.dir/main.cpp.o"
+  "/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/server2client.pb.cc" "/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/cmake-build-debug/CMakeFiles/graphics.dir/server2client.pb.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
@@ -21,7 +21,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/Library/Frameworks/SFML.framework"
   "/usr/local/include"
   "."
-  "/Users/jason/source/rapidjson/include"
+  "/usr/local/lib/cmake/RapidJSON/../../../include"
   )
 
 # Targets to which this target links.

@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/jason/Desktop/Captured/project/graphics
+CMAKE_SOURCE_DIR = "/Users/jason/Desktop/Another Duplicate/Captured/project/graphics"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/jason/Desktop/Captured/project/graphics/cmake-build-debug
+CMAKE_BINARY_DIR = "/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/graphics.dir/depend.make
@@ -59,81 +59,81 @@ include CMakeFiles/graphics.dir/flags.make
 
 CMakeFiles/graphics.dir/main.cpp.o: CMakeFiles/graphics.dir/flags.make
 CMakeFiles/graphics.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jason/Desktop/Captured/project/graphics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/graphics.dir/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/main.cpp.o -c /Users/jason/Desktop/Captured/project/graphics/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/graphics.dir/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/main.cpp.o -c "/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/main.cpp"
 
 CMakeFiles/graphics.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jason/Desktop/Captured/project/graphics/main.cpp > CMakeFiles/graphics.dir/main.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/main.cpp" > CMakeFiles/graphics.dir/main.cpp.i
 
 CMakeFiles/graphics.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jason/Desktop/Captured/project/graphics/main.cpp -o CMakeFiles/graphics.dir/main.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/main.cpp" -o CMakeFiles/graphics.dir/main.cpp.s
 
 CMakeFiles/graphics.dir/Modules/source/GraphicsController.cpp.o: CMakeFiles/graphics.dir/flags.make
 CMakeFiles/graphics.dir/Modules/source/GraphicsController.cpp.o: ../Modules/source/GraphicsController.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jason/Desktop/Captured/project/graphics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/graphics.dir/Modules/source/GraphicsController.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/Modules/source/GraphicsController.cpp.o -c /Users/jason/Desktop/Captured/project/graphics/Modules/source/GraphicsController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/graphics.dir/Modules/source/GraphicsController.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/Modules/source/GraphicsController.cpp.o -c "/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/Modules/source/GraphicsController.cpp"
 
 CMakeFiles/graphics.dir/Modules/source/GraphicsController.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/Modules/source/GraphicsController.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jason/Desktop/Captured/project/graphics/Modules/source/GraphicsController.cpp > CMakeFiles/graphics.dir/Modules/source/GraphicsController.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/Modules/source/GraphicsController.cpp" > CMakeFiles/graphics.dir/Modules/source/GraphicsController.cpp.i
 
 CMakeFiles/graphics.dir/Modules/source/GraphicsController.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/Modules/source/GraphicsController.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jason/Desktop/Captured/project/graphics/Modules/source/GraphicsController.cpp -o CMakeFiles/graphics.dir/Modules/source/GraphicsController.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/Modules/source/GraphicsController.cpp" -o CMakeFiles/graphics.dir/Modules/source/GraphicsController.cpp.s
 
 CMakeFiles/graphics.dir/Modules/source/MouseController.cpp.o: CMakeFiles/graphics.dir/flags.make
 CMakeFiles/graphics.dir/Modules/source/MouseController.cpp.o: ../Modules/source/MouseController.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jason/Desktop/Captured/project/graphics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/graphics.dir/Modules/source/MouseController.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/Modules/source/MouseController.cpp.o -c /Users/jason/Desktop/Captured/project/graphics/Modules/source/MouseController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/graphics.dir/Modules/source/MouseController.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/Modules/source/MouseController.cpp.o -c "/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/Modules/source/MouseController.cpp"
 
 CMakeFiles/graphics.dir/Modules/source/MouseController.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/Modules/source/MouseController.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jason/Desktop/Captured/project/graphics/Modules/source/MouseController.cpp > CMakeFiles/graphics.dir/Modules/source/MouseController.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/Modules/source/MouseController.cpp" > CMakeFiles/graphics.dir/Modules/source/MouseController.cpp.i
 
 CMakeFiles/graphics.dir/Modules/source/MouseController.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/Modules/source/MouseController.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jason/Desktop/Captured/project/graphics/Modules/source/MouseController.cpp -o CMakeFiles/graphics.dir/Modules/source/MouseController.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/Modules/source/MouseController.cpp" -o CMakeFiles/graphics.dir/Modules/source/MouseController.cpp.s
 
 CMakeFiles/graphics.dir/DataPacket.cpp.o: CMakeFiles/graphics.dir/flags.make
 CMakeFiles/graphics.dir/DataPacket.cpp.o: ../DataPacket.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jason/Desktop/Captured/project/graphics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/graphics.dir/DataPacket.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/DataPacket.cpp.o -c /Users/jason/Desktop/Captured/project/graphics/DataPacket.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/graphics.dir/DataPacket.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/DataPacket.cpp.o -c "/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/DataPacket.cpp"
 
 CMakeFiles/graphics.dir/DataPacket.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/DataPacket.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jason/Desktop/Captured/project/graphics/DataPacket.cpp > CMakeFiles/graphics.dir/DataPacket.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/DataPacket.cpp" > CMakeFiles/graphics.dir/DataPacket.cpp.i
 
 CMakeFiles/graphics.dir/DataPacket.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/DataPacket.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jason/Desktop/Captured/project/graphics/DataPacket.cpp -o CMakeFiles/graphics.dir/DataPacket.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/DataPacket.cpp" -o CMakeFiles/graphics.dir/DataPacket.cpp.s
 
 CMakeFiles/graphics.dir/client2server.pb.cc.o: CMakeFiles/graphics.dir/flags.make
 CMakeFiles/graphics.dir/client2server.pb.cc.o: ../client2server.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jason/Desktop/Captured/project/graphics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/graphics.dir/client2server.pb.cc.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/client2server.pb.cc.o -c /Users/jason/Desktop/Captured/project/graphics/client2server.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/graphics.dir/client2server.pb.cc.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/client2server.pb.cc.o -c "/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/client2server.pb.cc"
 
 CMakeFiles/graphics.dir/client2server.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/client2server.pb.cc.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jason/Desktop/Captured/project/graphics/client2server.pb.cc > CMakeFiles/graphics.dir/client2server.pb.cc.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/client2server.pb.cc" > CMakeFiles/graphics.dir/client2server.pb.cc.i
 
 CMakeFiles/graphics.dir/client2server.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/client2server.pb.cc.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jason/Desktop/Captured/project/graphics/client2server.pb.cc -o CMakeFiles/graphics.dir/client2server.pb.cc.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/client2server.pb.cc" -o CMakeFiles/graphics.dir/client2server.pb.cc.s
 
 CMakeFiles/graphics.dir/server2client.pb.cc.o: CMakeFiles/graphics.dir/flags.make
 CMakeFiles/graphics.dir/server2client.pb.cc.o: ../server2client.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jason/Desktop/Captured/project/graphics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/graphics.dir/server2client.pb.cc.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/server2client.pb.cc.o -c /Users/jason/Desktop/Captured/project/graphics/server2client.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/graphics.dir/server2client.pb.cc.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/server2client.pb.cc.o -c "/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/server2client.pb.cc"
 
 CMakeFiles/graphics.dir/server2client.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/server2client.pb.cc.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jason/Desktop/Captured/project/graphics/server2client.pb.cc > CMakeFiles/graphics.dir/server2client.pb.cc.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/server2client.pb.cc" > CMakeFiles/graphics.dir/server2client.pb.cc.i
 
 CMakeFiles/graphics.dir/server2client.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/server2client.pb.cc.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jason/Desktop/Captured/project/graphics/server2client.pb.cc -o CMakeFiles/graphics.dir/server2client.pb.cc.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/server2client.pb.cc" -o CMakeFiles/graphics.dir/server2client.pb.cc.s
 
 # Object files for target graphics
 graphics_OBJECTS = \
@@ -156,7 +156,7 @@ graphics: CMakeFiles/graphics.dir/server2client.pb.cc.o
 graphics: CMakeFiles/graphics.dir/build.make
 graphics: /usr/local/lib/libprotobuf.dylib
 graphics: CMakeFiles/graphics.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/jason/Desktop/Captured/project/graphics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable graphics"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable graphics"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/graphics.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -169,6 +169,6 @@ CMakeFiles/graphics.dir/clean:
 .PHONY : CMakeFiles/graphics.dir/clean
 
 CMakeFiles/graphics.dir/depend:
-	cd /Users/jason/Desktop/Captured/project/graphics/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/jason/Desktop/Captured/project/graphics /Users/jason/Desktop/Captured/project/graphics /Users/jason/Desktop/Captured/project/graphics/cmake-build-debug /Users/jason/Desktop/Captured/project/graphics/cmake-build-debug /Users/jason/Desktop/Captured/project/graphics/cmake-build-debug/CMakeFiles/graphics.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/jason/Desktop/Another Duplicate/Captured/project/graphics" "/Users/jason/Desktop/Another Duplicate/Captured/project/graphics" "/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/cmake-build-debug" "/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/cmake-build-debug" "/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/cmake-build-debug/CMakeFiles/graphics.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/graphics.dir/depend
 

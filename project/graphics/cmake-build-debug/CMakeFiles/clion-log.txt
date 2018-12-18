@@ -1,6 +1,26 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/jason/Desktop/Captured/project/graphics
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/Users/jason/Desktop/Another Duplicate/Captured/project/graphics"
+-- The C compiler identification is AppleClang 10.0.0.10001044
+-- The CXX compiler identification is AppleClang 10.0.0.10001044
+-- Check for working C compiler: /Library/Developer/CommandLineTools/usr/bin/cc
+-- Check for working C compiler: /Library/Developer/CommandLineTools/usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/c++
+-- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
 -- Found SFML .. in /Library/Frameworks/SFML.framework
--- RapidJSON found. Headers: /Users/jason/source/rapidjson/include
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - found
+-- Found Threads: TRUE  
+-- Found Protobuf: /usr/local/lib/libprotobuf.dylib (found version "3.6.1") 
+-- RapidJSON found. Headers: /usr/local/lib/cmake/RapidJSON/../../../include
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Users/jason/Desktop/Captured/project/graphics/cmake-build-debug
+-- Build files have been written to: /Users/jason/Desktop/Another Duplicate/Captured/project/graphics/cmake-build-debug

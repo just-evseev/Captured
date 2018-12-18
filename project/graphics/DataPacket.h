@@ -13,10 +13,14 @@
 
 struct DataPacket {
     std::map<Hex, int> areas;
-    //std::map<Hex, int> tails;
+    std::map<Hex, int> tails;
     std::map<Hex, int> players;
 
     DataPacket();
+
+    void unpack()  {
+
+    };
 };
 
 #endif //GRAPHICS_DATAPACKET_H

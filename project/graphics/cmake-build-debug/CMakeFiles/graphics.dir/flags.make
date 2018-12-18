@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++17 -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/jason/Desktop/Captured/project/graphics/Modules/headers -I/Users/jason/Desktop/Captured/project/graphics/. -I"/Users/jason/Desktop/Captured/project/graphics/Drawable Objects" -F/Library/Frameworks -I/usr/local/include -I/Users/jason/Desktop/Captured/project/graphics/cmake-build-debug -I/Users/jason/source/rapidjson/include 
+CXX_INCLUDES = -I"/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/Modules/headers" -I"/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/." -I"/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/Drawable Objects" -F/Library/Frameworks -I/usr/local/include -I"/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/cmake-build-debug" -I/usr/local/lib/cmake/RapidJSON/../../../include 
 
