@@ -5,7 +5,7 @@
 		<Option title="graphics"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\cmake_modules\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\RapidJSON\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake_modules\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/cmake-build-debug"/>
@@ -47,10 +47,10 @@
 					<Add directory="/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/Modules/headers"/>
 					<Add directory="/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/."/>
 					<Add directory="/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/Drawable Objects"/>
+					<Add directory="/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/include/rapidjson"/>
 					<Add directory="/Library/Frameworks/SFML.framework"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/cmake-build-debug"/>
-					<Add directory="/usr/local/lib/cmake/RapidJSON/../../../include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
@@ -75,10 +75,10 @@
 					<Add directory="/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/Modules/headers"/>
 					<Add directory="/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/."/>
 					<Add directory="/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/Drawable Objects"/>
+					<Add directory="/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/include/rapidjson"/>
 					<Add directory="/Library/Frameworks/SFML.framework"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/cmake-build-debug"/>
-					<Add directory="/usr/local/lib/cmake/RapidJSON/../../../include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
@@ -120,12 +120,6 @@
 		</Unit>
 		<Unit filename="/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/cmake_modules/FindSFML.cmake">
 			<Option virtualFolder="CMake Files\cmake_modules\"/>
-		</Unit>
-		<Unit filename="/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/../../../../../../../usr/local/lib/cmake/RapidJSON/RapidJSONConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\RapidJSON\"/>
-		</Unit>
-		<Unit filename="/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/../../../../../../../usr/local/lib/cmake/RapidJSON/RapidJSONConfigVersion.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\RapidJSON\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

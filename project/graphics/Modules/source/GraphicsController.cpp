@@ -43,6 +43,7 @@ void GraphicsController::centralize(Object &object) {
 
 void GraphicsController::update(std::shared_ptr<DataPacket> data) {
     this->data = data;
+    hexSpace.drop();
     hexSpace.rebuild(data);
 }
 

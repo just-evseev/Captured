@@ -90,6 +90,12 @@ class HexSpace : public sf::Drawable {
         }
     }
 
+    void drop() {
+        areas.drop();
+        players.drop();
+        tails.drop();
+    };
+
     void set_movement(Move direction, float distance) {
         areas.set_movement(direction, distance);
         tails.set_movement(direction, distance);

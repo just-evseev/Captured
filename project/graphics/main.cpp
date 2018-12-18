@@ -157,13 +157,13 @@ int main(int argc, char* argv[])
         // Draw part
         if (!i) {
             data->make(me);
+            graph.update(data);
             graph.set_direction(Move(me.move));
             i = tacts;
         }
         i--;
 
         graph.draw();
-
 
         window->display();
     }

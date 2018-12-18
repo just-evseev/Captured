@@ -14,7 +14,7 @@ set(SOURCE_FILES
 )
 
 add_executable(graphics ${SOURCE_FILES})
-include_directories("Modules/headers" "." "Drawable Objects")
+include_directories("Modules/headers" "." "Drawable Objects" "include/rapidjson")
 
 # SFML LINKING PART
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake_modules")
@@ -30,6 +30,3 @@ include_directories(${Protobuf_INCLUDE_DIRS})
 include_directories(${CMAKE_CURRENT_BINARY_DIR})
 #add_executable(graphics server2client.pb.cc client2server.pb.cc ${PROTO_SRCS} ${PROTO_HDRS})
 target_link_libraries(graphics ${Protobuf_LIBRARIES})
-
-find_package(RapidJSON)
-include_directories(${RapidJSON_INCLUDE_DIR})

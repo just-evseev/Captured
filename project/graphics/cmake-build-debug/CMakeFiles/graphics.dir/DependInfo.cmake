@@ -18,10 +18,10 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../Modules/headers"
   "../."
   "../Drawable Objects"
+  "../include/rapidjson"
   "/Library/Frameworks/SFML.framework"
   "/usr/local/include"
   "."
-  "/usr/local/lib/cmake/RapidJSON/../../../include"
   )
 
 # Targets to which this target links.
