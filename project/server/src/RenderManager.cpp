@@ -8,20 +8,19 @@ RenderManager::~RenderManager() = default;
 
 void RenderManager::acceptPlayer(int id) {
     Hex point = this->generateCoord();
-    std::cout << "Получил id " << id << std::endl;
+//    std::cout << "Получил id " << id << std::endl;
     Person person(point);
     this->persons.emplace(id, person);  // TODO: Реализовать взаиможействия с вектором координат в Person
     this->createAreaOfNewPlayer(point, id);
-    std::cout << "Сгенерировал точку" << point.r << " " << point.q << " для " << id << std::endl;
-
+//    std::cout << "Сгенерировал точку" << point.r << " " << point.q << " для " << id << std::endl;
 }
 
-void RenderManager::getPlayerCoord(Move move, int id) {
+void RenderManager::updateAt(int id) {
     Hex point = this->persons.at(id).point;
 
     CellState cellState(id, 1);
-    std::cout << "Игрок " << id << " получил движение " << move << std::endl;
-    switch (move) {
+//    std::cout << "Игрок " << id << " получил движение " << move << std::endl;
+    switch (persons.at(id).move) {
         case Move::UP:
             point.updateCoord(point.q, point.r - 1);
             cellState.state = 1;
@@ -53,39 +52,39 @@ void RenderManager::getPlayerCoord(Move move, int id) {
     if (t6 != this->areas.end()) { // Проверка на попадение в зону
         if (t6->second == id && isPersonTailEmpty) {
 
-            std::cout << "Попал к себе в зону в точке " << t6->first.q << ":" << t6->first.r << std::endl;
+//            std::cout << "Попал к себе в зону в точке " << t6->first.q << ":" << t6->first.r << std::endl;
 
             auto t7 = this->tails.find(point);
             if (t7 != this->tails.end()) {  // Проверка на убийство внутри своей зоны другого игрока
                 auto detectId = t7->second.id;
                 if (detectId != id) {
-                    std::cout << "Бил убит игрок " << detectId << " игроком " << id << std::endl;
+//                    std::cout << "Бил убит игрок " << detectId << " игроком " << id << std::endl;
                     this->playerKiller(detectId);
                     this->persons.at(id).kills += 1;
                 }
             } else {
-                std::cout << "Новая точка " << point.q << ":" << point.r << " игрока " << id
-                          << " в зоне, но не пересекает кривые других игроков" << std::endl;
+//                std::cout << "Новая точка " << point.q << ":" << point.r << " игрока " << id
+//                          << " в зоне, но не пересекает кривые других игроков" << std::endl;
             }
 
         } else if (t6->second == id && !isPersonTailEmpty) { // TODO: Попал к себе в зону, при этом вектор кривых не пуст
 
-            std::cout << "Игрок " << id << " завершил зону, происходит объединение" << std::endl;
+//            std::cout << "Игрок " << id << " завершил зону, происходит объединение" << std::endl;
             this->updatePersonArea(id);
 
             auto t7 = this->tails.find(point);
             if (t7 != this->tails.end()) {  // Проверка на убийство внутри своей зоны другого игрока
                 auto detectId = t7->second.id;
                 if (detectId != id) {
-                    std::cout << "Бил убит игрок " << detectId << " игроком " << id << std::endl;
+//                    std::cout << "Бил убит игрок " << detectId << " игроком " << id << std::endl;
                     this->playerKiller(detectId);
                     this->persons.at(id).kills += 1;
                 }
             } else {
-                std::cout << "Новая точка " << point.q << ":" << point.r
-                          << " игрока " << id
-                          << " захватила зону, но не пересекает кривые других игроков"
-                          << std::endl;
+//                std::cout << "Новая точка " << point.q << ":" << point.r
+//                          << " игрока " << id
+//                          << " захватила зону, но не пересекает кривые других игроков"
+//                          << std::endl;
             }
 
             this->persons.at(id).playerTails.clear();
@@ -94,46 +93,50 @@ void RenderManager::getPlayerCoord(Move move, int id) {
             if (t7 != this->tails.end()) {  // Проверка на убийство внутри своей зоны другого игрока
                 auto detectId = t7->second.id;
                 if (detectId != id) {
-                    std::cout << "Бил убит игрок " << detectId << " игроком " << id << std::endl;
+//                    std::cout << "Бил убит игрок " << detectId << " игроком " << id << std::endl;
                     this->playerKiller(detectId);
                     this->persons.at(id).kills += 1;
                 } else {
 
                 }
             } else {
-                std::cout << "Новая точка " << point.q << ":" << point.r
-                          << " игрока " << id
-                          << " в другой зоне"
-                          << std::endl;
+//                std::cout << "Новая точка " << point.q << ":" << point.r
+//                          << " игрока " << id
+//                          << " в другой зоне"
+//                          << std::endl;
             }
             this->persons.at(id).playerTails.push_back(point);
             this->tails.emplace(point, cellState); // Добавляем точку кривым
-            std::cout << "Добавил кривую игрока " << id << " с состоянием " << cellState.state << std::endl;
+//            std::cout << "Добавил кривую игрока " << id << " с состоянием " << cellState.state << std::endl;
         }
     } else { // TODO: Попал не в зону
         auto t7 = this->tails.find(point);
         if (t7 != this->tails.end()) {  // Проверка на убийство внутри своей зоны другого игрока
             auto detectId = t7->second.id;
             if (detectId != id) {
-                std::cout << "Бил убит игрок " << detectId << " игроком " << id << std::endl;
+//                std::cout << "Бил убит игрок " << detectId << " игроком " << id << std::endl;
                 this->playerKiller(detectId);
                 this->persons.at(id).kills += 1;
             } else {
 
             }
         } else {
-            std::cout << "Новая точка " << point.q << ":" << point.r
-                      << " игрока " << id
-                      << " вне зоны"
-                      << std::endl;
+//            std::cout << "Новая точка " << point.q << ":" << point.r
+//                      << " игрока " << id
+//                      << " вне зоны"
+//                      << std::endl;
         }
         this->persons.at(id).playerTails.push_back(point);
         this->tails.emplace(point, cellState); // Добавляем точку кривым
-        std::cout << "Добавил кривую игрока " << id << " с состоянием " << cellState.state << std::endl;
+//        std::cout << "Добавил кривую игрока " << id << " с состоянием " << cellState.state << std::endl;
     }
 
     persons.at(id).point = point; //Обновляем точку человеку
-    std::cout << "Добавил поинт игрока " << id << " " << point.q << ":" << point.r << std::endl;
+//    std::cout << "Добавил поинт игрока " << id << " " << point.q << ":" << point.r << std::endl;
+}
+
+void RenderManager::updateEnum(int id, Move move) {
+    this->persons.at(id).move = move;
 }
 
 void RenderManager::createAreaOfNewPlayer(Hex point, int id) {
@@ -141,7 +144,7 @@ void RenderManager::createAreaOfNewPlayer(Hex point, int id) {
         for (int j = -1; j < 2; j++) {
             if (abs(i + j) < 2) {
                 this->areas.emplace(Hex(point.q + i, point.r + j), id);
-                std::cout << "Новая точка " << point.q + i << ":" << point.r + j << " принадлежит " << id << std::endl;
+//                std::cout << "Новая точка " << point.q + i << ":" << point.r + j << " принадлежит " << id << std::endl;
                 this->persons.at(id).playerArea.push_back(Hex(point.q + i, point.r + j));
             }
         }
@@ -152,7 +155,7 @@ void RenderManager::createAreaOfNewPlayer(Hex point, int id) {
 
 Hex RenderManager::generateCoord() {
     Hex coord(this->generateNumber(), this->generateNumber());
-    std::cout << "Сгенерирована координата нового игрока " << coord.r << ":" << coord.q << std::endl;
+//    std::cout << "Сгенерирована координата нового игрока " << coord.r << ":" << coord.q << std::endl;
     return coord;
 }
 
@@ -170,9 +173,9 @@ void RenderManager::playerKiller(int playerId) { // TODO: в процессе р
 }
 
 void RenderManager::updatePersonArea(int id) { // добавление полигона к полигону игрока
-    std::cout << std::endl << "++++Начинаем цикл присоединения++++" << std::endl;
-    printArea();
-    printTails();
+//    std::cout << std::endl << "++++Начинаем цикл присоединения++++" << std::endl;
+//    printArea();
+//    printTails();
     QPlusState prevState(-1, -2);
 
     for (int r = -(this->MAP_SIZE); r <= 0; r++) {
@@ -190,7 +193,7 @@ void RenderManager::updatePersonArea(int id) { // добавление поли�
                         prevState.state = currState;
                     } else {
                         if (prevState.state != currState) {
-                            std::cout << prevState.q << " " << currQ << std::endl;
+//                            std::cout << prevState.q << " " << currQ << std::endl;
                             for (int i = prevState.q + 1; i < currQ; i++) {
                                 areas.emplace(Hex(i, r), id);
                                 persons.at(id).playerArea.push_back(Hex(i, r));
@@ -238,9 +241,9 @@ void RenderManager::updatePersonArea(int id) { // добавление поли�
         }
         prevState.q = -1;
     }
-    std::cout << std::endl;
-    printArea();
-    printTails();
+//    std::cout << std::endl;
+//    printArea();
+//    printTails();
 }
 
 void RenderManager::printArea () {

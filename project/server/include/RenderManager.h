@@ -5,6 +5,7 @@
 #ifndef SERVER_RENDERMANAGER_H
 #define SERVER_RENDERMANAGER_H
 
+#include <SFML/Network.hpp>
 #include "StructInit.h"
 
 class RenderManager {
@@ -15,6 +16,12 @@ public:
 
     void acceptPlayer(int id);
     void getPlayerCoord(Move move, int id);
+
+    void updateAt(int id);
+
+    void updateEnum(int id, Move move);
+
+    Persons persons;
 
 private:
     void createAreaOfNewPlayer(Hex point, int id);
@@ -32,7 +39,6 @@ private:
     void printArea();
     void printTails();
 
-    Persons persons;
     Areas areas;
     Tails tails;
 };

@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <SFML/Network.hpp>
-#include <thread>
 
 #include "../include/RenderManager.h"
 
@@ -18,30 +17,31 @@ void serverCycle() {
     listener.setBlocking(false);
     std::cout << "Server created" << std::endl;
 
-    std::vector<std::unique_ptr<sf::TcpSocket>> socket;
-    RenderManager renderManager;
+    std::vector<std::unique_ptr<sf::TcpSocket>> sockets;
+    RenderManager rM;
 
     int personId = 0;
+    sf::Clock clock;
 
     while(!quit) {
         std::unique_ptr<sf::TcpSocket> fooSocket = std::make_unique<sf::TcpSocket>();
 
         if (listener.accept(*fooSocket) == sf::Socket::Done) {
             (*fooSocket).setBlocking(false);
-            socket.push_back(std::move(fooSocket));
-            std::cout << socket[socket.size() - 1]->getRemoteAddress() << ": Connected" << std::endl;
-            renderManager.acceptPlayer(personId);
+            sockets.push_back(std::move(fooSocket));
+            std::cout << sockets[sockets.size() - 1]->getRemoteAddress() << ": Connected with id " << personId << std::endl;
+            rM.acceptPlayer(personId);
             personId += 1;
         }
 
-        for (int i = 0; i < socket.size(); ++i) {
+        for (int i = 0; i < sockets.size(); ++i) {
 
             sf::Packet packetReceive;
-            sf::Socket::Status Status = socket[i]->receive(packetReceive);
+            sf::Socket::Status Status = sockets[i]->receive(packetReceive);
 
             if (Status == sf::Socket::Disconnected) {
-                std::cout << socket[i]->getRemoteAddress() << ": Disconnect" << std::endl;
-                socket.erase(socket.end() - 1);
+                std::cout << sockets[i]->getRemoteAddress() << ": Disconnect (id = " << i << ")" << std::endl;
+                sockets.erase(sockets.end() - 1);
                 continue;
             }
 
@@ -49,42 +49,63 @@ void serverCycle() {
                 continue;
             }
 
-//            sf::Packet packetSend;
-//            if (msgSend.empty())
-//                continue;
-//            packetSend << msgSend;
-//            msgSend = "";
-//            socket[i]->send(packetSend);
-
             int msg;
 
             if (packetReceive >> msg) {
-                std::cout << std::endl << socket[i]->getRemoteAddress() << ": " << msg << std::endl;
+                std::cout << std::endl << sockets[i]->getRemoteAddress() << ": " << msg << std::endl;
                 switch (msg) {
                 case 0:
-                    renderManager.getPlayerCoord(Move::UP, i);
+                    rM.updateEnum(i, Move::UP);
                     break;
                 case 1:
-                    renderManager.getPlayerCoord(Move::RIGHT_UP, i);
+                    rM.updateEnum(i, Move::RIGHT_UP);
                     break;
                 case 2:
-                    renderManager.getPlayerCoord(Move::RIGHT_DOWN, i);
+                    rM.updateEnum(i, Move::RIGHT_DOWN);
                     break;
                 case 3:
-                    renderManager.getPlayerCoord(Move::DOWN, i);
+                    rM.updateEnum(i, Move::DOWN);
                     break;
                 case 4:
-                    renderManager.getPlayerCoord(Move::LEFT_DOWN, i);
+                    rM.updateEnum(i, Move::LEFT_DOWN);
                     break;
                 case 5:
-                    renderManager.getPlayerCoord(Move::LEFT_UP, i);
+                    rM.updateEnum(i, Move::LEFT_UP);
                     break;
                 default:
-                    std::cout << socket[i]->getRemoteAddress() << ": Incorrect value" << std::endl;
+                    std::cout << i << ": Incorrect value" << std::endl;
                     break;
                 }
 
             }
+        }
+
+        sf::Time time = clock.getElapsedTime();
+        auto timeInMS = time.asMilliseconds();
+        if (timeInMS >= 333) {
+            for (int i = 0; i < sockets.size(); ++i) {
+                rM.updateAt(i);
+                sf::Packet packet;
+                int size = sockets.size();
+                packet << size << i; //<< rM.persons.at(i).point.q << rM.persons.at(i).point.r;
+                for (int j = 0; j < size; ++j) {
+                    int areaSize = rM.persons.at(j).playerArea.size();
+                    int tailsSize = rM.persons.at(j).playerTails.size();
+                    packet << j << rM.persons.at(j).point.q << rM.persons.at(j).point.r << rM.persons.at(j).move << areaSize;
+                    for (int k = 0; k < areaSize; ++k) {
+                        packet << rM.persons.at(j).playerArea.at(k).q << rM.persons.at(j).playerArea.at(k).r;
+                    }
+                    packet << tailsSize;
+                    for (int k = 0; k < tailsSize; ++k) {
+                        packet << rM.persons.at(j).playerTails.at(k).q << rM.persons.at(j).playerTails.at(k).r;
+                    }
+                }
+                sf::Socket::Status Status = sockets[i]->send(packet);
+                if (Status != sf::Socket::Done) {
+                    std::cout << "Error in send packet to user with id " << i << std::endl;
+                }
+            }
+            clock.restart();
         }
     }
 }

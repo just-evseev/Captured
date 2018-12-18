@@ -21,6 +21,7 @@ typedef std::vector<Hex> PlayerArea;
 typedef std::vector<Hex> PlayerTails;
 
 struct Person {
+    int move;
     int areaSquare;
     Hex point;
     int kills;
@@ -28,7 +29,7 @@ struct Person {
     PlayerArea playerArea;
     PlayerTails playerTails;
     Person(Hex point)
-            :areaSquare(START_AREA), point(point), kills(0), bonusEffect(0) {};
+            :move(0), areaSquare(START_AREA), point(point), kills(0), bonusEffect(0) {};
 };
 
 struct CellState {
