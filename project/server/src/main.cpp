@@ -4,7 +4,7 @@
 
 #include "../include/RenderManager.h"
 
-const unsigned short PORT = 5000;
+const unsigned short PORT = 5001;
 
 bool quit = false;
 
@@ -40,7 +40,7 @@ void serverCycle() {
             sf::Socket::Status Status = sockets[i]->receive(packetReceive);
 
             if (Status == sf::Socket::Disconnected) {
-                std::cout << sockets[i]->getRemoteAddress() << ": Disconnect (id = " << i << ")" << std::endl;
+                std::cout << sockets[i]->getRemoteAddress() << ": Disconnect (id = " << ")" << std::endl;
                 sockets.erase(sockets.end() - 1);
                 continue;
             }
@@ -86,11 +86,11 @@ void serverCycle() {
             for (int i = 0; i < sockets.size(); ++i) {
                 rM.updateAt(i);
                 sf::Packet packet;
-                int size = sockets.size();
+                auto size = (int)sockets.size();
                 packet << size << i; //<< rM.persons.at(i).point.q << rM.persons.at(i).point.r;
                 for (int j = 0; j < size; ++j) {
-                    int areaSize = rM.persons.at(j).playerArea.size();
-                    int tailsSize = rM.persons.at(j).playerTails.size();
+                    auto areaSize = (int)rM.persons.at(j).playerArea.size();
+                    auto tailsSize = (int)rM.persons.at(j).playerTails.size();
                     packet << j << rM.persons.at(j).point.q << rM.persons.at(j).point.r << rM.persons.at(j).move << areaSize;
                     for (int k = 0; k < areaSize; ++k) {
                         packet << rM.persons.at(j).playerArea.at(k).q << rM.persons.at(j).playerArea.at(k).r;

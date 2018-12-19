@@ -162,8 +162,8 @@ Hex RenderManager::generateCoord() {
 int RenderManager::generateNumber() {
     srand((unsigned)time(nullptr));
     int number = rand() % (this->MAP_SIZE * 2) - this->MAP_SIZE; // TODO: Все таки ранд работает не правильно
-//    return number; // TODO: Вернуть назад
-    return 0;
+    return number; // TODO: Вернуть назад
+//    return 0;
 }
 
 void RenderManager::personKiller(int id) { // TODO: в процессе разработки (самоубийство)
@@ -240,6 +240,37 @@ void RenderManager::updatePersonArea(int id) { // добавление поли�
             }
         }
         prevState.q = -1;
+    }
+
+    for (int i = 0; i <  MAP_SIZE + 1; ++i) {
+        for (int j = 0; j < MAP_SIZE + i + 1; ++j) {
+            auto it5 = tails.find(Hex(-MAP_SIZE + j, -j + i));
+            if (it5 != tails.end()) {
+                int currState = it5->second.state;
+                int currId = it5->second.id;
+                int currQ = it5->first.q;
+                if (currId == id) {
+                    areas.emplace(Hex(-MAP_SIZE + j, -j + i), id);
+                    persons.at(id).playerArea.push_back(Hex(-MAP_SIZE + j, -j + i));
+                    if (prevState.q != -1) { // первая кривая игрока за проход
+                        prevState.q = currQ;
+                        prevState.state = currState;
+                    } else {
+                        if (prevState.state != currState) {
+                            for (int k = prevState.q + 1; k < currQ; k++) {
+                                areas.emplace(Hex(k, -j + k), id);
+                                persons.at(id).playerArea.push_back(Hex(k, -j + i));
+                            }
+                            prevState.q = currQ;
+                            prevState.state = currState;
+                        } else {
+                            prevState.q = currQ;
+                            prevState.state = currState;
+                        }
+                    }
+                }
+            }
+        }
     }
 //    std::cout << std::endl;
 //    printArea();

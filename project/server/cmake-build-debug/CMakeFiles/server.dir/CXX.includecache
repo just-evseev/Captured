@@ -9,6 +9,8 @@
 /Users/ilya/Desktop/Captured/project/server/include/Hex.h
 
 /Users/ilya/Desktop/Captured/project/server/include/RenderManager.h
+SFML/Network.hpp
+-
 StructInit.h
 /Users/ilya/Desktop/Captured/project/server/include/StructInit.h
 
@@ -20,8 +22,12 @@ map
 Hex.h
 /Users/ilya/Desktop/Captured/project/server/include/Hex.h
 
-/Users/ilya/Desktop/Captured/project/server/src/RenderManager.cpp
+/Users/ilya/Desktop/Captured/project/server/src/main.cpp
 iostream
+-
+vector
+-
+SFML/Network.hpp
 -
 ../include/RenderManager.h
 /Users/ilya/Desktop/Captured/project/server/include/RenderManager.h

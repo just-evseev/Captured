@@ -15,7 +15,6 @@ public:
     ~RenderManager();
 
     void acceptPlayer(int id);
-    void getPlayerCoord(Move move, int id);
 
     void updateAt(int id);
 
@@ -34,7 +33,7 @@ private:
 
     void updatePersonArea(int id);
 
-    const int MAP_SIZE = 10; // Размер карты (кастомизируется под поле на клиенте)
+    const int MAP_SIZE = 100; // Размер карты (кастомизируется под поле на клиенте)
 
     void printArea();
     void printTails();
