@@ -18,8 +18,8 @@
 #define FPS             60
 
 
-const unsigned short PORT = 5000;
-const std::string IPADDRESS("172.20.10.14");
+const unsigned short PORT = 5001;
+const std::string IPADDRESS("192.168.1.10");
 
 sf::TcpSocket socket;
 bool quit = false;
@@ -29,62 +29,20 @@ typedef std::map<int, Person> Persons;
 // GLOBAL VARIABLES (sh*t)
 
 Person me(Hex(0, 0));
-Move direction;
+Move direction = UP;
+
+auto window = std::make_shared<sf::RenderWindow>(sf::VideoMode(WIDTH, HEIGHT), PROGRAM_NAME, sf::Style::Fullscreen);
+auto mouse = std::make_shared<MouseController>(window);
 
 // END DECLARATION
 
-void GetInput()
+void ClientCycle();
+
+
+
+int main()
 {
-    while(!quit)
-    {
-        sf::Packet packetSend;
-        packetSend << (int) direction;
-        socket.send(packetSend);
-    }
-}
-
-void packetParser() {
-    while (!quit) {
-        sf::Packet packet;
-        sf::Socket::Status Status = socket.receive(packet);
-        if (Status != sf::Socket::Done) {
-            continue;
-        }
-
-        Persons persons;
-
-        int idCount = 0;
-        int currId = 0;
-        int currMove = 0;
-        int currQ = 0;
-        int currR = 0;
-        packet >> idCount >> currId; //>> currMove >> currQ >> currR;
-        for (int i = 0; i < idCount; ++i) {
-            int areaSize = 0;
-            int tailsSize = 0;
-            int thisId = 0;
-            packet >> thisId >> currQ >> currR >> currMove >> areaSize;
-            Person person(Hex(currQ, currR));
-            persons.emplace(thisId, person);
-            persons.at(thisId).move = currMove;
-            for (int k = 0; k < areaSize; ++k) {
-                packet >> currQ >> currR;
-                persons.at(thisId).playerArea.push_back(Hex(currQ, currR));
-            }
-            packet << tailsSize;
-            for (int k = 0; k < tailsSize; ++k) {
-                packet >> currQ >> currR;
-                persons.at(thisId).playerTails.push_back(Hex(currQ, currR));
-            }
-        }
-        std::cout << " + " << persons.at(currId).point.q << ":" << persons.at(currId).point.r << std::endl;
-
-        me = persons.at(0);
-    }
-}
-
-int main(int argc, char* argv[])
-{
+    std::cout << "Hoolie nihua ne happen" << std::endl;
     if(socket.connect(IPADDRESS, PORT) != sf::Socket::Done)
     {
         std::cout << "Connection Failed" << std::endl;
@@ -92,47 +50,14 @@ int main(int argc, char* argv[])
     }
     std::cout << "Connected\n";
 
-    sf::Thread* thread = nullptr;
-    thread = new sf::Thread(&packetParser);
-    thread->launch();
 
-    GetInput();
+    ClientCycle();
 
-    thread->wait();
-    delete thread;
+    return 0;
+}
 
-    auto window = std::make_shared<sf::RenderWindow>(sf::VideoMode(WIDTH, HEIGHT), PROGRAM_NAME, sf::Style::Fullscreen);
-
-    window->setVerticalSyncEnabled(true);
-    /// Use next line if speed is too fast & comment previous line
-    //window->setFramerateLimit(60);
-
-    auto mouse = std::make_shared<MouseController>(window);
-    mouse->set_visible(false);
-
-    GraphicsController graph(window, mouse);
-
-    auto data = std::make_shared<DataPacket>();
-    graph.update(data);
-
-    int speed = 3;
-    int tacts = FPS / speed;
-    int i = tacts;
-
-
-    // Main cycle
-
-    while (window->isOpen()) {
-
-        sf::Event event;
-        while (window->pollEvent(event)) {
-            if (event.type == sf::Event::Closed)
-                window->close();
-
-            if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Escape)
-                window->close();
-        }
-
+void func() {
+    while (true) {
         // Getting current direction
         Move momental_direction;
 
@@ -151,22 +76,108 @@ int main(int argc, char* argv[])
         else if (angle >= -180.f && angle < -120.f)
             momental_direction = LEFT_UP;
 
-        if (abs(momental_direction - graph.get_direction()) != 3)
-            direction = momental_direction;
+        //if (abs(momental_direction - graph.get_direction()) != 3)
+        direction = momental_direction;
 
-        // Draw part
-        if (!i) {
+        // Send
+        sf::Packet packetSend;
+        packetSend << (int) direction;
+        sf::Socket::Status Status_send = socket.send(packetSend);
+        if (Status_send != sf::Socket::Done) {
+            std::cout << "Error" << std::endl;
+        }
+
+        sf::sleep(sf::seconds(1.f / 60.f));
+    }
+}
+
+
+void ClientCycle() {
+
+
+
+    sf::Thread* thread = nullptr;
+    thread = new sf::Thread(&func);
+    thread->launch();
+
+
+
+    window->setVerticalSyncEnabled(true);
+    /// Use next line if speed is too fast & comment previous line
+    //window->setFramerateLimit(60);
+
+    mouse->set_visible(false);
+
+    GraphicsController graph(window, mouse);
+
+    auto data = std::make_shared<DataPacket>();
+    graph.update(data);
+
+    int speed = 3;
+    int tacts = FPS / speed;
+    int i = tacts;
+
+
+    // Main cycle
+
+    while (window->isOpen()) {
+
+        sf::Packet packet;
+        sf::Socket::Status Status_recieve = socket.receive(packet);
+        if (Status_recieve == sf::Socket::Done) {
+
+            // Recieve
+            Persons persons;
+
+            int idCount = 0;
+            int currId = 0;
+            int currMove = 0;
+            int currQ = 0;
+            int currR = 0;
+            packet >> idCount >> currId; //>> currMove >> currQ >> currR;
+            std::cout << currId << std::endl;
+            for (int i = 0; i < idCount; ++i) {
+                int areaSize = 0;
+                int tailsSize = 0;
+                int thisId = 0;
+                packet >> thisId >> currQ >> currR >> currMove >> areaSize;
+                Person person(Hex(currQ, currR));
+                persons.emplace(thisId, person);
+                persons.at(thisId).move = currMove;
+                for (int k = 0; k < areaSize; ++k) {
+                    packet >> currQ >> currR;
+                    persons.at(thisId).playerArea.push_back(Hex(currQ, currR));
+                }
+                packet >> tailsSize;
+                for (int k = 0; k < tailsSize; ++k) {
+                    packet >> currQ >> currR;
+                    persons.at(thisId).playerTails.push_back(Hex(currQ, currR));
+                }
+            }
+            //std::cout << " + " << persons.size() << persons.at(currId).point.q << ":" << persons.at(currId).point.r << std::endl;
+            me = persons.at(currId);
             data->make(me);
             graph.update(data);
-            graph.set_direction(Move(me.move));
-            i = tacts;
+            graph.set_direction(direction);
         }
-        i--;
 
-        graph.draw();
+        for (int i = 0; i < tacts; ++i) {
 
-        window->display();
+            sf::Event event;
+            while (window->pollEvent(event)) {
+                if (event.type == sf::Event::Closed)
+                    window->close();
+
+                if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Escape)
+                    window->close();
+            }
+
+
+            // Draw part
+            graph.draw();
+
+            window->display();
+        }
     }
 
-    return 0;
-}
+};

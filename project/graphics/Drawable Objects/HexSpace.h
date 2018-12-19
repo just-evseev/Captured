@@ -99,13 +99,13 @@ class HexSpace : public sf::Drawable {
     void set_movement(Move direction, float distance) {
         areas.set_movement(direction, distance);
         tails.set_movement(direction, distance);
-        playerObj->set_movement(direction, distance);
+        //playerObj->set_movement(direction, distance);
     }
 
     void move() {
         areas.move();
         tails.move();
-        playerObj->move();
+        //playerObj->move();
     }
 
     void freak(Move newmove) {
