@@ -4,6 +4,7 @@
 CMakeFiles/graphics.dir/DataPacket.cpp.o: ../DataPacket.cpp
 CMakeFiles/graphics.dir/DataPacket.cpp.o: ../DataPacket.h
 CMakeFiles/graphics.dir/DataPacket.cpp.o: ../Hex.h
+CMakeFiles/graphics.dir/DataPacket.cpp.o: ../Move.h
 CMakeFiles/graphics.dir/DataPacket.cpp.o: ../Person\ Struct.h
 CMakeFiles/graphics.dir/DataPacket.cpp.o: /usr/local/include/SFML/Config.hpp
 CMakeFiles/graphics.dir/DataPacket.cpp.o: /usr/local/include/SFML/Graphics.hpp

@@ -68,12 +68,12 @@ class JSONParser {
             sf::Texture ar_txt;
             ar_txt.loadFromFile(pack_dir + "/areas/" + img_name);
 
-            sf::Texture tl_txt;
-            tl_txt.loadFromFile(pack_dir + "/tails/" + img_name);
+            //sf::Texture tl_txt;
+            //tl_txt.loadFromFile(pack_dir + "/tails/" + img_name);
 
             txtr_ptr.playerTextures.emplace(i + 1, plr_txt);
             txtr_ptr.areaTextures.emplace(i + 1, ar_txt);
-            txtr_ptr.tailTextures.emplace(i + 1, tl_txt);
+            //txtr_ptr.tailTextures.emplace(i + 1, tl_txt);
         }
 
         txtr_ptr.gridTexture.loadFromFile(pack_dir + "/unique/grid.png");

@@ -23,6 +23,8 @@ map
 -
 Hex.h
 .././Hex.h
+Move.h
+.././Move.h
 Person Struct.h
 .././Person Struct.h
 
@@ -157,6 +159,8 @@ map
 -
 Hex.h
 /Users/jason/Desktop/Another Duplicate/Captured/project/graphics/Hex.h
+Move.h
+/Users/jason/Desktop/Another Duplicate/Captured/project/graphics/Move.h
 Person Struct.h
 /Users/jason/Desktop/Another Duplicate/Captured/project/graphics/Person Struct.h
 

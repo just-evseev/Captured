@@ -26,9 +26,10 @@ class HexSpace : public sf::Drawable {
     MovableObjectArray players;
     MovableObjectArray tails;
 
-    sf::Texture areaTexture;
-    sf::Texture playerTexture;
-    sf::Texture tailTexture;
+    Object player;
+
+
+    TextureOwner& texturePack;
 
 
     Move prevmove;
@@ -40,7 +41,6 @@ class HexSpace : public sf::Drawable {
             UP, RIGHT_UP, RIGHT_DOWN, DOWN, LEFT_DOWN, LEFT_UP,
                    LEFT_UP, LEFT_DOWN, DOWN, RIGHT_DOWN, RIGHT_UP, UP};
 
-    std::unique_ptr<MovingObject> playerObj;
 
     // Helpful methods
     sf::Vector2f pixel(Hex hex) {
@@ -51,17 +51,14 @@ class HexSpace : public sf::Drawable {
     }
 
  public:
-    HexSpace(sf::Vector2u window_size, int hex_size)
-    : window_size(window_size), hex_size(hex_size) {
-        areaTexture.loadFromFile("./Contents/sprites/territoria_bez_sveta.png");
-        playerTexture.loadFromFile("./Contents/sprites/Igrok.png");
-        tailTexture.loadFromFile("./textures/source/Neon/tails/1.png");
-    }
+    HexSpace(sf::Vector2u window_size, int hex_size, TextureOwner& texturePack)
+    : window_size(window_size), hex_size(hex_size),
+    texturePack(texturePack) {};
 
     void rebuild(std::shared_ptr<DataPacket> data) {
         for (auto& area : data->areas) {
             auto areaObj = std::make_unique<StationaryObject>();
-            areaObj->set_up(areaTexture);
+            areaObj->set_up(texturePack.get(AREA, area.second));
 
             areaObj->setPosition(pixel(area.first));
 
@@ -70,7 +67,7 @@ class HexSpace : public sf::Drawable {
 
         for (auto& tail : data->tails) {
             auto tailObj = std::make_unique<StationaryObject>();
-            tailObj->set_up(areaTexture);
+            tailObj->set_up(texturePack.get(AREA, tail.second));
             tailObj->set_alpha();
 
             tailObj->setPosition(pixel(tail.first));
@@ -78,16 +75,22 @@ class HexSpace : public sf::Drawable {
             this->areas.push(std::move(tailObj));
         }
 
+        //int i = 0;
         for (auto& player : data->players) {
-            playerObj = std::make_unique<MovingObject>();
-            playerObj->set_up(playerTexture);
+            auto playerObj = std::make_unique<MovingObject>();
+            playerObj->set_up(texturePack.get(PLAYER, player.second.id));
 
             playerObj->setPosition(pixel(player.first));
 
-            playerObj->set_move(UP);
-            playerObj->set_color();
+            playerObj->set_move(player.second.move);
             this->players.push(std::move(playerObj));
+            //i++;
         }
+
+        //std::cout << "Players: " << i << std::endl;
+
+        player.set_up(texturePack.get(PLAYER, data->my_id));
+        player.setPosition(window_size.x / 2.f, window_size.y / 2.f);
     }
 
     void drop() {
@@ -99,148 +102,149 @@ class HexSpace : public sf::Drawable {
     void set_movement(Move direction, float distance) {
         areas.set_movement(direction, distance);
         tails.set_movement(direction, distance);
-        //playerObj->set_movement(direction, distance);
+        players.set_movement(direction, distance);
     }
 
     void move() {
         areas.move();
         tails.move();
-        //playerObj->move();
+        players.move();
     }
 
     void freak(Move newmove) {
-        if (i == 24)
-            i = 0;
-        playerObj->set_move(ii[i]);
-        i++;
-
-        auto guide = [](Move prev, Move cur) -> TailType {
-            if (prev == UP)
-                switch ( cur) {
-                    case UP:
-                        return STRAIGHT_1;
-
-                    case RIGHT_UP:
-                        return OBTUSE_2;
-
-                    case RIGHT_DOWN:
-                        return SHARP_3;
-
-                    case LEFT_DOWN:
-                        return SHARP_4;
-
-                    case LEFT_UP:
-                        return OBTUSE_4;
-                }
-
-            if (prev == RIGHT_UP)
-                switch (cur) {
-                    case UP:
-                        return OBTUSE_5;
-
-                    case RIGHT_UP:
-                        return STRAIGHT_2;
-
-                    case RIGHT_DOWN:
-                        return OBTUSE_3;
-
-                    case DOWN:
-                        return SHARP_4;
-
-                    case LEFT_UP:
-                        return SHARP_5;
-                }
-
-            if (prev == RIGHT_DOWN)
-                switch (cur) {
-                    case UP:
-                        return SHARP_6;
-
-                    case RIGHT_UP:
-                        return OBTUSE_6;
-
-                    case RIGHT_DOWN:
-                        return STRAIGHT_3;
-
-                    case DOWN:
-                        return OBTUSE_4;
-
-                    case LEFT_DOWN:
-                        return SHARP_5;
-                }
-
-            if (prev == DOWN)
-                switch (cur) {
-                    case RIGHT_UP:
-                        return SHARP_1;
-
-                    case RIGHT_DOWN:
-                        return OBTUSE_1;
-
-                    case DOWN:
-                        return STRAIGHT_1;
-
-                    case LEFT_DOWN:
-                        return OBTUSE_5;
-
-                    case LEFT_UP:
-                        return SHARP_6;
-                }
-
-            if (prev == LEFT_DOWN)
-                switch (cur) {
-                    case UP:
-                        return SHARP_1;
-
-                    case RIGHT_DOWN:
-                        return SHARP_2;
-
-                    case DOWN:
-                        return OBTUSE_2;
-
-                    case LEFT_DOWN:
-                        return STRAIGHT_2;
-
-                    case LEFT_UP:
-                        return OBTUSE_6;
-                }
-
-            if (prev == LEFT_UP)
-                switch (cur) {
-                    case UP:
-                        return OBTUSE_1;
-
-                    case RIGHT_UP:
-                        return SHARP_2;
-
-                    case DOWN:
-                        return SHARP_3;
-
-                    case LEFT_DOWN:
-                        return OBTUSE_3;
-
-                    case LEFT_UP:
-                        return STRAIGHT_3;
-                }
-        };
-
-        auto tail = std::make_unique<StationaryObject>();
-        tail->set_up(tailTexture, 15);
-        tail->choose_texture(guide(prevmove, newmove));
-
-        tail->setPosition(window_size.x / 2.f, window_size.y / 2.f);
-
-
-        //tail->set_alpha();
-        tails.push(std::move(tail));
-        prevmove = newmove;
+//        if (i == 24)
+//            i = 0;
+//        playerObj->set_move(ii[i]);
+//        i++;
+//
+//        auto guide = [](Move prev, Move cur) -> TailType {
+//            if (prev == UP)
+//                switch ( cur) {
+//                    case UP:
+//                        return STRAIGHT_1;
+//
+//                    case RIGHT_UP:
+//                        return OBTUSE_2;
+//
+//                    case RIGHT_DOWN:
+//                        return SHARP_3;
+//
+//                    case LEFT_DOWN:
+//                        return SHARP_4;
+//
+//                    case LEFT_UP:
+//                        return OBTUSE_4;
+//                }
+//
+//            if (prev == RIGHT_UP)
+//                switch (cur) {
+//                    case UP:
+//                        return OBTUSE_5;
+//
+//                    case RIGHT_UP:
+//                        return STRAIGHT_2;
+//
+//                    case RIGHT_DOWN:
+//                        return OBTUSE_3;
+//
+//                    case DOWN:
+//                        return SHARP_4;
+//
+//                    case LEFT_UP:
+//                        return SHARP_5;
+//                }
+//
+//            if (prev == RIGHT_DOWN)
+//                switch (cur) {
+//                    case UP:
+//                        return SHARP_6;
+//
+//                    case RIGHT_UP:
+//                        return OBTUSE_6;
+//
+//                    case RIGHT_DOWN:
+//                        return STRAIGHT_3;
+//
+//                    case DOWN:
+//                        return OBTUSE_4;
+//
+//                    case LEFT_DOWN:
+//                        return SHARP_5;
+//                }
+//
+//            if (prev == DOWN)
+//                switch (cur) {
+//                    case RIGHT_UP:
+//                        return SHARP_1;
+//
+//                    case RIGHT_DOWN:
+//                        return OBTUSE_1;
+//
+//                    case DOWN:
+//                        return STRAIGHT_1;
+//
+//                    case LEFT_DOWN:
+//                        return OBTUSE_5;
+//
+//                    case LEFT_UP:
+//                        return SHARP_6;
+//                }
+//
+//            if (prev == LEFT_DOWN)
+//                switch (cur) {
+//                    case UP:
+//                        return SHARP_1;
+//
+//                    case RIGHT_DOWN:
+//                        return SHARP_2;
+//
+//                    case DOWN:
+//                        return OBTUSE_2;
+//
+//                    case LEFT_DOWN:
+//                        return STRAIGHT_2;
+//
+//                    case LEFT_UP:
+//                        return OBTUSE_6;
+//                }
+//
+//            if (prev == LEFT_UP)
+//                switch (cur) {
+//                    case UP:
+//                        return OBTUSE_1;
+//
+//                    case RIGHT_UP:
+//                        return SHARP_2;
+//
+//                    case DOWN:
+//                        return SHARP_3;
+//
+//                    case LEFT_DOWN:
+//                        return OBTUSE_3;
+//
+//                    case LEFT_UP:
+//                        return STRAIGHT_3;
+//                }
+//        };
+//
+//        auto tail = std::make_unique<StationaryObject>();
+//        tail->set_up(tailTexture, 15);
+//        tail->choose_texture(guide(prevmove, newmove));
+//
+//        tail->setPosition(window_size.x / 2.f, window_size.y / 2.f);
+//
+//
+//        //tail->set_alpha();
+//        tails.push(std::move(tail));
+//        prevmove = newmove;
     }
 
  private:
     void draw(sf::RenderTarget& target, sf::RenderStates states) const override {
         target.draw(areas);
         target.draw(tails);
-        //target.draw(*playerObj);
+        target.draw(players);
+        target.draw(player);
     }
 };
 

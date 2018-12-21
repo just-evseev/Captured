@@ -36,13 +36,12 @@ auto mouse = std::make_shared<MouseController>(window);
 
 // END DECLARATION
 
-void ClientCycle();
+int ClientCycle();
 
 
 
 int main()
 {
-    std::cout << "Hoolie nihua ne happen" << std::endl;
     if(socket.connect(IPADDRESS, PORT) != sf::Socket::Done)
     {
         std::cout << "Connection Failed" << std::endl;
@@ -50,8 +49,13 @@ int main()
     }
     std::cout << "Connected\n";
 
-
-    ClientCycle();
+    while (ClientCycle()) {
+        if(socket.connect(IPADDRESS, PORT) != sf::Socket::Done)
+        {
+            std::cout << "Connection Failed" << std::endl;
+            return -1;
+        }
+    };
 
     return 0;
 }
@@ -84,7 +88,7 @@ void func() {
         packetSend << (int) direction;
         sf::Socket::Status Status_send = socket.send(packetSend);
         if (Status_send != sf::Socket::Done) {
-            std::cout << "Error" << std::endl;
+            //std::cout << "Error" << std::endl;
         }
 
         sf::sleep(sf::seconds(1.f / 60.f));
@@ -92,9 +96,8 @@ void func() {
 }
 
 
-void ClientCycle() {
-
-
+int ClientCycle() {
+    int jj = 0;
 
     sf::Thread* thread = nullptr;
     thread = new sf::Thread(&func);
@@ -121,6 +124,14 @@ void ClientCycle() {
     // Main cycle
 
     while (window->isOpen()) {
+        sf::Event event;
+        while (window->pollEvent(event)) {
+            if (event.type == sf::Event::Closed)
+                window->close();
+
+            if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Escape)
+                window->close();
+        }
 
         sf::Packet packet;
         sf::Socket::Status Status_recieve = socket.receive(packet);
@@ -135,7 +146,7 @@ void ClientCycle() {
             int currQ = 0;
             int currR = 0;
             packet >> idCount >> currId;
-            std::cout << currId << std::endl;
+            //std::cout << currId << std::endl;
             for (int i = 0; i < idCount; ++i) {
                 int areaSize = 0;
                 int tailsSize = 0;
@@ -158,8 +169,14 @@ void ClientCycle() {
             data->make(persons, currId);
             graph.update(data);
             graph.set_direction(Move(persons.at(currId).move));
-        } else
+            jj = 0;
+        } else {
+            jj++;
+            if (jj >= 5)
+                return 1;
+
             continue;
+        }
 
         for (int i = 0; i < tacts; ++i) {
 
@@ -175,9 +192,10 @@ void ClientCycle() {
 
             // Draw part
             graph.draw();
-
             window->display();
         }
     }
+
+    return 0;
 
 };

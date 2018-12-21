@@ -14,16 +14,20 @@
     <list default="true" id="1e8ca273-b8ab-4e8f-a84b-a020dfc4ddd8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataPacket.h" beforeDir="false" afterPath="$PROJECT_DIR$/DataPacket.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/headers/GraphicsController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/headers/GraphicsController.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drawable Objects/HexSpace.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drawable Objects/HexSpace.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JSONParser.h" beforeDir="false" afterPath="$PROJECT_DIR$/JSONParser.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Modules/source/GraphicsController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/source/GraphicsController.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Person Struct.h" beforeDir="false" afterPath="$PROJECT_DIR$/Person Struct.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TextureOwner.h" beforeDir="false" afterPath="$PROJECT_DIR$/TextureOwner.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graphics.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graphics.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graphics.dir/DataPacket.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graphics.dir/DataPacket.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graphics.dir/Modules/source/GraphicsController.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graphics.dir/Modules/source/GraphicsController.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graphics.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graphics.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graphics.dir/DataPacket.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graphics.dir/Modules/source/GraphicsController.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graphics.dir/main.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/graphics" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/graphics" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/textures/packs/Neon.json" beforeDir="false" afterPath="$PROJECT_DIR$/textures/packs/Neon.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/textures/source/Neon/areas/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/textures/source/Neon/areas/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/textures/source/Neon/players/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/textures/source/Neon/players/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/textures/source/Neon/players/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/textures/source/Neon/players/2.png" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -167,26 +171,26 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="h" value="8" />
+          <entry key="h" value="10" />
           <entry key="memory" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="ObjectiveC" value="12" />
+          <entry key="ObjectiveC" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="1177" />
-          <entry key="h" value="303" />
+          <entry key="cpp" value="1295" />
+          <entry key="h" value="1031" />
           <entry key="txt" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="8" />
-          <entry key="ObjectiveC" value="1480" />
+          <entry key="ObjectiveC" value="2326" />
         </counts>
       </usages-collector>
     </session>
@@ -196,8 +200,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="43" column="1" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
+            <state relative-caret-position="261">
+              <caret line="54" column="39" selection-start-line="54" selection-start-column="39" selection-end-line="54" selection-end-column="39" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -208,54 +212,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Modules/headers/GraphicsController.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
-              <caret line="51" column="11" selection-start-line="51" selection-start-column="11" selection-end-line="51" selection-end-column="11" />
+            <state>
+              <caret column="2" selection-start-column="2" selection-end-column="2" />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Drawable Objects/MovableObject.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Person Struct.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-              <folding>
-                <element signature="e#120#137#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TextureOwner.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="62" column="54" selection-start-line="62" selection-start-column="54" selection-end-line="62" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Textures.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-82" />
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DataPacket.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+            <state relative-caret-position="123">
+              <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
               <folding>
                 <element signature="e#114#142#0" expanded="true" />
               </folding>
@@ -266,8 +233,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DataPacket.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="39" column="35" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
+            <state relative-caret-position="-8">
+              <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -275,20 +242,39 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Modules/source/GraphicsController.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="33" column="49" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
+            <state relative-caret-position="570">
+              <caret line="75" column="6" selection-start-line="75" selection-start-column="6" selection-end-line="75" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Drawable Objects/HexSpace.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="218">
+              <caret line="86" column="14" selection-start-line="86" selection-start-column="14" selection-end-line="86" selection-end-column="14" />
+              <folding>
+                <element signature="e#110#124#0" expanded="true" />
+                <element signature="e#2884#6406#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TextureOwner.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1155">
+              <caret line="80" column="50" selection-start-line="80" selection-start-column="50" selection-end-line="80" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Drawable Objects/HexSpace.h">
+        <entry file="file://$PROJECT_DIR$/JSONParser.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="724">
-              <caret line="101" column="10" selection-start-line="101" selection-start-column="10" selection-end-line="101" selection-end-column="10" />
-              <folding>
-                <element signature="e#2949#6221#0" />
-              </folding>
+            <state relative-caret-position="265">
+              <caret line="63" column="66" lean-forward="true" selection-start-line="63" selection-start-column="66" selection-end-line="63" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -330,7 +316,6 @@
         <option value="$PROJECT_DIR$/Textures.h" />
         <option value="$PROJECT_DIR$/Cursor.cpp" />
         <option value="$PROJECT_DIR$/Modules/source/MouseController.cpp" />
-        <option value="$PROJECT_DIR$/JSONParser.h" />
         <option value="$PROJECT_DIR$/Drawable Objects/TextureQuad.h" />
         <option value="$PROJECT_DIR$/Drawable Objects/TextureRect.h" />
         <option value="$PROJECT_DIR$/Drawable Objects/StationaryObject.h" />
@@ -341,13 +326,14 @@
         <option value="$PROJECT_DIR$/Modules/headers/MouseController.h" />
         <option value="$PROJECT_DIR$/Drawable Objects/MovableObject.h" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/Drawable Objects/HexSpace.h" />
         <option value="$PROJECT_DIR$/Person Struct.h" />
-        <option value="$PROJECT_DIR$/main.cpp" />
-        <option value="$PROJECT_DIR$/DataPacket.h" />
-        <option value="$PROJECT_DIR$/TextureOwner.h" />
         <option value="$PROJECT_DIR$/Modules/headers/GraphicsController.h" />
+        <option value="$PROJECT_DIR$/TextureOwner.h" />
         <option value="$PROJECT_DIR$/Modules/source/GraphicsController.cpp" />
+        <option value="$PROJECT_DIR$/Drawable Objects/HexSpace.h" />
+        <option value="$PROJECT_DIR$/DataPacket.h" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/JSONParser.h" />
       </list>
     </option>
   </component>
@@ -357,9 +343,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="300" />
-    <option name="y" value="419" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="20" />
+    <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="825" />
   </component>
@@ -470,15 +456,15 @@
       <workItem from="1545065786925" duration="1584000" />
       <workItem from="1545140161171" duration="2080000" />
       <workItem from="1545213051993" duration="15000" />
-      <workItem from="1545224984178" duration="12590000" />
+      <workItem from="1545224984178" duration="22543000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="203468000" />
+    <option name="totallyTimeSpent" value="213421000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="825" extended-state="0" />
+    <frame x="3" y="23" width="1440" height="825" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29756796" />
@@ -573,12 +559,6 @@
     <entry file="file://$PROJECT_DIR$/Cursor.h" />
     <entry file="file://$PROJECT_DIR$/Modules/source/MouseController.cpp" />
     <entry file="file://$PROJECT_DIR$/Modules/headers/MouseController.h" />
-    <entry file="file://$PROJECT_DIR$/Drawable Objects/MovingObject.h" />
-    <entry file="file://$PROJECT_DIR$/JSONParser.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-797" />
-      </provider>
-    </entry>
     <entry file="file:///Library/Developer/CommandLineTools/usr/include/c++/v1/map">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
@@ -607,33 +587,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Drawable Objects/MovableObject.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataPacket.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
-          <folding>
-            <element signature="e#114#142#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="1" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Person Struct.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -644,46 +597,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Drawable Objects/MovingObject.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-228" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Drawable Objects/MovableObject.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Textures.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-82" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TextureOwner.h">
+    <entry file="file://$PROJECT_DIR$/DataPacket.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="62" column="54" selection-start-line="62" selection-start-column="54" selection-end-line="62" selection-end-column="54" />
+        <state relative-caret-position="-8">
+          <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Modules/headers/GraphicsController.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="51" column="11" selection-start-line="51" selection-start-column="11" selection-end-line="51" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataPacket.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="39" column="35" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
+        <state>
+          <caret column="2" selection-start-column="2" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Modules/source/GraphicsController.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="33" column="49" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
+        <state relative-caret-position="570">
+          <caret line="75" column="6" selection-start-line="75" selection-start-column="6" selection-end-line="75" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Drawable Objects/HexSpace.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="724">
-          <caret line="101" column="10" selection-start-line="101" selection-start-column="10" selection-end-line="101" selection-end-column="10" />
+        <state relative-caret-position="218">
+          <caret line="86" column="14" selection-start-line="86" selection-start-column="14" selection-end-line="86" selection-end-column="14" />
           <folding>
-            <element signature="e#2949#6221#0" />
+            <element signature="e#110#124#0" expanded="true" />
+            <element signature="e#2884#6406#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataPacket.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding>
+            <element signature="e#114#142#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TextureOwner.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="80" column="50" selection-start-line="80" selection-start-column="50" selection-end-line="80" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="54" column="39" selection-start-line="54" selection-start-column="39" selection-end-line="54" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSONParser.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="63" column="66" lean-forward="true" selection-start-line="63" selection-start-column="66" selection-end-line="63" selection-end-column="66" />
         </state>
       </provider>
     </entry>

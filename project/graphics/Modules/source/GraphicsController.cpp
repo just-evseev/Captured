@@ -9,8 +9,9 @@ GraphicsController::GraphicsController(std::shared_ptr<sf::RenderWindow> window,
                             : window(window), size(window->getSize()),
                               data(nullptr),
                               mouse(mouse), cursor(mouse),
-                              hexSpace(window->getSize(), 59),
-                              texturePack("./textures/packs/Neon.json") {
+                              texturePack("./textures/packs/Neon.json"),
+                              hexSpace(window->getSize(), 59, texturePack)
+                               {
     texturePack.load();
 
     background.set_up(texturePack.get(BACKGROUND, -1));
@@ -19,7 +20,7 @@ GraphicsController::GraphicsController(std::shared_ptr<sf::RenderWindow> window,
     grid.set_up(texturePack.get(GRID, -1));
     centralize(grid);
 
-    player.set_up(texturePack.get(PLAYER, 0));
+    player.set_up(texturePack.get(PLAYER, id));
     centralize(player);
 
     lightT.loadFromFile("./Contents/light.png");
@@ -70,9 +71,9 @@ void GraphicsController::draw() {
     window->draw(hexSpace);
     hexSpace.move();
 
-    window->draw(reflection);
-    window->draw(light);
-    window->draw(player);
+    //window->draw(reflection);
+    //window->draw(light);
+    //window->draw(player);
 
 
     window->draw(cursor);

@@ -55,15 +55,24 @@ class TextureOwner {
     };
 
     sf::Texture& get(TextureType type, int id) {
+        if (id < 0)
+            id *= -1;
+
+        id++;
+
+        while (id > 5)
+            id -= 5;
+
+
         switch (type) {
             case PLAYER:
-                return textures.playerTextures.at(id + 1);
+                return textures.playerTextures.at(id);
 
             case AREA:
-                return textures.areaTextures.at(id + 1);
+                return textures.areaTextures.at(id);
 
             case TAIL:
-                return textures.tailTextures.at(1);
+                return textures.tailTextures.at(id);
 
             case GRID:
                 return textures.gridTexture;
