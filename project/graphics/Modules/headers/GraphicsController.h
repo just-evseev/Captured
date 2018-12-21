@@ -49,6 +49,7 @@ class GraphicsController {
 
     Move current;
     int i = 0;
+    int id;
 
  private:
     void centralize(Object& object);
@@ -61,6 +62,7 @@ class GraphicsController {
     void update(std::shared_ptr<DataPacket> data);
     void set_direction(Move direction);
     Move get_direction();
+    void set_id(int id);
     void draw();
 };
 

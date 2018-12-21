@@ -19,12 +19,12 @@
 
 
 const unsigned short PORT = 5001;
-const std::string IPADDRESS("192.168.1.10");
+const std::string IPADDRESS("172.20.10.10");
 
 sf::TcpSocket socket;
 bool quit = false;
 
-typedef std::map<int, Person> Persons;
+
 
 // GLOBAL VARIABLES (sh*t)
 
@@ -134,7 +134,7 @@ void ClientCycle() {
             int currMove = 0;
             int currQ = 0;
             int currR = 0;
-            packet >> idCount >> currId; //>> currMove >> currQ >> currR;
+            packet >> idCount >> currId;
             std::cout << currId << std::endl;
             for (int i = 0; i < idCount; ++i) {
                 int areaSize = 0;
@@ -155,11 +155,11 @@ void ClientCycle() {
                 }
             }
             //std::cout << " + " << persons.size() << persons.at(currId).point.q << ":" << persons.at(currId).point.r << std::endl;
-            me = persons.at(currId);
-            data->make(me);
+            data->make(persons, currId);
             graph.update(data);
-            graph.set_direction(direction);
-        }
+            graph.set_direction(Move(persons.at(currId).move));
+        } else
+            continue;
 
         for (int i = 0; i < tacts; ++i) {
 

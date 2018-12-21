@@ -13,13 +13,13 @@ GraphicsController::GraphicsController(std::shared_ptr<sf::RenderWindow> window,
                               texturePack("./textures/packs/Neon.json") {
     texturePack.load();
 
-    background.set_up(texturePack.get(BACKGROUND));
+    background.set_up(texturePack.get(BACKGROUND, -1));
     centralize(background);
 
-    grid.set_up(texturePack.get(GRID));
+    grid.set_up(texturePack.get(GRID, -1));
     centralize(grid);
 
-    player.set_up(texturePack.get(PLAYER));
+    player.set_up(texturePack.get(PLAYER, 0));
     centralize(player);
 
     lightT.loadFromFile("./Contents/light.png");
@@ -31,7 +31,7 @@ GraphicsController::GraphicsController(std::shared_ptr<sf::RenderWindow> window,
     reflection.set_up(reflectionT);
     centralize(reflection);
 
-    cursor.set_texture(texturePack.get(CURSOR));
+    cursor.set_texture(texturePack.get(CURSOR, -1));
 }
 
 GraphicsController::~GraphicsController() {}
@@ -78,3 +78,7 @@ void GraphicsController::draw() {
     window->draw(cursor);
 
 }
+
+void GraphicsController::set_id(int id) {
+    this->id = id;
+};

@@ -54,13 +54,13 @@ class TextureOwner {
         parser.load();
     };
 
-    sf::Texture& get(TextureType type) {
+    sf::Texture& get(TextureType type, int id) {
         switch (type) {
             case PLAYER:
-                return textures.playerTextures.at(1);
+                return textures.playerTextures.at(id + 1);
 
             case AREA:
-                return textures.areaTextures.at(1);
+                return textures.areaTextures.at(id + 1);
 
             case TAIL:
                 return textures.tailTextures.at(1);

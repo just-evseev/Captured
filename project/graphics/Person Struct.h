@@ -6,10 +6,12 @@
 #define GRAPHICS_PERSON_STRUCT_H
 
 #include <vector>
+#include <map>
 #include "Hex.h"
 
 typedef std::vector<Hex> PlayerArea;
 typedef std::vector<Hex> PlayerTails;
+
 
 struct Person {
     int move;
@@ -20,5 +22,6 @@ struct Person {
             :move(0), point(point) {};
 };
 
+typedef std::map<int, Person> Persons;
 
 #endif //GRAPHICS_PERSON_STRUCT_H
