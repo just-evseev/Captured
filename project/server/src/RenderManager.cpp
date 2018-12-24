@@ -91,7 +91,7 @@ void RenderManager::updateAt(int id) {
         }
     }
 //    if (detectId != id) {
-        persons.at(id).point = point; //Обновляем точку человеку
+    persons.at(id).point = point; //Обновляем точку человеку
 //    }
 }
 

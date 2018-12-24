@@ -1,3 +1,4 @@
+
 #include <iostream>
 #include <vector>
 #include <SFML/Network.hpp>
@@ -69,27 +70,27 @@ void serverCycle() {
             if (packetReceive >> msg) {
 //                std::cout << std::endl << sockets[i]->getRemoteAddress() << ": " << msg << std::endl;
                 switch (msg) {
-                case 0:
-                    rM.updateEnum(playersId[i], Move::UP);
-                    break;
-                case 1:
-                    rM.updateEnum(playersId[i], Move::RIGHT_UP);
-                    break;
-                case 2:
-                    rM.updateEnum(playersId[i], Move::RIGHT_DOWN);
-                    break;
-                case 3:
-                    rM.updateEnum(playersId[i], Move::DOWN);
-                    break;
-                case 4:
-                    rM.updateEnum(playersId[i], Move::LEFT_DOWN);
-                    break;
-                case 5:
-                    rM.updateEnum(playersId[i], Move::LEFT_UP);
-                    break;
-                default:
-                    std::cout << playersId[i] << ": Incorrect value" << std::endl;
-                    break;
+                    case 0:
+                        rM.updateEnum(playersId[i], Move::UP);
+                        break;
+                    case 1:
+                        rM.updateEnum(playersId[i], Move::RIGHT_UP);
+                        break;
+                    case 2:
+                        rM.updateEnum(playersId[i], Move::RIGHT_DOWN);
+                        break;
+                    case 3:
+                        rM.updateEnum(playersId[i], Move::DOWN);
+                        break;
+                    case 4:
+                        rM.updateEnum(playersId[i], Move::LEFT_DOWN);
+                        break;
+                    case 5:
+                        rM.updateEnum(playersId[i], Move::LEFT_UP);
+                        break;
+                    default:
+                        std::cout << playersId[i] << ": Incorrect value" << std::endl;
+                        break;
                 }
 
             }

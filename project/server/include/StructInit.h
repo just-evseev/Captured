@@ -1,3 +1,4 @@
+
 #ifndef StructInit_h
 #define StructInit_h
 

@@ -6,7 +6,6 @@
 #define GRAPHICS_HEX_H
 
 class Hex {
-
     struct decart {
         decart(float x, float y)
                 : x(x), y(y) {};
@@ -21,7 +20,6 @@ class Hex {
 
         return Hex::decart(x, y);
     }
-
 public:
     Hex(int q, int r)
             : q(q), r(r) {};
@@ -33,7 +31,6 @@ public:
         this->q = q;
         this->r = r;
     }
-
     bool operator<(const Hex& right) const {
         Hex::decart l = level();
         Hex::decart r = right.level();

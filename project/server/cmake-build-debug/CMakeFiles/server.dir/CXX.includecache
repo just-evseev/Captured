@@ -6,11 +6,19 @@
 
 #IncludeRegexTransform: 
 
+<<<<<<< HEAD
 /Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/include/Hex.h
 
 /Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/include/RenderManager.h
 SFML/Network.hpp
 -
+=======
+/Users/ilya/Desktop/Captured/project/server/include/CellState.h
+
+/Users/ilya/Desktop/Captured/project/server/include/Hex.h
+
+/Users/ilya/Desktop/Captured/project/server/include/RenderManager.h
+>>>>>>> master
 StructInit.h
 /Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/include/StructInit.h
 
@@ -18,6 +26,7 @@ StructInit.h
 vector
 -
 map
+<<<<<<< HEAD
 -
 Hex.h
 /Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/include/Hex.h
@@ -37,4 +46,15 @@ SFML/Network.hpp
 -
 ../include/RenderManager.h
 /Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/include/RenderManager.h
+=======
+-
+Hex.h
+/Users/ilya/Desktop/Captured/project/server/include/Hex.h
+CellState.h
+/Users/ilya/Desktop/Captured/project/server/include/CellState.h
+
+/Users/ilya/Desktop/Captured/project/server/src/RenderManager.cpp
+../include/RenderManager.h
+/Users/ilya/Desktop/Captured/project/server/include/RenderManager.h
+>>>>>>> master
 
