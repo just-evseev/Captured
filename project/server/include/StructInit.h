@@ -1,3 +1,4 @@
+
 #ifndef StructInit_h
 #define StructInit_h
 
@@ -5,7 +6,8 @@
 #include <map>
 
 #include "Hex.h"
-#include "CellState.h"
+
+#define START_AREA 7
 
 enum Move {
     UP = 0,
@@ -16,20 +18,37 @@ enum Move {
     LEFT_UP = 5
 };
 
-struct Per {
-    int id;
-    int state; // хз зачем эта характеристика
-    int area_sq;
+typedef std::vector<Hex> PlayerArea;
+typedef std::vector<Hex> PlayerTails;
+
+struct Person {
+    int move;
+    int areaSquare;
+    Hex point;
     int kills;
-    int bonus_effect;
+    int bonusEffect;
+    PlayerArea playerArea;
+    PlayerTails playerTails;
+    Person(Hex point)
+            :move(0), areaSquare(START_AREA), point(point), kills(0), bonusEffect(0) {};
 };
 
-typedef struct Per Person;
+struct CellState {
+    int id;
+    int state;
+    CellState(int id, int state)
+            : id(id), state(state) {};
+};
 
-typedef std::map<int, Person> Persons;
+struct QPlusState {
+    int q;
+    int state;
+    QPlusState(int q, int state)
+            : q(q), state(state) {};
+};
 
 typedef std::map<Hex, int> Areas;
 typedef std::map<Hex, CellState> Tails;
-typedef std::map<int, Hex> Points;
+typedef std::map<int, Person> Persons;
 
 #endif /* StructInit_h */

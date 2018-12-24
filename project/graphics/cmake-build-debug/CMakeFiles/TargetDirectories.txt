@@ -1,0 +1,3 @@
+/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/graphics/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/graphics/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/graphics/cmake-build-debug/CMakeFiles/graphics.dir

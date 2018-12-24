@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
+    <generated>
+      <config projectName="graphics" targetName="graphics" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1e8ca273-b8ab-4e8f-a84b-a020dfc4ddd8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.3/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.3/CMakeCCompiler.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.3/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.3/CMakeCXXCompiler.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../server/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/cmake-build-debug/CMakeFiles/3.12.3/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../server/cmake-build-debug/CMakeFiles/3.12.3/CMakeCCompiler.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/cmake-build-debug/CMakeFiles/3.12.3/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../server/cmake-build-debug/CMakeFiles/3.12.3/CMakeCXXCompiler.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../server/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../server/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../server/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../server/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../server/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../server/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/cmake-build-debug/CMakeFiles/server.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../server/cmake-build-debug/CMakeFiles/server.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/cmake-build-debug/CMakeFiles/server.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../server/cmake-build-debug/CMakeFiles/server.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/cmake-build-debug/CMakeFiles/server.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../server/cmake-build-debug/CMakeFiles/server.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/cmake-build-debug/CMakeFiles/server.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/../server/cmake-build-debug/CMakeFiles/server.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/cmake-build-debug/CMakeFiles/server.dir/src/RenderManager.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../server/cmake-build-debug/CMakeFiles/server.dir/src/RenderManager.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/cmake-build-debug/CMakeFiles/server.dir/src/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../server/cmake-build-debug/CMakeFiles/server.dir/src/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/cmake-build-debug/CMakeFiles/serverCaptured.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/cmake-build-debug/CMakeFiles/serverCaptured.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/cmake-build-debug/CMakeFiles/serverCaptured.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/cmake-build-debug/CMakeFiles/serverCaptured.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/cmake-build-debug/CMakeFiles/serverCaptured.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/cmake-build-debug/CMakeFiles/serverCaptured.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/cmake-build-debug/CMakeFiles/serverCaptured.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/cmake-build-debug/CMakeFiles/serverCaptured.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/cmake-build-debug/CMakeFiles/serverCaptured.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../server/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../server/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/cmake-build-debug/server" beforeDir="false" afterPath="$PROJECT_DIR$/../server/cmake-build-debug/server" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/cmake-build-debug/server.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../server/cmake-build-debug/server.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/include/RenderManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/../server/include/RenderManager.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/RenderManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/RenderManager.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main.cpp" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FUSProjectUsageTrigger">
+    <session id="-503292097">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cmake" value="1" />
+          <entry key="cpp" value="4" />
+          <entry key="h" value="7" />
+          <entry key="txt" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CMakeLists.txt" value="2" />
+          <entry key="ObjectiveC" value="11" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cpp" value="3018" />
+          <entry key="h" value="1637" />
+          <entry key="txt" value="67" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CMakeLists.txt" value="67" />
+          <entry key="ObjectiveC" value="4655" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-1801344229">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cpp" value="34" />
+          <entry key="file" value="2" />
+          <entry key="h" value="72" />
+          <entry key="hpp" value="6" />
+          <entry key="memory" value="1" />
+          <entry key="txt" value="7" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CMakeLists.txt" value="7" />
+          <entry key="ObjectiveC" value="113" />
+          <entry key="PLAIN_TEXT" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cpp" value="3987" />
+          <entry key="h" value="8442" />
+          <entry key="hpp" value="1" />
+          <entry key="txt" value="187" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CMakeLists.txt" value="187" />
+          <entry key="Doxygen file" value="2" />
+          <entry key="ObjectiveC" value="12428" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="1252225910">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cc" value="1" />
+          <entry key="cpp" value="15" />
+          <entry key="h" value="47" />
+          <entry key="png" value="7" />
+          <entry key="txt" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CMakeLists.txt" value="2" />
+          <entry key="Image" value="7" />
+          <entry key="ObjectiveC" value="63" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cpp" value="1168" />
+          <entry key="h" value="9330" />
+          <entry key="txt" value="70" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CMakeLists.txt" value="70" />
+          <entry key="ObjectiveC" value="10498" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-1390329649">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.160" value="1" />
+          <entry key="project.open.time.2" value="2" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="h" value="10" />
+          <entry key="memory" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="ObjectiveC" value="14" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cpp" value="1295" />
+          <entry key="h" value="1031" />
+          <entry key="txt" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CMakeLists.txt" value="8" />
+          <entry key="ObjectiveC" value="2326" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-1291500460">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="txt" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CMakeLists.txt" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cpp" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="ObjectiveC" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-515932160">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Modules/headers/GraphicsController.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="2" selection-start-column="2" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DataPacket.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+              <folding>
+                <element signature="e#114#142#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DataPacket.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Modules/source/GraphicsController.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1125">
+              <caret line="75" column="6" selection-start-line="75" selection-start-column="6" selection-end-line="75" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Drawable Objects/HexSpace.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1290">
+              <caret line="86" column="14" selection-start-line="86" selection-start-column="14" selection-end-line="86" selection-end-column="14" />
+              <folding>
+                <element signature="e#110#124#0" expanded="true" />
+                <element signature="e#2884#6406#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TextureOwner.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1200">
+              <caret line="80" column="50" selection-start-line="80" selection-start-column="50" selection-end-line="80" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JSONParser.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="945">
+              <caret line="63" column="66" selection-start-line="63" selection-start-column="66" selection-end-line="63" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="70" selection-start-line="16" selection-start-column="70" selection-end-line="16" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/coordinates.h" />
+        <option value="$PROJECT_DIR$/Player.h" />
+        <option value="$PROJECT_DIR$/Player.cpp" />
+        <option value="$PROJECT_DIR$/HexGrid.h" />
+        <option value="$PROJECT_DIR$/Hex.h" />
+        <option value="$PROJECT_DIR$/Move.h" />
+        <option value="$PROJECT_DIR$/GraphicsController.cpp" />
+        <option value="$PROJECT_DIR$/GraphicsController.h" />
+        <option value="$PROJECT_DIR$/src/main.cpp" />
+        <option value="$PROJECT_DIR$/MouseController.h" />
+        <option value="$PROJECT_DIR$/MouseController.cpp" />
+        <option value="$PROJECT_DIR$/ObjectHolder.h" />
+        <option value="$PROJECT_DIR$/StaticObject.h" />
+        <option value="$PROJECT_DIR$/HexMap.cpp" />
+        <option value="$PROJECT_DIR$/HexMap.h" />
+        <option value="$PROJECT_DIR$/PlayersImitation.h" />
+        <option value="$PROJECT_DIR$/PacketParser.h" />
+        <option value="$PROJECT_DIR$/PacketSender.h" />
+        <option value="$PROJECT_DIR$/PacketGenerator.h" />
+        <option value="$PROJECT_DIR$/MovableObject.h" />
+        <option value="$PROJECT_DIR$/ObjectArray.h" />
+        <option value="$PROJECT_DIR$/MovingObject.h" />
+        <option value="$PROJECT_DIR$/Object.h" />
+        <option value="$PROJECT_DIR$/StationaryObject.h" />
+        <option value="$PROJECT_DIR$/HexSpace.h" />
+        <option value="$PROJECT_DIR$/Server2ClientParser.h" />
+        <option value="$PROJECT_DIR$/Textures.h" />
+        <option value="$PROJECT_DIR$/Cursor.cpp" />
+        <option value="$PROJECT_DIR$/Modules/source/MouseController.cpp" />
+        <option value="$PROJECT_DIR$/Drawable Objects/TextureQuad.h" />
+        <option value="$PROJECT_DIR$/Drawable Objects/TextureRect.h" />
+        <option value="$PROJECT_DIR$/Drawable Objects/StationaryObject.h" />
+        <option value="$PROJECT_DIR$/Drawable Objects/MovingObject.h" />
+        <option value="$PROJECT_DIR$/DataPacket.cpp" />
+        <option value="$PROJECT_DIR$/Drawable Objects/Object.h" />
+        <option value="$PROJECT_DIR$/Cursor.h" />
+        <option value="$PROJECT_DIR$/Modules/headers/MouseController.h" />
+        <option value="$PROJECT_DIR$/Drawable Objects/MovableObject.h" />
+        <option value="$PROJECT_DIR$/Person Struct.h" />
+        <option value="$PROJECT_DIR$/Modules/headers/GraphicsController.h" />
+        <option value="$PROJECT_DIR$/TextureOwner.h" />
+        <option value="$PROJECT_DIR$/Modules/source/GraphicsController.cpp" />
+        <option value="$PROJECT_DIR$/Drawable Objects/HexSpace.h" />
+        <option value="$PROJECT_DIR$/DataPacket.h" />
+        <option value="$PROJECT_DIR$/JSONParser.h" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="38" />
+    <option name="y" value="23" />
+    <option name="width" value="1402" />
+    <option name="height" value="877" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="graphics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graphics" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graphics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graphics" type="462c0819:PsiDirectoryNode" />
+              <item name="Drawable Objects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graphics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graphics" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graphics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graphics" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="headers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graphics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graphics" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Drawable Objects" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.graphics">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="graphics" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="graphics" TARGET_NAME="graphics" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="graphics" RUN_TARGET_NAME="graphics">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Build All" />
+      <item itemvalue="Application.graphics" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1e8ca273-b8ab-4e8f-a84b-a020dfc4ddd8" name="Default Changelist" comment="" />
+      <created>1543150513144</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1543150513144</updated>
+      <workItem from="1543150514890" duration="26675000" />
+      <workItem from="1543587016784" duration="31713000" />
+      <workItem from="1544045326331" duration="4210000" />
+      <workItem from="1544112454660" duration="4067000" />
+      <workItem from="1544182489661" duration="368000" />
+      <workItem from="1544252190514" duration="60505000" />
+      <workItem from="1544618273305" duration="50279000" />
+      <workItem from="1544903979236" duration="3282000" />
+      <workItem from="1544909772571" duration="3480000" />
+      <workItem from="1545065681320" duration="4000" />
+      <workItem from="1545065786925" duration="1584000" />
+      <workItem from="1545140161171" duration="2080000" />
+      <workItem from="1545213051993" duration="15000" />
+      <workItem from="1545224984178" duration="22543000" />
+      <workItem from="1545407931239" duration="692000" />
+      <workItem from="1545409060242" duration="1297000" />
+      <workItem from="1545643793100" duration="96000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="215506000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="38" y="23" width="1402" height="877" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31029412" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.43312103" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3983629" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.60254776" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3292517" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="CMake" order="12" weight="0.3287858" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27110156" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2851296" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32469305" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3292517" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="CMake" order="12" weight="0.3287858" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main.cpp" />
+    <entry file="file://$PROJECT_DIR$/MouseController.cpp" />
+    <entry file="file://$PROJECT_DIR$/MouseController.h" />
+    <entry file="file://$PROJECT_DIR$/Modules/GraphicsController.h" />
+    <entry file="file://$PROJECT_DIR$/ObjectHolder.h" />
+    <entry file="file:///usr/local/include/SFML/Graphics/Drawable.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="68" column="17" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hex.h" />
+    <entry file="file://$PROJECT_DIR$/PacketSender.h" />
+    <entry file="file://$PROJECT_DIR$/StaticObject.h" />
+    <entry file="file://$PROJECT_DIR$/file" />
+    <entry file="file://$PROJECT_DIR$/HexMap.h" />
+    <entry file="file://$PROJECT_DIR$/HexMap.cpp" />
+    <entry file="file://$PROJECT_DIR$/Move.h" />
+    <entry file="file://$PROJECT_DIR$/PlayersImitation.h" />
+    <entry file="file://$PROJECT_DIR$/PacketGenerator.h" />
+    <entry file="file://$PROJECT_DIR$/PacketParser.h" />
+    <entry file="file://$PROJECT_DIR$/Client2ServerParser.h" />
+    <entry file="file://$PROJECT_DIR$/Cursor.cpp" />
+    <entry file="file://$PROJECT_DIR$/Drawable Objects/TextureQuad.h" />
+    <entry file="file://$PROJECT_DIR$/Drawable Objects/TextureRect.h" />
+    <entry file="file://$PROJECT_DIR$/Drawable Objects/GameCamera.h" />
+    <entry file="file://$PROJECT_DIR$/textures/source/Neon/areas/1.png" />
+    <entry file="file://$PROJECT_DIR$/textures/source/Neon/players/1.png" />
+    <entry file="file://$PROJECT_DIR$/textures/source/Neon/players/2.png" />
+    <entry file="file://$PROJECT_DIR$/textures/source/Neon/unique/grid.png" />
+    <entry file="file://$PROJECT_DIR$/textures/source/Neon/unique/cursor.png" />
+    <entry file="file://$PROJECT_DIR$/textures/source/Neon/unique/background.png" />
+    <entry file="file://$PROJECT_DIR$/textures/source/Neon/tails/1.png" />
+    <entry file="file://$PROJECT_DIR$/client2server.pb.cc" />
+    <entry file="file://$PROJECT_DIR$/Drawable Objects/StationaryObject.h" />
+    <entry file="file://$PROJECT_DIR$/Drawable Objects/Object.h" />
+    <entry file="file://$PROJECT_DIR$/Drawable Objects/ObjectArray.h" />
+    <entry file="file://$PROJECT_DIR$/Cursor.h" />
+    <entry file="file://$PROJECT_DIR$/Modules/source/MouseController.cpp" />
+    <entry file="file://$PROJECT_DIR$/Modules/headers/MouseController.h" />
+    <entry file="file:///Library/Developer/CommandLineTools/usr/include/c++/v1/map">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="1091" column="16" selection-start-line="1091" selection-start-column="16" selection-end-line="1091" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Developer/CommandLineTools/usr/include/c++/v1/memory">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23059">
+          <caret line="3877" selection-start-line="3877" selection-end-line="3877" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server2ClientParser.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Person Struct.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Drawable Objects/MovingObject.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-228" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Drawable Objects/MovableObject.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Textures.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-82" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/headers/GraphicsController.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2" selection-start-column="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataPacket.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding>
+            <element signature="e#114#142#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataPacket.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/source/GraphicsController.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1125">
+          <caret line="75" column="6" selection-start-line="75" selection-start-column="6" selection-end-line="75" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Drawable Objects/HexSpace.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1290">
+          <caret line="86" column="14" selection-start-line="86" selection-start-column="14" selection-end-line="86" selection-end-column="14" />
+          <folding>
+            <element signature="e#110#124#0" expanded="true" />
+            <element signature="e#2884#6406#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TextureOwner.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="80" column="50" selection-start-line="80" selection-start-column="50" selection-end-line="80" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSONParser.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="63" column="66" selection-start-line="63" selection-start-column="66" selection-end-line="63" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="70" selection-start-line="16" selection-start-column="70" selection-end-line="16" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

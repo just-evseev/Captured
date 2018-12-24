@@ -1,0 +1,19 @@
+syntax = "proto2";
+package client2server;
+
+// [START Helpful structures declaration]
+enum Move {
+    UP = 0;
+    RIGHT_UP = 1;
+    RIGHT_DOWN = 2;
+    DOWN = 3;
+    LEFT_DOWN = 4;
+    LEFT_UP = 5;
+}
+// [END Helpful structures declaration]
+
+// [START package content]
+message Packet {
+    required Move direction = 1;
+}
+// [END package content]

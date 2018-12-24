@@ -1,10 +1,7 @@
-//
-// Created by Ilya on 06/12/2018.
-//
-
 #ifndef SERVER_RENDERMANAGER_H
 #define SERVER_RENDERMANAGER_H
 
+#include <SFML/Network.hpp>
 #include "StructInit.h"
 
 class RenderManager {
@@ -14,27 +11,31 @@ public:
     ~RenderManager();
 
     void acceptPlayer(int id);
-    void getPlayerCoord(Move move, int id);
+
+    void updateAt(int id);
+
+    void updateEnum(int id, Move move);
+
+    void printArea();
+    void printTails();
+
+    Persons persons;
+    Tails tails;
+    Areas areas;
+    std::vector<int> killerList;
 
 private:
-    Hex createNewPlayer(int id);
     void createAreaOfNewPlayer(Hex point, int id);
 
-    Hex generateCoord(int size);
-    int generateNumber(int size);
+    Hex generateCoord();
+    int generateNumber();
 
-    void personKiller(int id);
     void playerKiller(int playerId);
 
     void updatePersonArea(int id);
 
     const int MAP_SIZE = 10; // Размер карты (кастомизируется под поле на клиенте)
 
-    Persons persons;
-    Points points;
-    Areas areas;
-    Tails tails;
 };
-
 
 #endif //SERVER_RENDERMANAGER_H

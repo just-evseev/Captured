@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;CMake Files\cmake_modules\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/ilya/Desktop/Captured/project/server/cmake-build-debug"/>
+				<Option working_dir="/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Учеба/Prep\ C:C++/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Учеба/Prep\ C:C++/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Учеба/Prep\ C:C++/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Учеба/Prep\ C:C++/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/ilya/Desktop/Captured/project/server/cmake-build-debug"/>
+				<Option working_dir="/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Учеба/Prep\ C:C++/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Учеба/Prep\ C:C++/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Учеба/Prep\ C:C++/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Учеба/Prep\ C:C++/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/ilya/Desktop/Captured/project/server/cmake-build-debug"/>
+				<Option working_dir="/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Учеба/Prep\ C:C++/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Учеба/Prep\ C:C++/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Учеба/Prep\ C:C++/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Учеба/Prep\ C:C++/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="server">
-				<Option output="/Users/ilya/Desktop/Captured/project/server/cmake-build-debug/server" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/ilya/Desktop/Captured/project/server/cmake-build-debug"/>
+				<Option output="/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/cmake-build-debug/server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -53,15 +53,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 server"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Учеба/Prep\ C:C++/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 server"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Учеба/Prep\ C:C++/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Учеба/Prep\ C:C++/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Учеба/Prep\ C:C++/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="server/fast">
-				<Option output="/Users/ilya/Desktop/Captured/project/server/cmake-build-debug/server" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/ilya/Desktop/Captured/project/server/cmake-build-debug"/>
+				<Option output="/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/cmake-build-debug/server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -75,35 +75,32 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 server/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Учеба/Prep\ C:C++/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 server/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Учеба/Prep\ C:C++/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Учеба/Prep\ C:C++/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ilya/Desktop/Учеба/Prep\ C:C++/Captured/project/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/ilya/Desktop/Captured/project/server/include/CellState.h">
+		<Unit filename="/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/include/Hex.h">
 			<Option target="server"/>
 		</Unit>
-		<Unit filename="/Users/ilya/Desktop/Captured/project/server/include/Hex.h">
+		<Unit filename="/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/include/RenderManager.h">
 			<Option target="server"/>
 		</Unit>
-		<Unit filename="/Users/ilya/Desktop/Captured/project/server/include/RenderManager.h">
+		<Unit filename="/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/include/StructInit.h">
 			<Option target="server"/>
 		</Unit>
-		<Unit filename="/Users/ilya/Desktop/Captured/project/server/include/StructInit.h">
+		<Unit filename="/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/src/RenderManager.cpp">
 			<Option target="server"/>
 		</Unit>
-		<Unit filename="/Users/ilya/Desktop/Captured/project/server/src/RenderManager.cpp">
+		<Unit filename="/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/src/main.cpp">
 			<Option target="server"/>
 		</Unit>
-		<Unit filename="/Users/ilya/Desktop/Captured/project/server/src/main.cpp">
-			<Option target="server"/>
-		</Unit>
-		<Unit filename="/Users/ilya/Desktop/Captured/project/server/CMakeLists.txt">
+		<Unit filename="/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/Users/ilya/Desktop/Captured/project/server/cmake_modules/FindSFML.cmake">
+		<Unit filename="/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/cmake_modules/FindSFML.cmake">
 			<Option virtualFolder="CMake Files\cmake_modules\"/>
 		</Unit>
 	</Project>

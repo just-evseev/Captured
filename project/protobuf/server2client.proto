@@ -1,0 +1,45 @@
+syntax = "proto2";
+package server2client;
+
+// [START Helpful structures declaration]
+enum Move {
+    UP = 0;
+    RIGHT_UP = 1;
+    RIGHT_DOWN = 2;
+    DOWN = 3;
+    LEFT_DOWN = 4;
+    LEFT_UP = 5;
+}
+
+message HexagonCoordinate {
+    required int32 q = 1;
+    required int32 r = 2;
+}
+
+message HexagonProperty {
+    required HexagonCoordinate hex = 1;
+    required int32 id = 2;
+}
+
+message TailProperty {
+    required HexagonCoordinate hex = 1;
+    required Move direction = 2;
+    required int32 id = 3;
+}
+
+message Player {
+    required int32 id = 1;
+    required Move direction = 2;
+    required HexagonCoordinate position = 3;
+    required int32 expansion = 4;
+    required int32 kills = 5;
+}
+// [END Helpful structures declaration]
+
+// [START package content]
+message Packet {
+    repeated Player players = 1;
+    repeated HexagonProperty areas = 2;
+    repeated HexagonProperty tails = 3;
+}
+// [END package content]

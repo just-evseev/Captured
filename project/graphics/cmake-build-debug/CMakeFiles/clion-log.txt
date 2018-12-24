@@ -1,0 +1,25 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/graphics"
+-- The C compiler identification is AppleClang 10.0.0.10001145
+-- The CXX compiler identification is AppleClang 10.0.0.10001145
+-- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc
+-- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - failed
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - failed
+-- Found SFML .. in /Library/Frameworks/SFML.framework
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - found
+-- Found Threads: TRUE  
+-- Found Protobuf: /usr/local/lib/libprotobuf.dylib (found version "3.6.1") 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/graphics/cmake-build-debug
