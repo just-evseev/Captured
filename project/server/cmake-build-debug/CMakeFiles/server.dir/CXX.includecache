@@ -6,23 +6,29 @@
 
 #IncludeRegexTransform: 
 
-/Users/ilya/Desktop/Captured/project/server/include/Hex.h
+/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/include/Hex.h
 
-/Users/ilya/Desktop/Captured/project/server/include/RenderManager.h
+/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/include/RenderManager.h
 SFML/Network.hpp
 -
 StructInit.h
-/Users/ilya/Desktop/Captured/project/server/include/StructInit.h
+/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/include/StructInit.h
 
-/Users/ilya/Desktop/Captured/project/server/include/StructInit.h
+/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/include/StructInit.h
 vector
 -
 map
 -
 Hex.h
-/Users/ilya/Desktop/Captured/project/server/include/Hex.h
+/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/include/Hex.h
 
-/Users/ilya/Desktop/Captured/project/server/src/main.cpp
+/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/src/RenderManager.cpp
+iostream
+-
+../include/RenderManager.h
+/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/include/RenderManager.h
+
+/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/src/main.cpp
 iostream
 -
 vector
@@ -30,5 +36,5 @@ vector
 SFML/Network.hpp
 -
 ../include/RenderManager.h
-/Users/ilya/Desktop/Captured/project/server/include/RenderManager.h
+/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/include/RenderManager.h
 

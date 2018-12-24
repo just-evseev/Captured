@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ilya/Desktop/Captured/project/server
+CMAKE_SOURCE_DIR = "/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ilya/Desktop/Captured/project/server/cmake-build-debug
+CMAKE_BINARY_DIR = "/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/server.dir/depend.make
@@ -59,29 +59,29 @@ include CMakeFiles/server.dir/flags.make
 
 CMakeFiles/server.dir/src/main.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ilya/Desktop/Captured/project/server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/server.dir/src/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/src/main.cpp.o -c /Users/ilya/Desktop/Captured/project/server/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/server.dir/src/main.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/src/main.cpp.o -c "/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/src/main.cpp"
 
 CMakeFiles/server.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/src/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ilya/Desktop/Captured/project/server/src/main.cpp > CMakeFiles/server.dir/src/main.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/src/main.cpp" > CMakeFiles/server.dir/src/main.cpp.i
 
 CMakeFiles/server.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/src/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ilya/Desktop/Captured/project/server/src/main.cpp -o CMakeFiles/server.dir/src/main.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/src/main.cpp" -o CMakeFiles/server.dir/src/main.cpp.s
 
 CMakeFiles/server.dir/src/RenderManager.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/src/RenderManager.cpp.o: ../src/RenderManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ilya/Desktop/Captured/project/server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/server.dir/src/RenderManager.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/src/RenderManager.cpp.o -c /Users/ilya/Desktop/Captured/project/server/src/RenderManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/server.dir/src/RenderManager.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/src/RenderManager.cpp.o -c "/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/src/RenderManager.cpp"
 
 CMakeFiles/server.dir/src/RenderManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/src/RenderManager.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ilya/Desktop/Captured/project/server/src/RenderManager.cpp > CMakeFiles/server.dir/src/RenderManager.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/src/RenderManager.cpp" > CMakeFiles/server.dir/src/RenderManager.cpp.i
 
 CMakeFiles/server.dir/src/RenderManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/src/RenderManager.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ilya/Desktop/Captured/project/server/src/RenderManager.cpp -o CMakeFiles/server.dir/src/RenderManager.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/src/RenderManager.cpp" -o CMakeFiles/server.dir/src/RenderManager.cpp.s
 
 # Object files for target server
 server_OBJECTS = \
@@ -95,7 +95,7 @@ server: CMakeFiles/server.dir/src/main.cpp.o
 server: CMakeFiles/server.dir/src/RenderManager.cpp.o
 server: CMakeFiles/server.dir/build.make
 server: CMakeFiles/server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ilya/Desktop/Captured/project/server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -108,6 +108,6 @@ CMakeFiles/server.dir/clean:
 .PHONY : CMakeFiles/server.dir/clean
 
 CMakeFiles/server.dir/depend:
-	cd /Users/ilya/Desktop/Captured/project/server/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ilya/Desktop/Captured/project/server /Users/ilya/Desktop/Captured/project/server /Users/ilya/Desktop/Captured/project/server/cmake-build-debug /Users/ilya/Desktop/Captured/project/server/cmake-build-debug /Users/ilya/Desktop/Captured/project/server/cmake-build-debug/CMakeFiles/server.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server" "/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server" "/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/cmake-build-debug" "/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/cmake-build-debug" "/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/cmake-build-debug/CMakeFiles/server.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/server.dir/depend
 

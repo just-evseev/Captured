@@ -24,6 +24,7 @@ void serverCycle() {
     int personId = 0;
     sf::Clock clock;
 
+
     while(!quit) {
         std::unique_ptr<sf::TcpSocket> fooSocket = std::make_unique<sf::TcpSocket>();
 
@@ -44,6 +45,17 @@ void serverCycle() {
             if (Status == sf::Socket::Disconnected) {
                 std::cout << sockets[i]->getRemoteAddress() << ": Disconnect (id = " << ")" << std::endl;
                 sockets.erase(sockets.begin() + i);
+                for (auto kek : rM.tails) {
+                    if (kek.second.id == playersId[i]) {
+                        rM.tails.erase(kek.first);
+                    }
+                }
+                for (auto kek : rM.areas) {
+                    if (kek.second == playersId[i]) {
+                        rM.tails.erase(kek.first);
+                    }
+                }
+                rM.persons.erase(playersId[i]);
                 playersId.erase(playersId.begin() + i);
                 continue;
             }
@@ -85,12 +97,13 @@ void serverCycle() {
 
         sf::Time time = clock.getElapsedTime();
         auto timeInMS = time.asMilliseconds();
+
         if (timeInMS >= 333) {
             clock.restart();
+            auto size = (int)sockets.size();
             for (int i = 0; i < sockets.size(); ++i) {
-                rM.updateAt(playersId[i]);
+//                std::cout << "Перемещение игрока " << playersId[i] << " = " << rM.persons.at(playersId[i]).move << std::endl;
                 sf::Packet packet;
-                auto size = (int)sockets.size();
                 packet << size << playersId[i];
                 for (int j = 0; j < size; ++j) {
                     auto areaSize = (int)rM.persons.at(playersId[j]).playerArea.size();
@@ -109,7 +122,26 @@ void serverCycle() {
                 if (Status != sf::Socket::Done) {
                     std::cout << "Error in send packet to user with id " << i << std::endl;
                 }
-//                rM.updateAt(playersId[i]);
+            }
+            for (int i = 0; i < sockets.size(); ++i) {
+                rM.updateAt(playersId[i]);
+            }
+            for (int i = 0; i < size; ++i) {
+                if (rM.persons.at(playersId[i]).bonusEffect == 1) {
+                    sockets.erase(sockets.begin() + i);
+                    for (auto kek : rM.tails) {
+                        if (kek.second.id == playersId[i]) {
+                            rM.tails.erase(kek.first);
+                        }
+                    }
+                    for (auto kek : rM.areas) {
+                        if (kek.second == playersId[i]) {
+                            rM.tails.erase(kek.first);
+                        }
+                    }
+                    rM.persons.erase(playersId[i]);
+                    playersId.erase(playersId.begin() + i);
+                }
             }
         }
     }

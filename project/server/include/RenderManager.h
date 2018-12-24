@@ -20,7 +20,13 @@ public:
 
     void updateEnum(int id, Move move);
 
+    void printArea();
+    void printTails();
+
     Persons persons;
+    Tails tails;
+    Areas areas;
+    std::vector<int> killerList;
 
 private:
     void createAreaOfNewPlayer(Hex point, int id);
@@ -28,18 +34,12 @@ private:
     Hex generateCoord();
     int generateNumber();
 
-    void personKiller(int id);
     void playerKiller(int playerId);
 
     void updatePersonArea(int id);
 
-    const int MAP_SIZE = 100; // Размер карты (кастомизируется под поле на клиенте)
+    const int MAP_SIZE = 10; // Размер карты (кастомизируется под поле на клиенте)
 
-    void printArea();
-    void printTails();
-
-    Areas areas;
-    Tails tails;
 };
 
 #endif //SERVER_RENDERMANAGER_H

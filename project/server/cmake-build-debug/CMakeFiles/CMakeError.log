@@ -1,0 +1,20 @@
+Detecting C [-std=c11] compiler features failed to compile with the following output:
+Change Dir: /Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6cedd/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_6cedd.dir/build.make CMakeFiles/cmTC_6cedd.dir/build
+CMakeFiles/cmTC_6cedd.dir/build.make:64: *** target pattern contains no `%'.  Stop.
+make: *** [cmTC_6cedd/fast] Error 2
+
+
+
+Detecting CXX [-std=c++1z] compiler features failed to compile with the following output:
+Change Dir: /Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d2665/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_d2665.dir/build.make CMakeFiles/cmTC_d2665.dir/build
+CMakeFiles/cmTC_d2665.dir/build.make:64: *** target pattern contains no `%'.  Stop.
+make: *** [cmTC_d2665/fast] Error 2
+
+
+

@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ilya/Desktop/client/include/Hex.h
+
+/Users/ilya/Desktop/client/src/main.cpp
+iostream
+-
+SFML/Network.hpp
+-
+thread
+-
+map
+-
+../include/Hex.h
+/Users/ilya/Desktop/client/include/Hex.h
+

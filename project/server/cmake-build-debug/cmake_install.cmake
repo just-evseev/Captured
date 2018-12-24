@@ -1,4 +1,4 @@
-# Install script for directory: /Users/ilya/Desktop/Captured/project/server
+# Install script for directory: /Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/ilya/Desktop/Captured/project/server/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

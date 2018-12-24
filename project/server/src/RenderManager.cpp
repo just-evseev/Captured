@@ -47,92 +47,52 @@ void RenderManager::updateAt(int id) {
             break;
     }
 
-    auto t6 = this->areas.find(point); // TODO: Гуляешь по своей зоне
+    auto t6 = this->areas.find(point);
     auto isPersonTailEmpty = this->persons.at(id).playerTails.empty();
-    if (t6 != this->areas.end()) { // Проверка на попадение в зону
+    int detectId;
+    if (t6 != this->areas.end()) { // TODO: Гуляешь по своей зоне
         if (t6->second == id && isPersonTailEmpty) {
-
-//            std::cout << "Попал к себе в зону в точке " << t6->first.q << ":" << t6->first.r << std::endl;
-
             auto t7 = this->tails.find(point);
             if (t7 != this->tails.end()) {  // Проверка на убийство внутри своей зоны другого игрока
-                auto detectId = t7->second.id;
+                detectId = t7->second.id;
                 if (detectId != id) {
-//                    std::cout << "Бил убит игрок " << detectId << " игроком " << id << std::endl;
-                    this->playerKiller(detectId);
                     this->persons.at(id).kills += 1;
+                    this->playerKiller(detectId);
                 }
-            } else {
-//                std::cout << "Новая точка " << point.q << ":" << point.r << " игрока " << id
-//                          << " в зоне, но не пересекает кривые других игроков" << std::endl;
             }
-
         } else if (t6->second == id && !isPersonTailEmpty) { // TODO: Попал к себе в зону, при этом вектор кривых не пуст
-
-//            std::cout << "Игрок " << id << " завершил зону, происходит объединение" << std::endl;
             this->updatePersonArea(id);
-
             auto t7 = this->tails.find(point);
             if (t7 != this->tails.end()) {  // Проверка на убийство внутри своей зоны другого игрока
-                auto detectId = t7->second.id;
+                detectId = t7->second.id;
                 if (detectId != id) {
-//                    std::cout << "Бил убит игрок " << detectId << " игроком " << id << std::endl;
-                    this->playerKiller(detectId);
                     this->persons.at(id).kills += 1;
+                    this->playerKiller(detectId);
                 }
-            } else {
-//                std::cout << "Новая точка " << point.q << ":" << point.r
-//                          << " игрока " << id
-//                          << " захватила зону, но не пересекает кривые других игроков"
-//                          << std::endl;
             }
-
-            this->persons.at(id).playerTails.clear();
         } else {
             auto t7 = this->tails.find(point);
-            if (t7 != this->tails.end()) {  // Проверка на убийство внутри своей зоны другого игрока
-                auto detectId = t7->second.id;
-                if (detectId != id) {
-//                    std::cout << "Бил убит игрок " << detectId << " игроком " << id << std::endl;
-                    this->playerKiller(detectId);
-                    this->persons.at(id).kills += 1;
-                } else {
-
-                }
-            } else {
-//                std::cout << "Новая точка " << point.q << ":" << point.r
-//                          << " игрока " << id
-//                          << " в другой зоне"
-//                          << std::endl;
-            }
             this->persons.at(id).playerTails.push_back(point);
             this->tails.emplace(point, cellState); // Добавляем точку кривым
-//            std::cout << "Добавил кривую игрока " << id << " с состоянием " << cellState.state << std::endl;
+            if (t7 != this->tails.end()) {  // Проверка на убийство в чужой зоне другого игрока
+                detectId = t7->second.id;
+                this->playerKiller(detectId);
+                this->persons.at(id).kills += 1;
+            }
         }
     } else { // TODO: Попал не в зону
         auto t7 = this->tails.find(point);
-        if (t7 != this->tails.end()) {  // Проверка на убийство внутри своей зоны другого игрока
-            auto detectId = t7->second.id;
-            if (detectId != id) {
-//                std::cout << "Бил убит игрок " << detectId << " игроком " << id << std::endl;
-                this->playerKiller(detectId);
-                this->persons.at(id).kills += 1;
-            } else {
-
-            }
-        } else {
-//            std::cout << "Новая точка " << point.q << ":" << point.r
-//                      << " игрока " << id
-//                      << " вне зоны"
-//                      << std::endl;
-        }
         this->persons.at(id).playerTails.push_back(point);
         this->tails.emplace(point, cellState); // Добавляем точку кривым
-//        std::cout << "Добавил кривую игрока " << id << " с состоянием " << cellState.state << std::endl;
+        if (t7 != this->tails.end()) {  // Проверка на убийство внутри своей зоны другого игрока
+            detectId = t7->second.id;
+            this->persons.at(id).kills += 1;
+            this->playerKiller(detectId);
+        }
     }
-
-    persons.at(id).point = point; //Обновляем точку человеку
-//    std::cout << "Добавил поинт игрока " << id << " " << point.q << ":" << point.r << std::endl;
+//    if (detectId != id) {
+        persons.at(id).point = point; //Обновляем точку человеку
+//    }
 }
 
 void RenderManager::updateEnum(int id, Move move) {
@@ -166,18 +126,12 @@ int RenderManager::generateNumber() {
 //    return 0;
 }
 
-void RenderManager::personKiller(int id) { // TODO: в процессе разработки (самоубийство)
-}
-
 void RenderManager::playerKiller(int playerId) { // TODO: в процессе разработки (убийство другого игрока)
+    this->persons.at(playerId).bonusEffect = 1;
 }
 
 void RenderManager::updatePersonArea(int id) { // добавление полигона к полигону игрока
-//    std::cout << std::endl << "++++Начинаем цикл присоединения++++" << std::endl;
-//    printArea();
-//    printTails();
-    std::cout << "Был вызван метод закраски у id = " << id << std::endl;
-    QPlusState prevState(-1, -2);
+    QPlusState prevState(-1000, -2);
 
     for (int r = -(this->MAP_SIZE); r <= 0; r++) {
         for (int q = -r - (this->MAP_SIZE); q <= (this->MAP_SIZE); q++) {
@@ -242,54 +196,39 @@ void RenderManager::updatePersonArea(int id) { // добавление поли�
         }
         prevState.q = -1;
     }
-//
-//    for (int i = 0; i <  MAP_SIZE + 1; ++i) {
-//        for (int j = 0; j < MAP_SIZE + i + 1; ++j) {
-//            auto it5 = tails.find(Hex(-MAP_SIZE + j, -j + i));
-//            if (it5 != tails.end()) {
-//                int currState = it5->second.state;
-//                int currId = it5->second.id;
-//                int currQ = it5->first.q;
-//                if (currId == id) {
-//                    areas.emplace(Hex(-MAP_SIZE + j, -j + i), id);
-//                    persons.at(id).playerArea.push_back(Hex(-MAP_SIZE + j, -j + i));
-//                    if (prevState.q != -1) { // первая кривая игрока за проход
-//                        prevState.q = currQ;
-//                        prevState.state = currState;
-//                    } else {
-//                        if (prevState.state != currState) {
-//                            for (int k = prevState.q + 1; k < currQ; k++) {
-//                                areas.emplace(Hex(k, -j + k), id);
-//                                persons.at(id).playerArea.push_back(Hex(k, -j + i));
-//                            }
-//                            prevState.q = currQ;
-//                            prevState.state = currState;
-//                        } else {
-//                            prevState.q = currQ;
-//                            prevState.state = currState;
-//                        }
-//                    }
-//                }
-//            }
-//        }
-//    }
-//    std::cout << std::endl;
-//    printArea();
-//    printTails();
+
+
+    for (auto kek : tails) {
+        if (kek.second.id == id) {
+            tails.erase(kek.first);
+        }
+    };
+
+    persons.at(id).playerTails.clear();
 }
 
 void RenderManager::printArea () {
     std::cout << std::endl << "print area" << std::endl;
-    for (auto it = this->areas.begin(); it != this->areas.end(); ++it)
-    {
-        std::cout << it->first.q << ":" << it->first.r << " " << it->second << std::endl;
+//    for (auto it = this->areas.begin(); it != this->areas.end(); ++it)
+//    {
+//        std::cout << it->first.q << ":" << it->first.r << " " << it->second << std::endl;
+//    }
+    for (auto kek : this->persons) {
+        for (auto lol : kek.second.playerArea) {
+            std::cout << kek.first << ": " << lol.q << "." << lol.r << std::endl;
+        }
     }
 }
 
 void RenderManager::printTails () {
     std::cout << std::endl << "print tails" << std::endl;
-    for (auto it = this->tails.begin(); it != this->tails.end(); ++it)
-    {
-        std::cout << it->first.q << ":" << it->first.r << " id = " << it->second.id << ":" << it->second.state << std::endl;
+//    for (auto it = this->tails.begin(); it != this->tails.end(); ++it)
+//    {
+//        std::cout << it->first.q << ":" << it->first.r << " id = " << it->second.id << ":" << it->second.state << std::endl;
+//    }
+    for (auto kek : this->persons) {
+        for (auto lol : kek.second.playerTails) {
+            std::cout << kek.first << ": " << lol.q << "." << lol.r << std::endl;
+        }
     }
 }

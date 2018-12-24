@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/ilya/Desktop/Captured/project/server/src/RenderManager.cpp" "/Users/ilya/Desktop/Captured/project/server/cmake-build-debug/CMakeFiles/server.dir/src/RenderManager.cpp.o"
-  "/Users/ilya/Desktop/Captured/project/server/src/main.cpp" "/Users/ilya/Desktop/Captured/project/server/cmake-build-debug/CMakeFiles/server.dir/src/main.cpp.o"
+  "/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/src/RenderManager.cpp" "/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/cmake-build-debug/CMakeFiles/server.dir/src/RenderManager.cpp.o"
+  "/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/src/main.cpp" "/Users/ilya/Desktop/Учеба/Prep C:C++/Captured/project/server/cmake-build-debug/CMakeFiles/server.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
