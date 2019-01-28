@@ -11,9 +11,11 @@
 
 ## Наша Команда
 * Разработчик Сервера и Клиента  
-[Евсеев Илья](github.com/olaoshka)
+    [Евсеев Илья](github.com/olaoshka)
 * Разработчик Графики и Интерфейса  
-[Святослав Кряжев](github.com/shadkain)
+    [Святослав Кряжев](github.com/shadkain)
+  
+### English version
 
 _Multiplayer game written in C ++ using SFML to implement client-server interaction_
 
