@@ -15,6 +15,8 @@
 * Разработчик Графики и Интерфейса  
     [Святослав Кряжев](github.com/shadkain)
   
+![ScreenShot](ScreenShot.png)
+
 ### English version
 
 _Multiplayer game written in C ++ using SFML to implement client-server interaction_
