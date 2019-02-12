@@ -11,9 +11,9 @@
 
 ## Наша Команда
 * Разработчик Сервера и Клиента  
-    [Евсеев Илья](github.com/olaoshka)
+    [Евсеев Илья](https://github.com/olaoshka)
 * Разработчик Графики и Интерфейса  
-    [Святослав Кряжев](github.com/shadkain)
+    [Святослав Кряжев](https://github.com/shadkain)
   
 ![ScreenShot](ScreenShot.png)
 
